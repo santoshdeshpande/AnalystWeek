@@ -33,6 +33,19 @@
 		3AE0C4FD1ADC00FE00E14FAD /* RHS_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0C4F51ADC00FE00E14FAD /* RHS_3.png */; };
 		3AE0C4FE1ADC00FE00E14FAD /* RHS_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0C4F61ADC00FE00E14FAD /* RHS_4.png */; };
 		3AE0C5001ADC063800E14FAD /* feedback_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0C4FF1ADC063800E14FAD /* feedback_icon.png */; };
+		3AE0C5031ADC086300E14FAD /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0C5021ADC086300E14FAD /* FeedbackViewController.m */; };
+		3AE0C5061ADC089500E14FAD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0C5051ADC089500E14FAD /* LoginViewController.m */; };
+		3AE0C50E1ADC0B2600E14FAD /* Button_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0C5081ADC0B2600E14FAD /* Button_1.png */; };
+		3AE0C50F1ADC0B2600E14FAD /* Button_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0C5091ADC0B2600E14FAD /* Button_2.png */; };
+		3AE0C5101ADC0B2600E14FAD /* Button_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0C50A1ADC0B2600E14FAD /* Button_3.png */; };
+		3AE0C5111ADC0B2600E14FAD /* Button_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0C50B1ADC0B2600E14FAD /* Button_4.png */; };
+		3AE0C5121ADC0B2600E14FAD /* Button_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0C50C1ADC0B2600E14FAD /* Button_5.png */; };
+		3AE0C5131ADC0B2600E14FAD /* Button_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0C50D1ADC0B2600E14FAD /* Button_6.png */; };
+		3AE0C5151ADC0E0C00E14FAD /* Welcome_note_Jpg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0C5141ADC0E0C00E14FAD /* Welcome_note_Jpg.jpg */; };
+		3AE0C5171ADC111A00E14FAD /* parking_pass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0C5161ADC111A00E14FAD /* parking_pass.jpg */; };
+		3AE0C5191ADC127000E14FAD /* threed_selfie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0C5181ADC127000E14FAD /* threed_selfie.jpg */; };
+		3AE0C51B1ADC21D500E14FAD /* back_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0C51A1ADC21D500E14FAD /* back_button.png */; };
+		3AE0C51E1ADC22A800E14FAD /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0C51D1ADC22A800E14FAD /* WelcomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +93,22 @@
 		3AE0C4F51ADC00FE00E14FAD /* RHS_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RHS_3.png; sourceTree = "<group>"; };
 		3AE0C4F61ADC00FE00E14FAD /* RHS_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RHS_4.png; sourceTree = "<group>"; };
 		3AE0C4FF1ADC063800E14FAD /* feedback_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feedback_icon.png; sourceTree = "<group>"; };
+		3AE0C5011ADC086300E14FAD /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
+		3AE0C5021ADC086300E14FAD /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
+		3AE0C5041ADC089500E14FAD /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		3AE0C5051ADC089500E14FAD /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		3AE0C5081ADC0B2600E14FAD /* Button_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_1.png; sourceTree = "<group>"; };
+		3AE0C5091ADC0B2600E14FAD /* Button_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_2.png; sourceTree = "<group>"; };
+		3AE0C50A1ADC0B2600E14FAD /* Button_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_3.png; sourceTree = "<group>"; };
+		3AE0C50B1ADC0B2600E14FAD /* Button_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_4.png; sourceTree = "<group>"; };
+		3AE0C50C1ADC0B2600E14FAD /* Button_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_5.png; sourceTree = "<group>"; };
+		3AE0C50D1ADC0B2600E14FAD /* Button_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_6.png; sourceTree = "<group>"; };
+		3AE0C5141ADC0E0C00E14FAD /* Welcome_note_Jpg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Welcome_note_Jpg.jpg; sourceTree = "<group>"; };
+		3AE0C5161ADC111A00E14FAD /* parking_pass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parking_pass.jpg; sourceTree = "<group>"; };
+		3AE0C5181ADC127000E14FAD /* threed_selfie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = threed_selfie.jpg; sourceTree = "<group>"; };
+		3AE0C51A1ADC21D500E14FAD /* back_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_button.png; sourceTree = "<group>"; };
+		3AE0C51C1ADC22A800E14FAD /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		3AE0C51D1ADC22A800E14FAD /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +198,12 @@
 				3AD644B61ADB6F1600591666 /* HomeViewController.m */,
 				3AE0C4EC1ADBBE6700E14FAD /* RequestMeetingViewController.h */,
 				3AE0C4ED1ADBBE6700E14FAD /* RequestMeetingViewController.m */,
+				3AE0C5011ADC086300E14FAD /* FeedbackViewController.h */,
+				3AE0C5021ADC086300E14FAD /* FeedbackViewController.m */,
+				3AE0C5041ADC089500E14FAD /* LoginViewController.h */,
+				3AE0C5051ADC089500E14FAD /* LoginViewController.m */,
+				3AE0C51C1ADC22A800E14FAD /* WelcomeViewController.h */,
+				3AE0C51D1ADC22A800E14FAD /* WelcomeViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -176,6 +211,7 @@
 		3AE0C4E21ADBA56200E14FAD /* images */ = {
 			isa = PBXGroup;
 			children = (
+				3AE0C5071ADC0B1A00E14FAD /* About */,
 				3AE0C4FF1ADC063800E14FAD /* feedback_icon.png */,
 				3AE0C4EF1ADC00FE00E14FAD /* LHS_1.png */,
 				3AE0C4F01ADC00FE00E14FAD /* LHS_2.png */,
@@ -202,6 +238,23 @@
 				3AE0C4E61ADBA82E00E14FAD /* Heading.png */,
 			);
 			name = RequestForMeeting;
+			sourceTree = "<group>";
+		};
+		3AE0C5071ADC0B1A00E14FAD /* About */ = {
+			isa = PBXGroup;
+			children = (
+				3AE0C51A1ADC21D500E14FAD /* back_button.png */,
+				3AE0C5181ADC127000E14FAD /* threed_selfie.jpg */,
+				3AE0C5161ADC111A00E14FAD /* parking_pass.jpg */,
+				3AE0C5141ADC0E0C00E14FAD /* Welcome_note_Jpg.jpg */,
+				3AE0C5081ADC0B2600E14FAD /* Button_1.png */,
+				3AE0C5091ADC0B2600E14FAD /* Button_2.png */,
+				3AE0C50A1ADC0B2600E14FAD /* Button_3.png */,
+				3AE0C50B1ADC0B2600E14FAD /* Button_4.png */,
+				3AE0C50C1ADC0B2600E14FAD /* Button_5.png */,
+				3AE0C50D1ADC0B2600E14FAD /* Button_6.png */,
+			);
+			name = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,22 +339,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AD644B11ADB693D00591666 /* LHS_1_About The Event.png in Resources */,
+				3AE0C5171ADC111A00E14FAD /* parking_pass.jpg in Resources */,
+				3AE0C51B1ADC21D500E14FAD /* back_button.png in Resources */,
+				3AE0C5151ADC0E0C00E14FAD /* Welcome_note_Jpg.jpg in Resources */,
 				3AE0C4FA1ADC00FE00E14FAD /* LHS_4.png in Resources */,
+				3AE0C50E1ADC0B2600E14FAD /* Button_1.png in Resources */,
 				3AE0C4F91ADC00FE00E14FAD /* LHS_3.png in Resources */,
 				3AE0C4E91ADBB39700E14FAD /* request_icon.png in Resources */,
 				3AD644A91ADB5B8F00591666 /* Images in Resources */,
 				3AE0C5001ADC063800E14FAD /* feedback_icon.png in Resources */,
 				3AE0C4E71ADBA82E00E14FAD /* Heading.png in Resources */,
 				3AD644AB1ADB66E500591666 /* BG-01.png in Resources */,
+				3AE0C5121ADC0B2600E14FAD /* Button_5.png in Resources */,
 				3AD644AD1ADB66EC00591666 /* image.png in Resources */,
 				3AE0C4FC1ADC00FE00E14FAD /* RHS_2.png in Resources */,
 				3AD644AF1ADB68EF00591666 /* HeadingDesign.png in Resources */,
 				3AE0C4FB1ADC00FE00E14FAD /* RHS_1.png in Resources */,
+				3AE0C5131ADC0B2600E14FAD /* Button_6.png in Resources */,
 				3AE0C4F71ADC00FE00E14FAD /* LHS_1.png in Resources */,
+				3AE0C5111ADC0B2600E14FAD /* Button_4.png in Resources */,
+				3AE0C50F1ADC0B2600E14FAD /* Button_2.png in Resources */,
 				3AD6448E1ADB5B0A00591666 /* Main.storyboard in Resources */,
 				3AE0C4FE1ADC00FE00E14FAD /* RHS_4.png in Resources */,
 				3AD644931ADB5B0A00591666 /* LaunchScreen.xib in Resources */,
+				3AE0C5101ADC0B2600E14FAD /* Button_3.png in Resources */,
 				3AD644901ADB5B0A00591666 /* Images.xcassets in Resources */,
+				3AE0C5191ADC127000E14FAD /* threed_selfie.jpg in Resources */,
 				3AE0C4FD1ADC00FE00E14FAD /* RHS_3.png in Resources */,
 				3AE0C4F81ADC00FE00E14FAD /* LHS_2.png in Resources */,
 				3AE0C4EB1ADBBC1000E14FAD /* submitButton.png in Resources */,
@@ -326,7 +389,10 @@
 				3AD644881ADB5B0A00591666 /* AppDelegate.m in Sources */,
 				3AE0C4EE1ADBBE6700E14FAD /* RequestMeetingViewController.m in Sources */,
 				3AD644851ADB5B0900591666 /* main.m in Sources */,
+				3AE0C5061ADC089500E14FAD /* LoginViewController.m in Sources */,
+				3AE0C51E1ADC22A800E14FAD /* WelcomeViewController.m in Sources */,
 				3AD644B71ADB6F1600591666 /* HomeViewController.m in Sources */,
+				3AE0C5031ADC086300E14FAD /* FeedbackViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

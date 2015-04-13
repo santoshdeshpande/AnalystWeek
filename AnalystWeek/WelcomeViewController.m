@@ -1,26 +1,22 @@
 //
-//  HomeViewController.m
+//  WelcomeViewController.m
 //  AnalystWeek
 //
 //  Created by Santosh S on 13/04/15.
 //  Copyright (c) 2015 Santosh S. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "WelcomeViewController.h"
 
-@interface HomeViewController ()
+@interface WelcomeViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation WelcomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
-
-- (void) viewWillAppear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,7 +34,7 @@
 }
 */
 
-- (IBAction)unwindToHomeView:(UIStoryboardSegue *)segue
+- (IBAction)unwindToWelcomeView:(UIStoryboardSegue *)segue
 {
     
 }

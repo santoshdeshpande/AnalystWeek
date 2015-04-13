@@ -1,26 +1,22 @@
 //
-//  HomeViewController.m
+//  FeedbackViewController.m
 //  AnalystWeek
 //
 //  Created by Santosh S on 13/04/15.
 //  Copyright (c) 2015 Santosh S. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "FeedbackViewController.h"
 
-@interface HomeViewController ()
+@interface FeedbackViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation FeedbackViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
-
-- (void) viewWillAppear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,10 +33,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-- (IBAction)unwindToHomeView:(UIStoryboardSegue *)segue
-{
-    
-}
 
 @end
