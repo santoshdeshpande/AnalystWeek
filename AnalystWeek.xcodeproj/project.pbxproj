@@ -25,6 +25,12 @@
 		3AC5DB791ADD673A006DF05A /* SessionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5DB781ADD673A006DF05A /* SessionTableViewCell.m */; };
 		3AC5DB7C1ADD7B6A006DF05A /* Agenda.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5DB7B1ADD7B6A006DF05A /* Agenda.m */; };
 		3AC5DB7F1ADD8502006DF05A /* PaddedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5DB7E1ADD8502006DF05A /* PaddedLabel.m */; };
+		3AC5DB821ADE0743006DF05A /* Contact_us_heading.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC5DB801ADE0743006DF05A /* Contact_us_heading.png */; };
+		3AC5DB831ADE0743006DF05A /* contact_us_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC5DB811ADE0743006DF05A /* contact_us_icon.png */; };
+		3AC5DB851ADE1648006DF05A /* chat_user_icon_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC5DB841ADE1648006DF05A /* chat_user_icon_1.png */; };
+		3AC5DB881ADE18AA006DF05A /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5DB871ADE18AA006DF05A /* ContactUsViewController.m */; };
+		3AC5DB8A1ADE28CE006DF05A /* SendButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC5DB891ADE28CE006DF05A /* SendButton.png */; };
+		3AC5DB8C1ADE733E006DF05A /* parking_pass.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC5DB8B1ADE733E006DF05A /* parking_pass.png */; };
 		3AD644851ADB5B0900591666 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD644841ADB5B0900591666 /* main.m */; };
 		3AD644881ADB5B0A00591666 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD644871ADB5B0A00591666 /* AppDelegate.m */; };
 		3AD6448B1ADB5B0A00591666 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD6448A1ADB5B0A00591666 /* ViewController.m */; };
@@ -105,6 +111,13 @@
 		3AC5DB7B1ADD7B6A006DF05A /* Agenda.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Agenda.m; sourceTree = "<group>"; };
 		3AC5DB7D1ADD8502006DF05A /* PaddedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaddedLabel.h; sourceTree = "<group>"; };
 		3AC5DB7E1ADD8502006DF05A /* PaddedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaddedLabel.m; sourceTree = "<group>"; };
+		3AC5DB801ADE0743006DF05A /* Contact_us_heading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Contact_us_heading.png; sourceTree = "<group>"; };
+		3AC5DB811ADE0743006DF05A /* contact_us_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact_us_icon.png; sourceTree = "<group>"; };
+		3AC5DB841ADE1648006DF05A /* chat_user_icon_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_user_icon_1.png; sourceTree = "<group>"; };
+		3AC5DB861ADE18AA006DF05A /* ContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
+		3AC5DB871ADE18AA006DF05A /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
+		3AC5DB891ADE28CE006DF05A /* SendButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SendButton.png; sourceTree = "<group>"; };
+		3AC5DB8B1ADE733E006DF05A /* parking_pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parking_pass.png; sourceTree = "<group>"; };
 		3AD6447F1ADB5B0900591666 /* AnalystWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalystWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD644831ADB5B0900591666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AD644841ADB5B0900591666 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -289,6 +302,8 @@
 				3AC5DB541ADD0A75006DF05A /* YourMeetingsViewController.m */,
 				3AC5DB6A1ADD605D006DF05A /* AgendaViewController.h */,
 				3AC5DB6B1ADD605D006DF05A /* AgendaViewController.m */,
+				3AC5DB861ADE18AA006DF05A /* ContactUsViewController.h */,
+				3AC5DB871ADE18AA006DF05A /* ContactUsViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -296,6 +311,11 @@
 		3AE0C4E21ADBA56200E14FAD /* images */ = {
 			isa = PBXGroup;
 			children = (
+				3AC5DB8B1ADE733E006DF05A /* parking_pass.png */,
+				3AC5DB891ADE28CE006DF05A /* SendButton.png */,
+				3AC5DB841ADE1648006DF05A /* chat_user_icon_1.png */,
+				3AC5DB801ADE0743006DF05A /* Contact_us_heading.png */,
+				3AC5DB811ADE0743006DF05A /* contact_us_icon.png */,
 				3AC5DB6D1ADD60FF006DF05A /* Agenda_Heading.png */,
 				3AC5DB6E1ADD60FF006DF05A /* Agenda_icon.png */,
 				3AC5DB5E1ADD412A006DF05A /* threed_selfi */,
@@ -429,7 +449,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AD644B11ADB693D00591666 /* LHS_1_About The Event.png in Resources */,
+				3AC5DB831ADE0743006DF05A /* contact_us_icon.png in Resources */,
 				3AC5DB6F1ADD60FF006DF05A /* Agenda_Heading.png in Resources */,
+				3AC5DB851ADE1648006DF05A /* chat_user_icon_1.png in Resources */,
+				3AC5DB8C1ADE733E006DF05A /* parking_pass.png in Resources */,
 				3AE0C5171ADC111A00E14FAD /* parking_pass.jpg in Resources */,
 				3AC5DB631ADD4155006DF05A /* footer.png in Resources */,
 				3AE0C51B1ADC21D500E14FAD /* back_button.png in Resources */,
@@ -439,9 +462,11 @@
 				3AE0C4F91ADC00FE00E14FAD /* LHS_3.png in Resources */,
 				3AE0C4E91ADBB39700E14FAD /* request_icon.png in Resources */,
 				3AD644A91ADB5B8F00591666 /* Images in Resources */,
+				3AC5DB8A1ADE28CE006DF05A /* SendButton.png in Resources */,
 				3AE0C5001ADC063800E14FAD /* feedback_icon.png in Resources */,
 				3AC5DB701ADD60FF006DF05A /* Agenda_icon.png in Resources */,
 				3AE0C4E71ADBA82E00E14FAD /* Heading.png in Resources */,
+				3AC5DB821ADE0743006DF05A /* Contact_us_heading.png in Resources */,
 				3AD644AB1ADB66E500591666 /* BG-01.png in Resources */,
 				3AC5DB641ADD4155006DF05A /* main_pic.png in Resources */,
 				3AE0C5121ADC0B2600E14FAD /* Button_5.png in Resources */,
@@ -497,6 +522,7 @@
 				3AD644851ADB5B0900591666 /* main.m in Sources */,
 				3AC5DB7F1ADD8502006DF05A /* PaddedLabel.m in Sources */,
 				3AE0C5061ADC089500E14FAD /* LoginViewController.m in Sources */,
+				3AC5DB881ADE18AA006DF05A /* ContactUsViewController.m in Sources */,
 				3AE0C51E1ADC22A800E14FAD /* WelcomeViewController.m in Sources */,
 				3AD644B71ADB6F1600591666 /* HomeViewController.m in Sources */,
 				3AE0C5031ADC086300E14FAD /* FeedbackViewController.m in Sources */,
