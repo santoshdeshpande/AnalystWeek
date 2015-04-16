@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mFS-6B-w5l">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -36,11 +36,15 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heading.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ry1-s8-4f3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="About_Event.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ry1-s8-4f3">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="226" id="PPT-hv-l78"/>
-                                    <constraint firstAttribute="height" constant="75" id="ahD-26-2lf"/>
+                                    <constraint firstAttribute="width" constant="226" id="PPT-hv-l78">
+                                        <variation key="heightClass=regular" constant="400"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="75" id="ahD-26-2lf">
+                                        <variation key="heightClass=regular" constant="100"/>
+                                    </constraint>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -52,25 +56,6 @@
                                     <mask key="constraints">
                                         <include reference="PPT-hv-l78"/>
                                         <include reference="ahD-26-2lf"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feedback_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="AdB-5m-Ced">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="BRA-M6-gm1"/>
-                                    <constraint firstAttribute="width" constant="90" id="pCl-Gx-qv0"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="BRA-M6-gm1"/>
-                                        <exclude reference="pCl-Gx-qv0"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="BRA-M6-gm1"/>
-                                        <include reference="pCl-Gx-qv0"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -251,12 +236,10 @@
                             <constraint firstAttribute="trailing" secondItem="qMi-MM-J4W" secondAttribute="trailing" id="C6v-MO-5Si"/>
                             <constraint firstItem="qMi-MM-J4W" firstAttribute="leading" secondItem="1j2-JZ-YKx" secondAttribute="leading" id="D9q-Yp-CX0"/>
                             <constraint firstItem="QGW-09-EMa" firstAttribute="top" secondItem="gpl-SP-EYh" secondAttribute="bottom" constant="30" id="Dtu-W7-T2L"/>
-                            <constraint firstItem="gpl-SP-EYh" firstAttribute="top" secondItem="AdB-5m-Ced" secondAttribute="bottom" constant="100" id="GNa-iJ-wjq">
-                                <variation key="heightClass=regular" constant="50"/>
-                            </constraint>
                             <constraint firstItem="HLa-0i-acq" firstAttribute="leading" secondItem="1j2-JZ-YKx" secondAttribute="leadingMargin" constant="10" id="IT8-BV-VNF"/>
                             <constraint firstAttribute="centerX" secondItem="TFe-Af-Y7z" secondAttribute="centerX" id="QGy-Ha-J3P"/>
                             <constraint firstAttribute="centerX" secondItem="Ry1-s8-4f3" secondAttribute="centerX" id="U8o-fw-4eo"/>
+                            <constraint firstItem="gpl-SP-EYh" firstAttribute="top" secondItem="Ry1-s8-4f3" secondAttribute="bottom" constant="50" id="UGR-Ir-RM6"/>
                             <constraint firstItem="aWd-EO-cLp" firstAttribute="top" secondItem="sKh-Gj-Oxg" secondAttribute="bottom" constant="30" id="WM1-My-GL5"/>
                             <constraint firstItem="TFe-Af-Y7z" firstAttribute="top" secondItem="QGW-09-EMa" secondAttribute="bottom" constant="30" id="cBK-bg-4f1"/>
                             <constraint firstItem="Ry1-s8-4f3" firstAttribute="top" secondItem="4Gd-OS-34v" secondAttribute="bottom" constant="100" id="fOA-w8-uae"/>
@@ -266,16 +249,13 @@
                             <constraint firstAttribute="centerX" secondItem="1gd-R3-NQx" secondAttribute="centerX" id="kqf-Og-j5t"/>
                             <constraint firstItem="sKh-Gj-Oxg" firstAttribute="top" secondItem="TFe-Af-Y7z" secondAttribute="bottom" constant="30" id="nxq-xE-96x"/>
                             <constraint firstItem="Hzj-e0-aau" firstAttribute="top" secondItem="qMi-MM-J4W" secondAttribute="bottom" id="oL2-cH-gmj"/>
-                            <constraint firstItem="AdB-5m-Ced" firstAttribute="top" secondItem="4Gd-OS-34v" secondAttribute="bottom" constant="100" id="p6k-ij-rFS"/>
                             <constraint firstItem="1gd-R3-NQx" firstAttribute="top" secondItem="aWd-EO-cLp" secondAttribute="bottom" constant="30" id="prt-CF-9bl"/>
                             <constraint firstAttribute="centerX" secondItem="gpl-SP-EYh" secondAttribute="centerX" id="pwl-Dq-Yne"/>
-                            <constraint firstItem="AdB-5m-Ced" firstAttribute="leading" secondItem="Ry1-s8-4f3" secondAttribute="trailing" constant="8" id="sZF-Ll-sQ1"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="qMi-MM-J4W"/>
                                 <exclude reference="Ry1-s8-4f3"/>
-                                <exclude reference="AdB-5m-Ced"/>
                                 <exclude reference="gpl-SP-EYh"/>
                                 <exclude reference="QGW-09-EMa"/>
                                 <exclude reference="TFe-Af-Y7z"/>
@@ -285,35 +265,32 @@
                                 <exclude reference="1gd-R3-NQx"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="oL2-cH-gmj"/>
-                                <exclude reference="kqf-Og-j5t"/>
-                                <exclude reference="prt-CF-9bl"/>
+                                <exclude reference="1UH-Y2-xad"/>
+                                <exclude reference="C6v-MO-5Si"/>
+                                <exclude reference="D9q-Yp-CX0"/>
                                 <exclude reference="IT8-BV-VNF"/>
                                 <exclude reference="gqQ-ow-A7z"/>
+                                <exclude reference="U8o-fw-4eo"/>
+                                <exclude reference="fOA-w8-uae"/>
+                                <exclude reference="UGR-Ir-RM6"/>
+                                <exclude reference="pwl-Dq-Yne"/>
                                 <exclude reference="Dtu-W7-T2L"/>
                                 <exclude reference="hwv-os-uzZ"/>
                                 <exclude reference="QGy-Ha-J3P"/>
                                 <exclude reference="cBK-bg-4f1"/>
-                                <exclude reference="5aP-PH-gTj"/>
-                                <exclude reference="WM1-My-GL5"/>
-                                <exclude reference="GNa-iJ-wjq"/>
-                                <exclude reference="pwl-Dq-Yne"/>
                                 <exclude reference="hMG-0n-0g5"/>
                                 <exclude reference="nxq-xE-96x"/>
-                                <exclude reference="p6k-ij-rFS"/>
-                                <exclude reference="sZF-Ll-sQ1"/>
-                                <exclude reference="U8o-fw-4eo"/>
-                                <exclude reference="fOA-w8-uae"/>
-                                <exclude reference="1UH-Y2-xad"/>
-                                <exclude reference="C6v-MO-5Si"/>
-                                <exclude reference="D9q-Yp-CX0"/>
+                                <exclude reference="5aP-PH-gTj"/>
+                                <exclude reference="WM1-My-GL5"/>
+                                <exclude reference="kqf-Og-j5t"/>
+                                <exclude reference="prt-CF-9bl"/>
+                                <exclude reference="oL2-cH-gmj"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
                                 <include reference="qMi-MM-J4W"/>
                                 <include reference="Ry1-s8-4f3"/>
-                                <include reference="AdB-5m-Ced"/>
                                 <include reference="gpl-SP-EYh"/>
                                 <include reference="QGW-09-EMa"/>
                                 <include reference="TFe-Af-Y7z"/>
@@ -323,28 +300,26 @@
                                 <include reference="1gd-R3-NQx"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="oL2-cH-gmj"/>
-                                <include reference="kqf-Og-j5t"/>
-                                <include reference="prt-CF-9bl"/>
+                                <include reference="1UH-Y2-xad"/>
+                                <include reference="C6v-MO-5Si"/>
+                                <include reference="D9q-Yp-CX0"/>
                                 <include reference="IT8-BV-VNF"/>
                                 <include reference="gqQ-ow-A7z"/>
+                                <include reference="U8o-fw-4eo"/>
+                                <include reference="fOA-w8-uae"/>
+                                <include reference="UGR-Ir-RM6"/>
+                                <include reference="pwl-Dq-Yne"/>
                                 <include reference="Dtu-W7-T2L"/>
                                 <include reference="hwv-os-uzZ"/>
                                 <include reference="QGy-Ha-J3P"/>
                                 <include reference="cBK-bg-4f1"/>
-                                <include reference="5aP-PH-gTj"/>
-                                <include reference="WM1-My-GL5"/>
-                                <include reference="GNa-iJ-wjq"/>
-                                <include reference="pwl-Dq-Yne"/>
                                 <include reference="hMG-0n-0g5"/>
                                 <include reference="nxq-xE-96x"/>
-                                <include reference="p6k-ij-rFS"/>
-                                <include reference="sZF-Ll-sQ1"/>
-                                <include reference="U8o-fw-4eo"/>
-                                <include reference="fOA-w8-uae"/>
-                                <include reference="1UH-Y2-xad"/>
-                                <include reference="C6v-MO-5Si"/>
-                                <include reference="D9q-Yp-CX0"/>
+                                <include reference="5aP-PH-gTj"/>
+                                <include reference="WM1-My-GL5"/>
+                                <include reference="kqf-Og-j5t"/>
+                                <include reference="prt-CF-9bl"/>
+                                <include reference="oL2-cH-gmj"/>
                             </mask>
                         </variation>
                     </view>
@@ -369,41 +344,30 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="V3c-5T-Vzr">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Agenda_Heading.png" translatesAutoresizingMaskIntoConstraints="NO" id="phs-Wn-3wV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Agenda_Final.png" translatesAutoresizingMaskIntoConstraints="NO" id="phs-Wn-3wV">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="226" id="DGg-X6-YbK"/>
                                     <constraint firstAttribute="height" constant="75" id="hNS-Zu-ocG"/>
+                                    <constraint firstAttribute="width" constant="406" id="wsM-ee-E8f"/>
+                                    <constraint firstAttribute="height" constant="100" id="ycM-yr-Z91">
+                                        <variation key="heightClass=regular" constant="94"/>
+                                    </constraint>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="DGg-X6-YbK"/>
                                         <exclude reference="hNS-Zu-ocG"/>
+                                        <exclude reference="wsM-ee-E8f"/>
+                                        <exclude reference="ycM-yr-Z91"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular">
                                     <mask key="constraints">
-                                        <include reference="DGg-X6-YbK"/>
-                                        <include reference="hNS-Zu-ocG"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Agenda_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="jOc-zG-cir">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="AO2-Bf-Hd7"/>
-                                    <constraint firstAttribute="width" constant="90" id="QXq-ob-o7a"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="AO2-Bf-Hd7"/>
-                                        <exclude reference="QXq-ob-o7a"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="AO2-Bf-Hd7"/>
-                                        <include reference="QXq-ob-o7a"/>
+                                        <exclude reference="DGg-X6-YbK"/>
+                                        <exclude reference="hNS-Zu-ocG"/>
+                                        <include reference="wsM-ee-E8f"/>
+                                        <include reference="ycM-yr-Z91"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -540,13 +504,13 @@
                                                     <exclude reference="2v3-oq-ebF"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="FyH-1t-cjB"/>
-                                                    <exclude reference="USU-tC-y4R"/>
-                                                    <exclude reference="ZIk-py-Ag2"/>
                                                     <exclude reference="Miq-CW-OzX"/>
                                                     <exclude reference="YBe-ij-2Jc"/>
                                                     <exclude reference="nY2-79-O7e"/>
                                                     <exclude reference="sFV-Nn-7TP"/>
+                                                    <exclude reference="FyH-1t-cjB"/>
+                                                    <exclude reference="USU-tC-y4R"/>
+                                                    <exclude reference="ZIk-py-Ag2"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular">
@@ -555,13 +519,13 @@
                                                     <include reference="2v3-oq-ebF"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="FyH-1t-cjB"/>
-                                                    <include reference="USU-tC-y4R"/>
-                                                    <include reference="ZIk-py-Ag2"/>
                                                     <include reference="Miq-CW-OzX"/>
                                                     <include reference="YBe-ij-2Jc"/>
                                                     <include reference="nY2-79-O7e"/>
                                                     <include reference="sFV-Nn-7TP"/>
+                                                    <include reference="FyH-1t-cjB"/>
+                                                    <include reference="USU-tC-y4R"/>
+                                                    <include reference="ZIk-py-Ag2"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -632,12 +596,6 @@
                                                     <exclude reference="7Sb-EY-Yf1"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="3HN-2S-Zzs"/>
-                                                    <exclude reference="3kR-ln-VGm"/>
-                                                    <exclude reference="5q8-Y3-TK3"/>
-                                                    <exclude reference="HFX-Cu-EZI"/>
-                                                    <exclude reference="fog-ip-8TL"/>
-                                                    <exclude reference="slh-ce-J9B"/>
                                                     <exclude reference="Aa3-jd-XMO"/>
                                                     <exclude reference="DPh-sr-SZy"/>
                                                     <exclude reference="MMn-ek-YoY"/>
@@ -646,6 +604,12 @@
                                                     <exclude reference="jZh-7P-Cgj"/>
                                                     <exclude reference="k1w-kW-X50"/>
                                                     <exclude reference="kf9-zW-7Iy"/>
+                                                    <exclude reference="3HN-2S-Zzs"/>
+                                                    <exclude reference="3kR-ln-VGm"/>
+                                                    <exclude reference="5q8-Y3-TK3"/>
+                                                    <exclude reference="HFX-Cu-EZI"/>
+                                                    <exclude reference="fog-ip-8TL"/>
+                                                    <exclude reference="slh-ce-J9B"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular">
@@ -654,12 +618,6 @@
                                                     <include reference="7Sb-EY-Yf1"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="3HN-2S-Zzs"/>
-                                                    <include reference="3kR-ln-VGm"/>
-                                                    <include reference="5q8-Y3-TK3"/>
-                                                    <exclude reference="HFX-Cu-EZI"/>
-                                                    <exclude reference="fog-ip-8TL"/>
-                                                    <exclude reference="slh-ce-J9B"/>
                                                     <include reference="Aa3-jd-XMO"/>
                                                     <exclude reference="DPh-sr-SZy"/>
                                                     <exclude reference="MMn-ek-YoY"/>
@@ -668,6 +626,12 @@
                                                     <include reference="jZh-7P-Cgj"/>
                                                     <exclude reference="k1w-kW-X50"/>
                                                     <include reference="kf9-zW-7Iy"/>
+                                                    <include reference="3HN-2S-Zzs"/>
+                                                    <include reference="3kR-ln-VGm"/>
+                                                    <include reference="5q8-Y3-TK3"/>
+                                                    <exclude reference="HFX-Cu-EZI"/>
+                                                    <exclude reference="fog-ip-8TL"/>
+                                                    <exclude reference="slh-ce-J9B"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -689,20 +653,19 @@
                                 <variation key="heightClass=regular" constant="150"/>
                             </constraint>
                             <constraint firstItem="V3c-5T-Vzr" firstAttribute="top" secondItem="mBX-U8-8ka" secondAttribute="top" id="EVg-9G-mzH"/>
-                            <constraint firstItem="3jK-qn-T7u" firstAttribute="top" secondItem="jOc-zG-cir" secondAttribute="bottom" constant="20" id="JAc-sq-K8h"/>
-                            <constraint firstItem="jOc-zG-cir" firstAttribute="top" secondItem="RYX-A2-deC" secondAttribute="bottom" constant="100" id="Ovs-ah-PYf"/>
                             <constraint firstItem="Zeb-Zn-py3" firstAttribute="leading" secondItem="mBX-U8-8ka" secondAttribute="leadingMargin" constant="10" id="S7x-cv-Hha"/>
-                            <constraint firstItem="jOc-zG-cir" firstAttribute="leading" secondItem="phs-Wn-3wV" secondAttribute="trailing" constant="8" id="U9T-C9-kZa"/>
                             <constraint firstItem="phs-Wn-3wV" firstAttribute="top" secondItem="RYX-A2-deC" secondAttribute="bottom" constant="100" id="ZnD-KJ-8Pz"/>
                             <constraint firstItem="3jK-qn-T7u" firstAttribute="width" secondItem="V3c-5T-Vzr" secondAttribute="width" multiplier="0.8" id="gdZ-kY-Mi4"/>
                             <constraint firstItem="Zeb-Zn-py3" firstAttribute="top" secondItem="RYX-A2-deC" secondAttribute="bottom" constant="20" id="jxa-FM-04a"/>
                             <constraint firstAttribute="trailing" secondItem="V3c-5T-Vzr" secondAttribute="trailing" id="k3b-hg-QCc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="phs-Wn-3wV" secondAttribute="trailing" constant="50" id="kXP-Rn-Gny"/>
+                            <constraint firstItem="3jK-qn-T7u" firstAttribute="top" secondItem="phs-Wn-3wV" secondAttribute="bottom" constant="30" id="tLj-mv-8ZK"/>
+                            <constraint firstItem="phs-Wn-3wV" firstAttribute="leading" secondItem="mBX-U8-8ka" secondAttribute="leadingMargin" constant="50" id="ucH-dF-ix2"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="V3c-5T-Vzr"/>
                                 <exclude reference="phs-Wn-3wV"/>
-                                <exclude reference="jOc-zG-cir"/>
                                 <exclude reference="Zeb-Zn-py3"/>
                                 <exclude reference="3jK-qn-T7u"/>
                             </mask>
@@ -714,11 +677,11 @@
                                 <exclude reference="jxa-FM-04a"/>
                                 <exclude reference="5fv-73-98X"/>
                                 <exclude reference="ZnD-KJ-8Pz"/>
+                                <exclude reference="kXP-Rn-Gny"/>
+                                <exclude reference="ucH-dF-ix2"/>
                                 <exclude reference="5mb-hV-ri0"/>
-                                <exclude reference="JAc-sq-K8h"/>
                                 <exclude reference="gdZ-kY-Mi4"/>
-                                <exclude reference="Ovs-ah-PYf"/>
-                                <exclude reference="U9T-C9-kZa"/>
+                                <exclude reference="tLj-mv-8ZK"/>
                                 <exclude reference="2J2-HR-x7i"/>
                                 <exclude reference="CZU-1z-PnA"/>
                             </mask>
@@ -727,7 +690,6 @@
                             <mask key="subviews">
                                 <include reference="V3c-5T-Vzr"/>
                                 <include reference="phs-Wn-3wV"/>
-                                <include reference="jOc-zG-cir"/>
                                 <include reference="Zeb-Zn-py3"/>
                                 <include reference="3jK-qn-T7u"/>
                             </mask>
@@ -739,11 +701,11 @@
                                 <include reference="jxa-FM-04a"/>
                                 <include reference="5fv-73-98X"/>
                                 <include reference="ZnD-KJ-8Pz"/>
+                                <exclude reference="kXP-Rn-Gny"/>
+                                <exclude reference="ucH-dF-ix2"/>
                                 <include reference="5mb-hV-ri0"/>
-                                <include reference="JAc-sq-K8h"/>
                                 <include reference="gdZ-kY-Mi4"/>
-                                <include reference="Ovs-ah-PYf"/>
-                                <include reference="U9T-C9-kZa"/>
+                                <include reference="tLj-mv-8ZK"/>
                                 <include reference="2J2-HR-x7i"/>
                                 <include reference="CZU-1z-PnA"/>
                             </mask>
@@ -767,6 +729,7 @@
                         <viewControllerLayoutGuide type="bottom" id="W9V-D4-cRa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uLC-lp-Y89">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image.png" translatesAutoresizingMaskIntoConstraints="NO" id="0mH-Wm-2ys">
@@ -785,13 +748,17 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Contact_us_heading.png" translatesAutoresizingMaskIntoConstraints="NO" id="RXH-o5-Z26">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Conatct_Us.png" translatesAutoresizingMaskIntoConstraints="NO" id="RXH-o5-Z26">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="226" id="KUc-Xt-2d5"/>
-                                    <constraint firstAttribute="height" constant="75" id="N7j-rv-36p"/>
+                                    <constraint firstAttribute="height" constant="75" id="N7j-rv-36p">
+                                        <variation key="heightClass=regular" constant="88"/>
+                                    </constraint>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="n9x-gB-ZBX"/>
-                                    <constraint firstAttribute="width" constant="226" id="szb-LI-mdt"/>
+                                    <constraint firstAttribute="width" constant="226" id="szb-LI-mdt">
+                                        <variation key="heightClass=regular" constant="400"/>
+                                    </constraint>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -807,31 +774,6 @@
                                         <include reference="N7j-rv-36p"/>
                                         <exclude reference="n9x-gB-ZBX"/>
                                         <include reference="szb-LI-mdt"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact_us_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ysg-ce-02g">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="2aO-Vq-aXF"/>
-                                    <constraint firstAttribute="width" constant="90" id="Iii-Lm-sPh"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="kgv-Dp-0PN"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="wNf-pO-pq7"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="2aO-Vq-aXF"/>
-                                        <exclude reference="Iii-Lm-sPh"/>
-                                        <exclude reference="kgv-Dp-0PN"/>
-                                        <exclude reference="wNf-pO-pq7"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="2aO-Vq-aXF"/>
-                                        <include reference="Iii-Lm-sPh"/>
-                                        <exclude reference="kgv-Dp-0PN"/>
-                                        <exclude reference="wNf-pO-pq7"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -872,7 +814,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" text="Mohammad Nawaz 91-989898989898 mohammadnawaz@wipro.com" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYl-4h-ro8">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" text="Mohammad Nawaz 91-999999 mohammadnawaz@wipro.com" translatesAutoresizingMaskIntoConstraints="NO" id="mYl-4h-ro8">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -933,7 +875,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" text="Wipro Limited, Doddakanneli, Sarjapura Road Bangalore - 560 035 India" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oP-LY-CJ9">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" text="Wipro Limited, Doddakanneli, Sarjapura Road Bangalore - 560 035 India" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="5oP-LY-CJ9">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1013,6 +955,7 @@
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="6zD-Xa-KI3"/>
+                                        <exclude reference="00q-9Y-Eox"/>
                                         <exclude reference="LiQ-Sl-21G"/>
                                         <exclude reference="aSB-JT-tBP"/>
                                         <exclude reference="pJz-w4-RE7"/>
@@ -1022,7 +965,6 @@
                                         <exclude reference="aUx-t0-wXe"/>
                                         <exclude reference="fvI-Ao-UHI"/>
                                         <exclude reference="nxu-mK-UlH"/>
-                                        <exclude reference="00q-9Y-Eox"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular">
@@ -1032,6 +974,7 @@
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="6zD-Xa-KI3"/>
+                                        <include reference="00q-9Y-Eox"/>
                                         <include reference="LiQ-Sl-21G"/>
                                         <include reference="aSB-JT-tBP"/>
                                         <include reference="pJz-w4-RE7"/>
@@ -1041,7 +984,6 @@
                                         <include reference="aUx-t0-wXe"/>
                                         <include reference="fvI-Ao-UHI"/>
                                         <include reference="nxu-mK-UlH"/>
-                                        <include reference="00q-9Y-Eox"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -1116,13 +1058,13 @@
                                                     <exclude reference="qmI-Et-zQp"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="8YU-Za-oob"/>
-                                                    <exclude reference="Xaf-Qf-ncx"/>
-                                                    <exclude reference="eJN-hG-bhw"/>
                                                     <exclude reference="0iQ-xy-SlQ"/>
                                                     <exclude reference="9sx-lY-R7z"/>
                                                     <exclude reference="C8X-Db-dbC"/>
                                                     <exclude reference="KUH-Go-4Ln"/>
+                                                    <exclude reference="8YU-Za-oob"/>
+                                                    <exclude reference="Xaf-Qf-ncx"/>
+                                                    <exclude reference="eJN-hG-bhw"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular">
@@ -1131,13 +1073,13 @@
                                                     <include reference="qmI-Et-zQp"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="8YU-Za-oob"/>
-                                                    <include reference="Xaf-Qf-ncx"/>
-                                                    <exclude reference="eJN-hG-bhw"/>
                                                     <include reference="0iQ-xy-SlQ"/>
                                                     <include reference="9sx-lY-R7z"/>
                                                     <include reference="C8X-Db-dbC"/>
                                                     <include reference="KUH-Go-4Ln"/>
+                                                    <include reference="8YU-Za-oob"/>
+                                                    <include reference="Xaf-Qf-ncx"/>
+                                                    <exclude reference="eJN-hG-bhw"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -1241,19 +1183,11 @@
                             <constraint firstItem="RXH-o5-Z26" firstAttribute="top" secondItem="xz4-wM-Gzo" secondAttribute="bottom" constant="100" id="0g3-Tv-zJe">
                                 <variation key="heightClass=regular" constant="75"/>
                             </constraint>
-                            <constraint firstItem="ysg-ce-02g" firstAttribute="leading" secondItem="RXH-o5-Z26" secondAttribute="trailing" constant="8" id="4J5-Mp-ce5"/>
-                            <constraint firstItem="ysg-ce-02g" firstAttribute="leading" secondItem="RXH-o5-Z26" secondAttribute="trailing" constant="8" id="6Ug-xb-zVw"/>
                             <constraint firstAttribute="centerY" secondItem="RXH-o5-Z26" secondAttribute="centerY" id="9EV-uP-qBG"/>
-                            <constraint firstItem="ysg-ce-02g" firstAttribute="top" secondItem="xz4-wM-Gzo" secondAttribute="bottom" constant="100" id="Bj8-Zk-wwR">
-                                <variation key="heightClass=regular" constant="75"/>
-                            </constraint>
                             <constraint firstAttribute="centerX" secondItem="RXH-o5-Z26" secondAttribute="centerX" id="Cgh-cW-e34"/>
                             <constraint firstAttribute="centerX" secondItem="O2f-Ps-jtb" secondAttribute="centerX" id="Ghc-Fx-UIj"/>
                             <constraint firstItem="XBS-pe-z1z" firstAttribute="top" secondItem="FAy-Bl-jDs" secondAttribute="bottom" constant="10" id="H1M-0s-kke"/>
                             <constraint firstItem="FAy-Bl-jDs" firstAttribute="top" secondItem="xz4-wM-Gzo" secondAttribute="bottom" constant="40" id="IPG-aL-SVx"/>
-                            <constraint firstItem="FAy-Bl-jDs" firstAttribute="top" secondItem="ysg-ce-02g" secondAttribute="bottom" constant="40" id="JCd-lB-9T9">
-                                <variation key="heightClass=regular" constant="20"/>
-                            </constraint>
                             <constraint firstItem="CSQ-7h-2om" firstAttribute="leading" secondItem="uLC-lp-Y89" secondAttribute="leadingMargin" constant="10" id="KRF-Mu-a41"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FAy-Bl-jDs" secondAttribute="trailing" constant="20" id="Mij-DB-kbL">
                                 <variation key="heightClass=regular" constant="80"/>
@@ -1268,6 +1202,9 @@
                             <constraint firstItem="FAy-Bl-jDs" firstAttribute="leading" secondItem="uLC-lp-Y89" secondAttribute="leadingMargin" constant="20" id="Vx4-qK-Ytx">
                                 <variation key="heightClass=regular" constant="80"/>
                             </constraint>
+                            <constraint firstItem="FAy-Bl-jDs" firstAttribute="top" secondItem="RXH-o5-Z26" secondAttribute="bottom" constant="20" id="c1u-Ck-OBg">
+                                <variation key="heightClass=regular" constant="10"/>
+                            </constraint>
                             <constraint firstItem="W9V-D4-cRa" firstAttribute="top" secondItem="0mH-Wm-2ys" secondAttribute="bottom" id="cYW-gF-p2W"/>
                             <constraint firstItem="O2f-Ps-jtb" firstAttribute="top" secondItem="x3v-Uz-PeV" secondAttribute="bottom" constant="10" id="d8g-1R-5zx"/>
                             <constraint firstItem="0mH-Wm-2ys" firstAttribute="leading" secondItem="uLC-lp-Y89" secondAttribute="leading" id="dMr-0W-X9Q"/>
@@ -1279,7 +1216,6 @@
                             <constraint firstItem="XBS-pe-z1z" firstAttribute="leading" secondItem="uLC-lp-Y89" secondAttribute="leadingMargin" id="s7w-Yk-TQd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XBS-pe-z1z" secondAttribute="trailing" id="t8Y-rU-AFY"/>
                             <constraint firstItem="O2f-Ps-jtb" firstAttribute="width" secondItem="x3v-Uz-PeV" secondAttribute="width" id="w0n-1c-h63"/>
-                            <constraint firstItem="ysg-ce-02g" firstAttribute="leading" secondItem="RXH-o5-Z26" secondAttribute="trailing" constant="8" id="wCg-7M-E7H"/>
                             <constraint firstItem="0mH-Wm-2ys" firstAttribute="top" secondItem="uLC-lp-Y89" secondAttribute="top" id="wiy-ag-8hc"/>
                             <constraint firstItem="RXH-o5-Z26" firstAttribute="top" secondItem="xz4-wM-Gzo" secondAttribute="bottom" constant="100" id="woT-8f-V2U"/>
                         </constraints>
@@ -1287,7 +1223,6 @@
                             <mask key="subviews">
                                 <exclude reference="0mH-Wm-2ys"/>
                                 <exclude reference="RXH-o5-Z26"/>
-                                <exclude reference="ysg-ce-02g"/>
                                 <exclude reference="CSQ-7h-2om"/>
                                 <exclude reference="FAy-Bl-jDs"/>
                                 <exclude reference="XBS-pe-z1z"/>
@@ -1306,16 +1241,12 @@
                                 <exclude reference="po9-si-36y"/>
                                 <exclude reference="woT-8f-V2U"/>
                                 <exclude reference="IPG-aL-SVx"/>
-                                <exclude reference="JCd-lB-9T9"/>
                                 <exclude reference="Mij-DB-kbL"/>
                                 <exclude reference="Vx4-qK-Ytx"/>
+                                <exclude reference="c1u-Ck-OBg"/>
                                 <exclude reference="H1M-0s-kke"/>
                                 <exclude reference="s7w-Yk-TQd"/>
                                 <exclude reference="t8Y-rU-AFY"/>
-                                <exclude reference="4J5-Mp-ce5"/>
-                                <exclude reference="6Ug-xb-zVw"/>
-                                <exclude reference="Bj8-Zk-wwR"/>
-                                <exclude reference="wCg-7M-E7H"/>
                                 <exclude reference="RT6-fy-2kT"/>
                                 <exclude reference="UBD-S3-fol"/>
                                 <exclude reference="s7O-3V-8cl"/>
@@ -1329,7 +1260,6 @@
                             <mask key="subviews">
                                 <include reference="0mH-Wm-2ys"/>
                                 <include reference="RXH-o5-Z26"/>
-                                <include reference="ysg-ce-02g"/>
                                 <include reference="CSQ-7h-2om"/>
                                 <include reference="FAy-Bl-jDs"/>
                                 <include reference="XBS-pe-z1z"/>
@@ -1348,16 +1278,12 @@
                                 <exclude reference="po9-si-36y"/>
                                 <exclude reference="woT-8f-V2U"/>
                                 <exclude reference="IPG-aL-SVx"/>
-                                <include reference="JCd-lB-9T9"/>
                                 <include reference="Mij-DB-kbL"/>
                                 <include reference="Vx4-qK-Ytx"/>
+                                <include reference="c1u-Ck-OBg"/>
                                 <include reference="H1M-0s-kke"/>
                                 <include reference="s7w-Yk-TQd"/>
                                 <include reference="t8Y-rU-AFY"/>
-                                <include reference="4J5-Mp-ce5"/>
-                                <exclude reference="6Ug-xb-zVw"/>
-                                <include reference="Bj8-Zk-wwR"/>
-                                <exclude reference="wCg-7M-E7H"/>
                                 <include reference="RT6-fy-2kT"/>
                                 <include reference="UBD-S3-fol"/>
                                 <include reference="s7O-3V-8cl"/>
@@ -1369,6 +1295,8 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="addressField" destination="5oP-LY-CJ9" id="sp2-me-9FT"/>
+                        <outlet property="contactField" destination="mYl-4h-ro8" id="zdO-Ii-Ght"/>
                         <outlet property="liveChatView" destination="x3v-Uz-PeV" id="rJ7-Os-8tv"/>
                     </connections>
                 </viewController>
@@ -1386,6 +1314,7 @@
                         <viewControllerLayoutGuide type="bottom" id="1Xv-Ps-jsQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZMf-Yn-S7r">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image.png" translatesAutoresizingMaskIntoConstraints="NO" id="4c5-Jx-M1R">
@@ -1415,14 +1344,14 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="OPX-zJ-pWg"/>
                                         <exclude reference="KiW-sq-jXm"/>
+                                        <exclude reference="OPX-zJ-pWg"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular">
                                     <mask key="constraints">
-                                        <include reference="OPX-zJ-pWg"/>
                                         <include reference="KiW-sq-jXm"/>
+                                        <include reference="OPX-zJ-pWg"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -1518,13 +1447,13 @@
                                         <exclude reference="15f-uE-Hx1"/>
                                         <exclude reference="TXZ-in-Xzs"/>
                                         <exclude reference="qaF-MV-VPT"/>
+                                        <exclude reference="20o-YX-iUX"/>
+                                        <exclude reference="kmy-ue-Nmd"/>
+                                        <exclude reference="liX-p9-hFI"/>
                                         <exclude reference="8EW-hY-voi"/>
                                         <exclude reference="9Sg-wA-YVe"/>
                                         <exclude reference="C8f-yf-cN1"/>
                                         <exclude reference="EkC-8l-2q3"/>
-                                        <exclude reference="20o-YX-iUX"/>
-                                        <exclude reference="kmy-ue-Nmd"/>
-                                        <exclude reference="liX-p9-hFI"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular">
@@ -1537,13 +1466,13 @@
                                         <include reference="15f-uE-Hx1"/>
                                         <include reference="TXZ-in-Xzs"/>
                                         <include reference="qaF-MV-VPT"/>
+                                        <include reference="20o-YX-iUX"/>
+                                        <include reference="kmy-ue-Nmd"/>
+                                        <include reference="liX-p9-hFI"/>
                                         <include reference="8EW-hY-voi"/>
                                         <include reference="9Sg-wA-YVe"/>
                                         <include reference="C8f-yf-cN1"/>
                                         <include reference="EkC-8l-2q3"/>
-                                        <include reference="20o-YX-iUX"/>
-                                        <include reference="kmy-ue-Nmd"/>
-                                        <include reference="liX-p9-hFI"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -1643,13 +1572,13 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFZ-Mf-2Kw">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <mutableString key="text">He leads the ISG business in Finland and the Strategy and Operations practice across
+                                                <string key="text">He leads the ISG business in Finland and the Strategy and Operations practice across
 Nordic countries. He has been advising global manufacturing and finance clients on sourcing strategy, service management and integration and outsourcing transactions. 
 
 Recent engagements include sourcing strategy for a 100B€+ company as well as service 
 integration strategy, design and sourcing project for a global manufacturing client together with IT infrastructure outsourcing transaction.
 
-LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
+LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -1718,9 +1647,6 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <variation key="heightClass=regular" misplaced="YES">
-                                            <rect key="frame" x="8" y="365" width="46" height="30"/>
-                                        </variation>
                                         <connections>
                                             <action selector="onBackButtonClicked:" destination="7xP-lw-Ymb" eventType="touchUpInside" id="I0J-U8-WLQ"/>
                                         </connections>
@@ -1744,14 +1670,14 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                         <exclude reference="rgr-yf-16B"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <exclude reference="VKL-Ar-qar"/>
+                                        <exclude reference="mU0-PS-Z1Q"/>
                                         <exclude reference="DSP-r7-CYL"/>
                                         <exclude reference="Ip2-7l-BIK"/>
                                         <exclude reference="QMW-tk-yKQ"/>
                                         <exclude reference="eBy-O7-n5L"/>
                                         <exclude reference="fdQ-Rf-Vvg"/>
                                         <exclude reference="vzr-pz-K8B"/>
-                                        <exclude reference="VKL-Ar-qar"/>
-                                        <exclude reference="mU0-PS-Z1Q"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular">
@@ -1761,14 +1687,14 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                         <include reference="rgr-yf-16B"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <include reference="VKL-Ar-qar"/>
+                                        <include reference="mU0-PS-Z1Q"/>
                                         <include reference="DSP-r7-CYL"/>
                                         <include reference="Ip2-7l-BIK"/>
                                         <include reference="QMW-tk-yKQ"/>
                                         <include reference="eBy-O7-n5L"/>
                                         <include reference="fdQ-Rf-Vvg"/>
                                         <include reference="vzr-pz-K8B"/>
-                                        <include reference="VKL-Ar-qar"/>
-                                        <include reference="mU0-PS-Z1Q"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -1819,12 +1745,12 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <exclude reference="TuL-hc-6mH"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Vvd-9t-ogD"/>
+                                <exclude reference="jrn-Ic-GTj"/>
                                 <exclude reference="E84-sx-phh"/>
                                 <exclude reference="K2D-8d-lJ3"/>
                                 <exclude reference="OLb-hR-wd2"/>
                                 <exclude reference="vOt-Sz-caH"/>
-                                <exclude reference="Vvd-9t-ogD"/>
-                                <exclude reference="jrn-Ic-GTj"/>
                                 <exclude reference="3cy-nJ-Ljv"/>
                                 <exclude reference="4rR-Ef-bzc"/>
                                 <exclude reference="WzA-pp-G1g"/>
@@ -1856,12 +1782,12 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <include reference="TuL-hc-6mH"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Vvd-9t-ogD"/>
+                                <include reference="jrn-Ic-GTj"/>
                                 <include reference="E84-sx-phh"/>
                                 <include reference="K2D-8d-lJ3"/>
                                 <include reference="OLb-hR-wd2"/>
                                 <include reference="vOt-Sz-caH"/>
-                                <include reference="Vvd-9t-ogD"/>
-                                <include reference="jrn-Ic-GTj"/>
                                 <include reference="3cy-nJ-Ljv"/>
                                 <include reference="4rR-Ef-bzc"/>
                                 <include reference="WzA-pp-G1g"/>
@@ -2330,23 +2256,23 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                                     <exclude reference="GtP-8c-j5U"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <exclude reference="1LX-7V-02E"/>
+                                                    <exclude reference="Pxd-Bv-8hM"/>
+                                                    <exclude reference="2jC-eW-AS3"/>
+                                                    <exclude reference="aPm-k2-0U9"/>
+                                                    <exclude reference="ZZN-IO-ieE"/>
+                                                    <exclude reference="qsZ-lb-ZSv"/>
+                                                    <exclude reference="DMd-Sk-WW7"/>
+                                                    <exclude reference="LO9-dS-r1p"/>
+                                                    <exclude reference="jks-C1-ZC6"/>
                                                     <exclude reference="XWM-dO-O8w"/>
                                                     <exclude reference="deY-of-Pzg"/>
                                                     <exclude reference="zbX-je-voD"/>
-                                                    <exclude reference="1LX-7V-02E"/>
-                                                    <exclude reference="Pxd-Bv-8hM"/>
                                                     <exclude reference="0jC-YH-aeA"/>
                                                     <exclude reference="15C-m9-Tcs"/>
                                                     <exclude reference="7bi-iy-xqN"/>
                                                     <exclude reference="RAH-2U-L47"/>
                                                     <exclude reference="p71-WD-vUL"/>
-                                                    <exclude reference="DMd-Sk-WW7"/>
-                                                    <exclude reference="LO9-dS-r1p"/>
-                                                    <exclude reference="jks-C1-ZC6"/>
-                                                    <exclude reference="ZZN-IO-ieE"/>
-                                                    <exclude reference="qsZ-lb-ZSv"/>
-                                                    <exclude reference="2jC-eW-AS3"/>
-                                                    <exclude reference="aPm-k2-0U9"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular">
@@ -2359,23 +2285,23 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                                     <include reference="GtP-8c-j5U"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <include reference="1LX-7V-02E"/>
+                                                    <include reference="Pxd-Bv-8hM"/>
+                                                    <include reference="2jC-eW-AS3"/>
+                                                    <include reference="aPm-k2-0U9"/>
+                                                    <include reference="ZZN-IO-ieE"/>
+                                                    <include reference="qsZ-lb-ZSv"/>
+                                                    <include reference="DMd-Sk-WW7"/>
+                                                    <include reference="LO9-dS-r1p"/>
+                                                    <include reference="jks-C1-ZC6"/>
                                                     <include reference="XWM-dO-O8w"/>
                                                     <include reference="deY-of-Pzg"/>
                                                     <include reference="zbX-je-voD"/>
-                                                    <include reference="1LX-7V-02E"/>
-                                                    <include reference="Pxd-Bv-8hM"/>
                                                     <include reference="0jC-YH-aeA"/>
                                                     <include reference="15C-m9-Tcs"/>
                                                     <include reference="7bi-iy-xqN"/>
                                                     <include reference="RAH-2U-L47"/>
                                                     <include reference="p71-WD-vUL"/>
-                                                    <include reference="DMd-Sk-WW7"/>
-                                                    <include reference="LO9-dS-r1p"/>
-                                                    <include reference="jks-C1-ZC6"/>
-                                                    <include reference="ZZN-IO-ieE"/>
-                                                    <include reference="qsZ-lb-ZSv"/>
-                                                    <include reference="2jC-eW-AS3"/>
-                                                    <include reference="aPm-k2-0U9"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -2467,11 +2393,8 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <exclude reference="l1l-Zb-FLN"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="QmA-ew-EPP"/>
-                                <exclude reference="UnM-DD-y0S"/>
-                                <exclude reference="dO1-xL-3r1"/>
-                                <exclude reference="ejI-zi-Dym"/>
-                                <exclude reference="jlX-zL-Yyf"/>
+                                <exclude reference="Gce-YV-xWs"/>
+                                <exclude reference="mru-SI-SOq"/>
                                 <exclude reference="8Te-wn-7uU"/>
                                 <exclude reference="8v7-Zy-S5N"/>
                                 <exclude reference="EMm-WG-fba"/>
@@ -2483,13 +2406,16 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <exclude reference="SCM-iE-P20"/>
                                 <exclude reference="dIr-g1-ptl"/>
                                 <exclude reference="fX9-sG-5EK"/>
+                                <exclude reference="QmA-ew-EPP"/>
+                                <exclude reference="UnM-DD-y0S"/>
+                                <exclude reference="dO1-xL-3r1"/>
+                                <exclude reference="ejI-zi-Dym"/>
+                                <exclude reference="jlX-zL-Yyf"/>
+                                <exclude reference="2Qi-Kj-ccw"/>
+                                <exclude reference="ePH-rw-Muw"/>
                                 <exclude reference="2eJ-q8-RUj"/>
                                 <exclude reference="7hN-i3-SKb"/>
                                 <exclude reference="hyN-mR-ySI"/>
-                                <exclude reference="2Qi-Kj-ccw"/>
-                                <exclude reference="ePH-rw-Muw"/>
-                                <exclude reference="Gce-YV-xWs"/>
-                                <exclude reference="mru-SI-SOq"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -2501,11 +2427,8 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <include reference="l1l-Zb-FLN"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="QmA-ew-EPP"/>
-                                <include reference="UnM-DD-y0S"/>
-                                <include reference="dO1-xL-3r1"/>
-                                <include reference="ejI-zi-Dym"/>
-                                <include reference="jlX-zL-Yyf"/>
+                                <include reference="Gce-YV-xWs"/>
+                                <exclude reference="mru-SI-SOq"/>
                                 <exclude reference="8Te-wn-7uU"/>
                                 <include reference="8v7-Zy-S5N"/>
                                 <include reference="EMm-WG-fba"/>
@@ -2517,13 +2440,16 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <include reference="SCM-iE-P20"/>
                                 <exclude reference="dIr-g1-ptl"/>
                                 <include reference="fX9-sG-5EK"/>
+                                <include reference="QmA-ew-EPP"/>
+                                <include reference="UnM-DD-y0S"/>
+                                <include reference="dO1-xL-3r1"/>
+                                <include reference="ejI-zi-Dym"/>
+                                <include reference="jlX-zL-Yyf"/>
+                                <include reference="2Qi-Kj-ccw"/>
+                                <include reference="ePH-rw-Muw"/>
                                 <include reference="2eJ-q8-RUj"/>
                                 <include reference="7hN-i3-SKb"/>
                                 <include reference="hyN-mR-ySI"/>
-                                <include reference="2Qi-Kj-ccw"/>
-                                <include reference="ePH-rw-Muw"/>
-                                <include reference="Gce-YV-xWs"/>
-                                <exclude reference="mru-SI-SOq"/>
                             </mask>
                         </variation>
                     </view>
@@ -2649,6 +2575,9 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="Mw4-hi-cJd"/>
+                                        <exclude reference="KJK-oD-tkv"/>
+                                        <exclude reference="P8c-WC-xyl"/>
+                                        <exclude reference="kbR-f8-CCQ"/>
                                         <exclude reference="17C-BA-78B"/>
                                         <exclude reference="3Qr-Xd-pDS"/>
                                         <exclude reference="N2V-hr-yjw"/>
@@ -2660,9 +2589,6 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                         <exclude reference="eXI-iG-di1"/>
                                         <exclude reference="inU-np-Y5e"/>
                                         <exclude reference="mqu-hd-h4L"/>
-                                        <exclude reference="KJK-oD-tkv"/>
-                                        <exclude reference="P8c-WC-xyl"/>
-                                        <exclude reference="kbR-f8-CCQ"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular">
@@ -2674,6 +2600,9 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="Mw4-hi-cJd"/>
+                                        <include reference="KJK-oD-tkv"/>
+                                        <include reference="P8c-WC-xyl"/>
+                                        <include reference="kbR-f8-CCQ"/>
                                         <include reference="17C-BA-78B"/>
                                         <include reference="3Qr-Xd-pDS"/>
                                         <include reference="N2V-hr-yjw"/>
@@ -2685,9 +2614,6 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                         <exclude reference="eXI-iG-di1"/>
                                         <include reference="inU-np-Y5e"/>
                                         <exclude reference="mqu-hd-h4L"/>
-                                        <include reference="KJK-oD-tkv"/>
-                                        <include reference="P8c-WC-xyl"/>
-                                        <include reference="kbR-f8-CCQ"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -2741,6 +2667,10 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <exclude reference="ic4-8B-9UG"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="5Pj-6u-f4B"/>
+                                <exclude reference="gez-jw-2fT"/>
+                                <exclude reference="4FZ-Qk-Ppb"/>
+                                <exclude reference="dz4-LU-1B6"/>
                                 <exclude reference="0z7-3q-Xg9"/>
                                 <exclude reference="XWi-vh-wBp"/>
                                 <exclude reference="a0u-29-FFk"/>
@@ -2751,10 +2681,6 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <exclude reference="VvP-8o-lsR"/>
                                 <exclude reference="liT-YE-ymO"/>
                                 <exclude reference="m1W-ko-fdp"/>
-                                <exclude reference="4FZ-Qk-Ppb"/>
-                                <exclude reference="dz4-LU-1B6"/>
-                                <exclude reference="5Pj-6u-f4B"/>
-                                <exclude reference="gez-jw-2fT"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -2764,6 +2690,10 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <include reference="ic4-8B-9UG"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="5Pj-6u-f4B"/>
+                                <include reference="gez-jw-2fT"/>
+                                <include reference="4FZ-Qk-Ppb"/>
+                                <include reference="dz4-LU-1B6"/>
                                 <include reference="0z7-3q-Xg9"/>
                                 <include reference="XWi-vh-wBp"/>
                                 <exclude reference="a0u-29-FFk"/>
@@ -2774,10 +2704,6 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <include reference="VvP-8o-lsR"/>
                                 <exclude reference="liT-YE-ymO"/>
                                 <include reference="m1W-ko-fdp"/>
-                                <include reference="4FZ-Qk-Ppb"/>
-                                <include reference="dz4-LU-1B6"/>
-                                <exclude reference="5Pj-6u-f4B"/>
-                                <include reference="gez-jw-2fT"/>
                             </mask>
                         </variation>
                     </view>
@@ -2999,6 +2925,11 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <exclude reference="8CW-2B-ZOi"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="CEG-36-JKE"/>
+                                <exclude reference="Ng6-zV-Jfl"/>
+                                <exclude reference="wJe-Ep-uDQ"/>
+                                <exclude reference="AEh-8X-b9l"/>
+                                <exclude reference="eKw-Ev-efB"/>
                                 <exclude reference="4uT-6q-MbB"/>
                                 <exclude reference="5yq-Zx-NIQ"/>
                                 <exclude reference="98F-4Q-648"/>
@@ -3010,16 +2941,11 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <exclude reference="kUp-uO-03e"/>
                                 <exclude reference="sWH-WV-89J"/>
                                 <exclude reference="xF6-mh-AlS"/>
-                                <exclude reference="AEh-8X-b9l"/>
-                                <exclude reference="eKw-Ev-efB"/>
                                 <exclude reference="Iih-Sw-j2P"/>
                                 <exclude reference="Kiv-Qd-Fmc"/>
                                 <exclude reference="SGD-RP-gD6"/>
                                 <exclude reference="XUV-dS-t6N"/>
                                 <exclude reference="vUX-LV-Ias"/>
-                                <exclude reference="CEG-36-JKE"/>
-                                <exclude reference="Ng6-zV-Jfl"/>
-                                <exclude reference="wJe-Ep-uDQ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -3029,6 +2955,11 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <include reference="8CW-2B-ZOi"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="CEG-36-JKE"/>
+                                <exclude reference="Ng6-zV-Jfl"/>
+                                <exclude reference="wJe-Ep-uDQ"/>
+                                <include reference="AEh-8X-b9l"/>
+                                <include reference="eKw-Ev-efB"/>
                                 <exclude reference="4uT-6q-MbB"/>
                                 <include reference="5yq-Zx-NIQ"/>
                                 <include reference="98F-4Q-648"/>
@@ -3040,16 +2971,11 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <exclude reference="kUp-uO-03e"/>
                                 <include reference="sWH-WV-89J"/>
                                 <exclude reference="xF6-mh-AlS"/>
-                                <include reference="AEh-8X-b9l"/>
-                                <include reference="eKw-Ev-efB"/>
                                 <exclude reference="Iih-Sw-j2P"/>
                                 <exclude reference="Kiv-Qd-Fmc"/>
                                 <include reference="SGD-RP-gD6"/>
                                 <include reference="XUV-dS-t6N"/>
                                 <exclude reference="vUX-LV-Ias"/>
-                                <include reference="CEG-36-JKE"/>
-                                <exclude reference="Ng6-zV-Jfl"/>
-                                <exclude reference="wJe-Ep-uDQ"/>
                             </mask>
                         </variation>
                     </view>
@@ -3071,8 +2997,8 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BG-Element.png" translatesAutoresizingMaskIntoConstraints="NO" id="O10-ew-31C">
-                                <rect key="frame" x="0.0" y="190" width="410" height="410"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-Element.png" translatesAutoresizingMaskIntoConstraints="NO" id="O10-ew-31C">
+                                <rect key="frame" x="0.0" y="190" width="205" height="410"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="410" id="8hC-P1-mMO">
                                         <variation key="heightClass=regular" constant="275"/>
@@ -3103,7 +3029,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                     </mask>
                                 </variation>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FxL-Wn-zSg">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="admin" borderStyle="roundedRect" placeholder="User Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FxL-Wn-zSg">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Soj-b0-9rf"/>
@@ -3124,7 +3050,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                     </mask>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IV1-ct-5Ky">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="santoshs" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IV1-ct-5Ky">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="HSW-9V-tPr"/>
@@ -3172,7 +3098,28 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                         <include reference="qCG-yX-6Ta"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="onLoginClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z1r-2C-1qg"/>
+                                </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This field is required" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcH-aH-QTI">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                <color key="textColor" red="0.7725490196" green="0.2274509804" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This field is required" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YF-ee-yqV">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                <color key="textColor" red="0.7725490196" green="0.2274509804" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid Credentials. Try Again" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTc-53-tsa">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                <color key="textColor" red="0.7725490196" green="0.2274509804" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -3180,16 +3127,27 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                             <constraint firstItem="O10-ew-31C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1kS-5t-5pS"/>
                             <constraint firstItem="FxL-Wn-zSg" firstAttribute="top" secondItem="29e-nU-ds1" secondAttribute="bottom" constant="50" id="2Bo-ri-ua9"/>
                             <constraint firstAttribute="centerX" secondItem="JTo-Fl-H84" secondAttribute="centerX" id="4IJ-0D-nvg"/>
+                            <constraint firstAttribute="centerX" secondItem="FxL-Wn-zSg" secondAttribute="centerX" id="4ki-xV-zSO"/>
+                            <constraint firstItem="vcH-aH-QTI" firstAttribute="top" secondItem="FxL-Wn-zSg" secondAttribute="bottom" constant="8" id="9Q3-8a-KAe">
+                                <variation key="heightClass=regular" constant="4"/>
+                            </constraint>
+                            <constraint firstItem="IV1-ct-5Ky" firstAttribute="width" secondItem="1YF-ee-yqV" secondAttribute="width" id="AQX-gT-Q2Z"/>
+                            <constraint firstAttribute="centerX" secondItem="1YF-ee-yqV" secondAttribute="centerX" id="Ac3-d4-bUu"/>
                             <constraint firstItem="O10-ew-31C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AkU-qZ-G28"/>
+                            <constraint firstItem="NTc-53-tsa" firstAttribute="width" secondItem="JTo-Fl-H84" secondAttribute="width" id="DIl-c1-e7p"/>
                             <constraint firstItem="29e-nU-ds1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="DdE-dG-sU9"/>
                             <constraint firstAttribute="centerX" secondItem="IV1-ct-5Ky" secondAttribute="centerX" id="Eho-Q2-fMt"/>
                             <constraint firstAttribute="centerX" secondItem="29e-nU-ds1" secondAttribute="centerX" id="FNW-Yf-SJR"/>
+                            <constraint firstAttribute="centerX" secondItem="NTc-53-tsa" secondAttribute="centerX" id="HIk-Tb-ORW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="O10-ew-31C" secondAttribute="bottom" id="IaI-kN-FhZ"/>
                             <constraint firstItem="55c-YD-gxt" firstAttribute="top" secondItem="IV1-ct-5Ky" secondAttribute="bottom" constant="40" id="KBc-Gy-7Ec">
                                 <variation key="heightClass=regular" constant="20"/>
                             </constraint>
                             <constraint firstItem="JTo-Fl-H84" firstAttribute="top" secondItem="55c-YD-gxt" secondAttribute="bottom" constant="10" id="QQc-US-yV6"/>
                             <constraint firstAttribute="centerX" secondItem="FxL-Wn-zSg" secondAttribute="centerX" id="Y7O-Ig-neA"/>
+                            <constraint firstAttribute="centerX" secondItem="vcH-aH-QTI" secondAttribute="centerX" id="YXv-ge-Xfe"/>
+                            <constraint firstItem="FxL-Wn-zSg" firstAttribute="width" secondItem="vcH-aH-QTI" secondAttribute="width" id="ayW-CR-hTd"/>
+                            <constraint firstItem="1YF-ee-yqV" firstAttribute="top" secondItem="IV1-ct-5Ky" secondAttribute="bottom" constant="4" id="b0l-7u-P3J"/>
                             <constraint firstAttribute="trailing" secondItem="O10-ew-31C" secondAttribute="trailing" constant="395" id="gVC-IF-0Su"/>
                             <constraint firstItem="O10-ew-31C" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="374" id="iHo-Jm-JiR"/>
                             <constraint firstItem="IV1-ct-5Ky" firstAttribute="width" secondItem="JTo-Fl-H84" secondAttribute="width" id="jor-WP-61K"/>
@@ -3197,6 +3155,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                             <constraint firstAttribute="centerX" secondItem="55c-YD-gxt" secondAttribute="centerX" id="uG2-US-yOw"/>
                             <constraint firstItem="JTo-Fl-H84" firstAttribute="top" secondItem="IV1-ct-5Ky" secondAttribute="bottom" constant="40" id="wCT-aq-R2D"/>
                             <constraint firstItem="IV1-ct-5Ky" firstAttribute="width" secondItem="FxL-Wn-zSg" secondAttribute="width" id="wE2-PX-cAs"/>
+                            <constraint firstItem="NTc-53-tsa" firstAttribute="top" secondItem="JTo-Fl-H84" secondAttribute="bottom" constant="10" id="x7b-70-n7x"/>
                             <constraint firstItem="IV1-ct-5Ky" firstAttribute="top" secondItem="FxL-Wn-zSg" secondAttribute="bottom" constant="40" id="yqM-bf-RcQ"/>
                         </constraints>
                         <variation key="default">
@@ -3205,20 +3164,33 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <exclude reference="IV1-ct-5Ky"/>
                                 <exclude reference="55c-YD-gxt"/>
                                 <exclude reference="JTo-Fl-H84"/>
+                                <exclude reference="vcH-aH-QTI"/>
+                                <exclude reference="1YF-ee-yqV"/>
+                                <exclude reference="NTc-53-tsa"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="2Bo-ri-ua9"/>
+                                <exclude reference="4ki-xV-zSO"/>
                                 <exclude reference="Y7O-Ig-neA"/>
+                                <exclude reference="ayW-CR-hTd"/>
+                                <exclude reference="9Q3-8a-KAe"/>
+                                <exclude reference="YXv-ge-Xfe"/>
+                                <exclude reference="AQX-gT-Q2Z"/>
                                 <exclude reference="Eho-Q2-fMt"/>
                                 <exclude reference="jor-WP-61K"/>
                                 <exclude reference="wE2-PX-cAs"/>
                                 <exclude reference="yqM-bf-RcQ"/>
+                                <exclude reference="Ac3-d4-bUu"/>
+                                <exclude reference="b0l-7u-P3J"/>
                                 <exclude reference="KBc-Gy-7Ec"/>
                                 <exclude reference="uG2-US-yOw"/>
                                 <exclude reference="0ie-1L-zrb"/>
                                 <exclude reference="4IJ-0D-nvg"/>
                                 <exclude reference="QQc-US-yV6"/>
                                 <exclude reference="wCT-aq-R2D"/>
+                                <exclude reference="DIl-c1-e7p"/>
+                                <exclude reference="HIk-Tb-ORW"/>
+                                <exclude reference="x7b-70-n7x"/>
                                 <exclude reference="1kS-5t-5pS"/>
                                 <exclude reference="gVC-IF-0Su"/>
                                 <exclude reference="iHo-Jm-JiR"/>
@@ -3231,23 +3203,43 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <include reference="IV1-ct-5Ky"/>
                                 <include reference="55c-YD-gxt"/>
                                 <include reference="JTo-Fl-H84"/>
+                                <include reference="vcH-aH-QTI"/>
+                                <include reference="1YF-ee-yqV"/>
+                                <include reference="NTc-53-tsa"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="2Bo-ri-ua9"/>
+                                <include reference="4ki-xV-zSO"/>
                                 <include reference="Y7O-Ig-neA"/>
+                                <include reference="ayW-CR-hTd"/>
+                                <include reference="9Q3-8a-KAe"/>
+                                <include reference="YXv-ge-Xfe"/>
+                                <include reference="AQX-gT-Q2Z"/>
                                 <include reference="Eho-Q2-fMt"/>
                                 <include reference="jor-WP-61K"/>
                                 <include reference="wE2-PX-cAs"/>
                                 <include reference="yqM-bf-RcQ"/>
+                                <include reference="Ac3-d4-bUu"/>
+                                <include reference="b0l-7u-P3J"/>
                                 <include reference="KBc-Gy-7Ec"/>
                                 <include reference="uG2-US-yOw"/>
                                 <include reference="0ie-1L-zrb"/>
                                 <include reference="4IJ-0D-nvg"/>
                                 <include reference="QQc-US-yV6"/>
                                 <exclude reference="wCT-aq-R2D"/>
+                                <include reference="DIl-c1-e7p"/>
+                                <include reference="HIk-Tb-ORW"/>
+                                <include reference="x7b-70-n7x"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="invalidError" destination="NTc-53-tsa" id="h0Y-7K-Pw7"/>
+                        <outlet property="password" destination="IV1-ct-5Ky" id="qJb-Te-JQq"/>
+                        <outlet property="passwordErrorLabel" destination="1YF-ee-yqV" id="iBB-5Z-egZ"/>
+                        <outlet property="userName" destination="FxL-Wn-zSg" id="qm8-lb-rVC"/>
+                        <outlet property="userNameErrorLabel" destination="vcH-aH-QTI" id="hT3-Hk-6w4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -3256,7 +3248,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
         <!--Home View Controller-->
         <scene sceneID="pyQ-Ac-abp">
             <objects>
-                <viewController id="Qnq-zc-HPh" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeViewScreen" id="Qnq-zc-HPh" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QV2-rU-kgt"/>
                         <viewControllerLayoutGuide type="bottom" id="eyr-NI-nKX"/>
@@ -3508,13 +3500,13 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="eJJ-yZ-XHi"/>
-                                        <exclude reference="Z71-JR-zG5"/>
-                                        <exclude reference="M63-FJ-3NW"/>
                                         <exclude reference="Ag2-aS-Qt0"/>
+                                        <exclude reference="M63-FJ-3NW"/>
+                                        <exclude reference="Z71-JR-zG5"/>
                                         <exclude reference="HVa-5I-4yW"/>
+                                        <exclude reference="btk-1e-1fk"/>
                                         <exclude reference="svW-jo-vh8"/>
                                         <exclude reference="ylg-95-Sqa"/>
-                                        <exclude reference="btk-1e-1fk"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular">
@@ -3524,13 +3516,13 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="eJJ-yZ-XHi"/>
-                                        <include reference="Z71-JR-zG5"/>
-                                        <include reference="M63-FJ-3NW"/>
                                         <include reference="Ag2-aS-Qt0"/>
+                                        <include reference="M63-FJ-3NW"/>
+                                        <include reference="Z71-JR-zG5"/>
                                         <include reference="HVa-5I-4yW"/>
+                                        <include reference="btk-1e-1fk"/>
                                         <include reference="svW-jo-vh8"/>
                                         <include reference="ylg-95-Sqa"/>
-                                        <include reference="btk-1e-1fk"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -3589,13 +3581,13 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="w4T-W0-LUh"/>
-                                        <exclude reference="nXd-Xr-rML"/>
-                                        <exclude reference="lty-MX-Bda"/>
                                         <exclude reference="i5N-d5-6qS"/>
-                                        <exclude reference="OnN-Sf-OvZ"/>
-                                        <exclude reference="NS7-4A-qvR"/>
-                                        <exclude reference="J68-aU-nWZ"/>
+                                        <exclude reference="lty-MX-Bda"/>
+                                        <exclude reference="nXd-Xr-rML"/>
                                         <exclude reference="Iov-3e-F2S"/>
+                                        <exclude reference="J68-aU-nWZ"/>
+                                        <exclude reference="NS7-4A-qvR"/>
+                                        <exclude reference="OnN-Sf-OvZ"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular">
@@ -3605,13 +3597,13 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="w4T-W0-LUh"/>
-                                        <include reference="nXd-Xr-rML"/>
-                                        <include reference="lty-MX-Bda"/>
                                         <include reference="i5N-d5-6qS"/>
-                                        <include reference="OnN-Sf-OvZ"/>
-                                        <include reference="NS7-4A-qvR"/>
-                                        <include reference="J68-aU-nWZ"/>
+                                        <include reference="lty-MX-Bda"/>
+                                        <include reference="nXd-Xr-rML"/>
                                         <include reference="Iov-3e-F2S"/>
+                                        <include reference="J68-aU-nWZ"/>
+                                        <include reference="NS7-4A-qvR"/>
+                                        <include reference="OnN-Sf-OvZ"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -3668,6 +3660,15 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <exclude reference="EZc-Hj-cBU"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="a2p-JW-GUa"/>
+                                <exclude reference="e4g-4P-L5K"/>
+                                <exclude reference="6ph-Ng-tEL"/>
+                                <exclude reference="CbY-6O-eDO"/>
+                                <exclude reference="H5K-qI-TlT"/>
+                                <exclude reference="PJY-vi-lx1"/>
+                                <exclude reference="az5-U6-Cwg"/>
+                                <exclude reference="lMe-is-Ffp"/>
+                                <exclude reference="n4I-ma-Q8S"/>
                                 <exclude reference="8Pw-fc-6ap"/>
                                 <exclude reference="GUc-DC-HG6"/>
                                 <exclude reference="Ibh-Tw-0XH"/>
@@ -3678,16 +3679,6 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <exclude reference="m0g-Va-isT"/>
                                 <exclude reference="nEI-Ux-uDC"/>
                                 <exclude reference="rMr-vk-rRD"/>
-                                <exclude reference="6ph-Ng-tEL"/>
-                                <exclude reference="CbY-6O-eDO"/>
-                                <exclude reference="H5K-qI-TlT"/>
-                                <exclude reference="PJY-vi-lx1"/>
-                                <exclude reference="az5-U6-Cwg"/>
-                                <exclude reference="lMe-is-Ffp"/>
-                                <exclude reference="n4I-ma-Q8S"/>
-                                <exclude reference="0Nd-ZS-zNn"/>
-                                <exclude reference="339-Ei-h4X"/>
-                                <exclude reference="cLk-Uc-72i"/>
                                 <exclude reference="JXT-aO-cEI"/>
                                 <exclude reference="LLQ-SS-kLL"/>
                                 <exclude reference="rBa-H8-amh"/>
@@ -3703,8 +3694,9 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <exclude reference="etb-je-hQk"/>
                                 <exclude reference="fdW-ei-DGd"/>
                                 <exclude reference="imx-Ze-4sq"/>
-                                <exclude reference="a2p-JW-GUa"/>
-                                <exclude reference="e4g-4P-L5K"/>
+                                <exclude reference="0Nd-ZS-zNn"/>
+                                <exclude reference="339-Ei-h4X"/>
+                                <exclude reference="cLk-Uc-72i"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -3717,6 +3709,15 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <include reference="EZc-Hj-cBU"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="a2p-JW-GUa"/>
+                                <include reference="e4g-4P-L5K"/>
+                                <exclude reference="6ph-Ng-tEL"/>
+                                <exclude reference="CbY-6O-eDO"/>
+                                <exclude reference="H5K-qI-TlT"/>
+                                <include reference="PJY-vi-lx1"/>
+                                <include reference="az5-U6-Cwg"/>
+                                <exclude reference="lMe-is-Ffp"/>
+                                <include reference="n4I-ma-Q8S"/>
                                 <include reference="8Pw-fc-6ap"/>
                                 <include reference="GUc-DC-HG6"/>
                                 <include reference="Ibh-Tw-0XH"/>
@@ -3727,16 +3728,6 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <exclude reference="m0g-Va-isT"/>
                                 <exclude reference="nEI-Ux-uDC"/>
                                 <include reference="rMr-vk-rRD"/>
-                                <exclude reference="6ph-Ng-tEL"/>
-                                <exclude reference="CbY-6O-eDO"/>
-                                <exclude reference="H5K-qI-TlT"/>
-                                <include reference="PJY-vi-lx1"/>
-                                <include reference="az5-U6-Cwg"/>
-                                <exclude reference="lMe-is-Ffp"/>
-                                <include reference="n4I-ma-Q8S"/>
-                                <include reference="0Nd-ZS-zNn"/>
-                                <include reference="339-Ei-h4X"/>
-                                <include reference="cLk-Uc-72i"/>
                                 <include reference="JXT-aO-cEI"/>
                                 <include reference="LLQ-SS-kLL"/>
                                 <include reference="rBa-H8-amh"/>
@@ -3752,8 +3743,9 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
                                 <exclude reference="etb-je-hQk"/>
                                 <include reference="fdW-ei-DGd"/>
                                 <include reference="imx-Ze-4sq"/>
-                                <include reference="a2p-JW-GUa"/>
-                                <include reference="e4g-4P-L5K"/>
+                                <include reference="0Nd-ZS-zNn"/>
+                                <include reference="339-Ei-h4X"/>
+                                <include reference="cLk-Uc-72i"/>
                             </mask>
                         </variation>
                     </view>
@@ -5033,8 +5025,8 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
         </scene>
     </scenes>
     <resources>
-        <image name="Agenda_Heading.png" width="775" height="273"/>
-        <image name="Agenda_icon.png" width="331" height="359"/>
+        <image name="About_Event.png" width="1199" height="312"/>
+        <image name="Agenda_Final.png" width="1220" height="282"/>
         <image name="BG-01.png" width="246" height="185"/>
         <image name="BG-Element.png" width="838" height="827"/>
         <image name="Button_1.png" width="1599" height="137"/>
@@ -5043,7 +5035,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
         <image name="Button_4.png" width="1599" height="137"/>
         <image name="Button_5.png" width="1599" height="138"/>
         <image name="Button_6.png" width="1599" height="137"/>
-        <image name="Contact_us_heading.png" width="653" height="273"/>
+        <image name="Conatct_Us.png" width="1243" height="273"/>
         <image name="Heading.png" width="900" height="309"/>
         <image name="HeadingDesign.png" width="1718" height="274"/>
         <image name="LHS_1.png" width="846" height="141"/>
@@ -5060,7 +5052,6 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</mutableString>
         <image name="Wipro_Logo.png" width="316" height="363"/>
         <image name="back_button.png" width="109" height="102"/>
         <image name="chat_user_icon_1.png" width="131" height="132"/>
-        <image name="contact_us_icon.png" width="414" height="276"/>
         <image name="feedback_icon.png" width="472" height="421"/>
         <image name="footer.png" width="472" height="29"/>
         <image name="image.png" width="1104" height="1104"/>

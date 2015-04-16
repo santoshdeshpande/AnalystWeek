@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AnalystWeekHTTPClient.h"
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController<AnalystWeekDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *userName;
+@property (weak, nonatomic) IBOutlet UITextField *password;
+- (IBAction)onLoginClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *userNameErrorLabel;
+@property (weak, nonatomic) IBOutlet UILabel *passwordErrorLabel;
+@property (weak, nonatomic) IBOutlet UILabel *invalidError;
 
 @end

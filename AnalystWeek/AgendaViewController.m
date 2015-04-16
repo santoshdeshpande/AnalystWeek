@@ -11,6 +11,7 @@
 #import "HeadingTableViewCell.h"
 #import "SessionTableViewCell.h"
 #import "Agenda.h"
+#import "AnalystWeekHTTPClient.h"
 
 @interface AgendaViewController ()
 @property NSMutableArray *agendaItems;
@@ -21,10 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.agendaItems = [NSMutableArray array];
-    [self buildAgendaItems];
+    [self fetchAgendaInfo];
     // Do any additional setup after loading the view.
     self.agendaTable.rowHeight = UITableViewAutomaticDimension;
-    self.agendaTable.estimatedRowHeight = 44.0;
+    self.agendaTable.estimatedRowHeight = 60.0;
     self.agendaTable.dataSource = self;
     self.agendaTable.delegate = self;
     self.agendaTable.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
@@ -75,6 +76,26 @@
         
     }
     return nil;
+}
+
+- (void) fetchAgendaInfo {
+    AnalystWeekHTTPClient *client = [AnalystWeekHTTPClient sharedHTTPClient];
+    client.delegate = self;
+    [client fetchAgenda];
+}
+
+- (void) analystHTTPClient:(AnalystWeekHTTPClient *)client agendaFetched:(id)response {
+    NSArray *data = (NSArray *)response;
+    for (id object in data) {
+        NSDictionary *dictionary = (NSDictionary *)object;
+        NSString *header = [dictionary objectForKey:@"session_time"];
+        NSString *info = [dictionary objectForKey:@"session_info"];
+        NSString *type = [dictionary objectForKey:@"session_type"];
+        Agenda *agenda = [self buildAgenda:type header:header info:info];
+        [self.agendaItems addObject:agenda];
+        
+        [self.agendaTable reloadData];
+    }
 }
 
 - (void) buildAgendaItems {
