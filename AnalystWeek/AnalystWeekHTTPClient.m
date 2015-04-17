@@ -42,6 +42,10 @@ static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
     parameters[@"username"] = user;
     parameters[@"password"] = password;
     NSLog(@"Sending %@  - %@",user, password);
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [defaults setObject:user forKey:@"username"];
+    [defaults setObject:password forKey:@"password"];
     [self POST:@"api-token-auth/" parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
         if ([self.delegate respondsToSelector:@selector(analystHTTPClient:loginSucceeded:)]) {
             [self.delegate analystHTTPClient:self loginSucceeded:responseObject];
@@ -55,8 +59,9 @@ static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
 }
 
 - (void) fetchContactInfo {
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
 
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
     [self GET:@"contact_info/" parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
         if ([self.delegate respondsToSelector:@selector(analystHTTPClient:contactInfoFetched:)]) {
             [self.delegate analystHTTPClient:self contactInfoFetched:responseObject];
@@ -69,7 +74,7 @@ static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
 
 - (void) fetchAgenda {
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    
+    [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
     [self GET:@"agenda/" parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
         if ([self.delegate respondsToSelector:@selector(analystHTTPClient:agendaFetched:)]) {
             [self.delegate analystHTTPClient:self agendaFetched:responseObject];
@@ -78,6 +83,13 @@ static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
         NSLog(@"%@",error.userInfo);
     }];
     
+}
+
+- (NSString *) getToken {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *token = [defaults objectForKey:@"auth-token"];
+    token = [NSString stringWithFormat:@"JWT %@",token];
+    return token;
 }
 
 

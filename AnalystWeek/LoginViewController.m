@@ -21,6 +21,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *user = [defaults objectForKey:@"username"];
+    NSString *password = [defaults objectForKey:@"password"];
+    self.userName.text = user;
+    self.password.text = password;
     // Do any additional setup after loading the view.
 }
 
@@ -29,15 +34,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)onLoginClicked:(id)sender {
     AnalystWeekHTTPClient *client = [AnalystWeekHTTPClient sharedHTTPClient];
@@ -62,7 +58,8 @@
 -(void)analystHTTPClient:(AnalystWeekHTTPClient *)client loginSucceeded:(id)response {
     NSDictionary *responseDict = (NSDictionary *)response;
     NSString *token = [responseDict objectForKey:@"token"];
-    NSLog(@"%@",token);
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:token forKey:@"auth-token"];
     UIStoryboard *storyboard = self.storyboard;
     HomeViewController *viewController = (HomeViewController *)[storyboard instantiateViewControllerWithIdentifier:@"homeViewScreen"];
     UINavigationController* navigation = [[UINavigationController alloc] initWithRootViewController:viewController];

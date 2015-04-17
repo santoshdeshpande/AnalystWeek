@@ -52,6 +52,9 @@
 
 - (void) fetchContactInfo {
     AnalystWeekHTTPClient *httpClient = [AnalystWeekHTTPClient sharedHTTPClient];
+//    NSString *token = [defaults objectForKey:@"auth-token"];
+//    token = [NSString stringWithFormat:@"JWT %@",token];
+
     httpClient.delegate = self;
     [httpClient fetchContactInfo];
 }
