@@ -19,6 +19,18 @@
 		3A5AD3C61ADFAE3C00146D11 /* Resource_Bank.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AD3BD1ADFAE3C00146D11 /* Resource_Bank.png */; };
 		3A5AD3C71ADFAE3C00146D11 /* Speakers_Participants.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AD3BE1ADFAE3C00146D11 /* Speakers_Participants.png */; };
 		3A5AD3C81ADFAE3C00146D11 /* Survey.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AD3BF1ADFAE3C00146D11 /* Survey.png */; };
+		3A5AD3CF1ADFC44A00146D11 /* AWRoundedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AD3CA1ADFC44A00146D11 /* AWRoundedLabel.m */; };
+		3A5AD3D01ADFC44A00146D11 /* AWRoundedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AD3CC1ADFC44A00146D11 /* AWRoundedTextField.m */; };
+		3A5AD3D11ADFC44A00146D11 /* AWRoundedTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AD3CE1ADFC44A00146D11 /* AWRoundedTextView.m */; };
+		3A5AD3D31ADFC87800146D11 /* BG-Element.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AD3D21ADFC87800146D11 /* BG-Element.png */; };
+		3A5AD3D51ADFC87C00146D11 /* Login_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AD3D41ADFC87C00146D11 /* Login_Button.png */; };
+		3A5AD3D71ADFC87F00146D11 /* Wipro_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AD3D61ADFC87F00146D11 /* Wipro_Logo.png */; };
+		3A5AD3DA1AE0A4CB00146D11 /* SurveyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AD3D91AE0A4CB00146D11 /* SurveyTableViewCell.m */; };
+		3A5AD3DD1AE0A56000146D11 /* SurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AD3DC1AE0A56000146D11 /* SurveyViewController.m */; };
+		3A5AD3E11AE0AAAD00146D11 /* Button_BusinessVertical.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AD3DE1AE0AAAC00146D11 /* Button_BusinessVertical.png */; };
+		3A5AD3E21AE0AAAD00146D11 /* Button_ServiceLines.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AD3DF1AE0AAAD00146D11 /* Button_ServiceLines.png */; };
+		3A5AD3E31AE0AAAD00146D11 /* Button_Topic.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AD3E01AE0AAAD00146D11 /* Button_Topic.png */; };
+		3A5AD3E61AE0B13D00146D11 /* ResourceBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AD3E51AE0B13D00146D11 /* ResourceBankViewController.m */; };
 		3AC5DB521ADD08D7006DF05A /* MeetingRequestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5DB511ADD08D7006DF05A /* MeetingRequestTableViewCell.m */; };
 		3AC5DB551ADD0A75006DF05A /* YourMeetingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5DB541ADD0A75006DF05A /* YourMeetingsViewController.m */; };
 		3AC5DB591ADD0D49006DF05A /* YourMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5DB581ADD0D49006DF05A /* YourMeeting.m */; };
@@ -112,6 +124,24 @@
 		3A5AD3BD1ADFAE3C00146D11 /* Resource_Bank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Resource_Bank.png; sourceTree = "<group>"; };
 		3A5AD3BE1ADFAE3C00146D11 /* Speakers_Participants.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Speakers_Participants.png; sourceTree = "<group>"; };
 		3A5AD3BF1ADFAE3C00146D11 /* Survey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Survey.png; sourceTree = "<group>"; };
+		3A5AD3C91ADFC44A00146D11 /* AWRoundedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWRoundedLabel.h; sourceTree = "<group>"; };
+		3A5AD3CA1ADFC44A00146D11 /* AWRoundedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWRoundedLabel.m; sourceTree = "<group>"; };
+		3A5AD3CB1ADFC44A00146D11 /* AWRoundedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWRoundedTextField.h; sourceTree = "<group>"; };
+		3A5AD3CC1ADFC44A00146D11 /* AWRoundedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWRoundedTextField.m; sourceTree = "<group>"; };
+		3A5AD3CD1ADFC44A00146D11 /* AWRoundedTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWRoundedTextView.h; sourceTree = "<group>"; };
+		3A5AD3CE1ADFC44A00146D11 /* AWRoundedTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWRoundedTextView.m; sourceTree = "<group>"; };
+		3A5AD3D21ADFC87800146D11 /* BG-Element.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BG-Element.png"; path = "AnalystWeek/Images/Login/BG-Element.png"; sourceTree = "<group>"; };
+		3A5AD3D41ADFC87C00146D11 /* Login_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Login_Button.png; path = AnalystWeek/Images/Login/Login_Button.png; sourceTree = "<group>"; };
+		3A5AD3D61ADFC87F00146D11 /* Wipro_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Wipro_Logo.png; path = AnalystWeek/Images/Login/Wipro_Logo.png; sourceTree = "<group>"; };
+		3A5AD3D81AE0A4CB00146D11 /* SurveyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyTableViewCell.h; sourceTree = "<group>"; };
+		3A5AD3D91AE0A4CB00146D11 /* SurveyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyTableViewCell.m; sourceTree = "<group>"; };
+		3A5AD3DB1AE0A56000146D11 /* SurveyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyViewController.h; sourceTree = "<group>"; };
+		3A5AD3DC1AE0A56000146D11 /* SurveyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyViewController.m; sourceTree = "<group>"; };
+		3A5AD3DE1AE0AAAC00146D11 /* Button_BusinessVertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_BusinessVertical.png; sourceTree = "<group>"; };
+		3A5AD3DF1AE0AAAD00146D11 /* Button_ServiceLines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_ServiceLines.png; sourceTree = "<group>"; };
+		3A5AD3E01AE0AAAD00146D11 /* Button_Topic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Topic.png; sourceTree = "<group>"; };
+		3A5AD3E41AE0B13D00146D11 /* ResourceBankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceBankViewController.h; sourceTree = "<group>"; };
+		3A5AD3E51AE0B13D00146D11 /* ResourceBankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceBankViewController.m; sourceTree = "<group>"; };
 		3AC5DB501ADD08D7006DF05A /* MeetingRequestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingRequestTableViewCell.h; sourceTree = "<group>"; };
 		3AC5DB511ADD08D7006DF05A /* MeetingRequestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingRequestTableViewCell.m; sourceTree = "<group>"; };
 		3AC5DB531ADD0A75006DF05A /* YourMeetingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YourMeetingsViewController.h; sourceTree = "<group>"; };
@@ -284,6 +314,9 @@
 		3AD644761ADB5B0900591666 = {
 			isa = PBXGroup;
 			children = (
+				3A5AD3D61ADFC87F00146D11 /* Wipro_Logo.png */,
+				3A5AD3D41ADFC87C00146D11 /* Login_Button.png */,
+				3A5AD3D21ADFC87800146D11 /* BG-Element.png */,
 				3AD644811ADB5B0900591666 /* AnalystWeek */,
 				3AD6449B1ADB5B0A00591666 /* AnalystWeekTests */,
 				3AD644801ADB5B0900591666 /* Products */,
@@ -304,6 +337,12 @@
 		3AD644811ADB5B0900591666 /* AnalystWeek */ = {
 			isa = PBXGroup;
 			children = (
+				3A5AD3C91ADFC44A00146D11 /* AWRoundedLabel.h */,
+				3A5AD3CA1ADFC44A00146D11 /* AWRoundedLabel.m */,
+				3A5AD3CB1ADFC44A00146D11 /* AWRoundedTextField.h */,
+				3A5AD3CC1ADFC44A00146D11 /* AWRoundedTextField.m */,
+				3A5AD3CD1ADFC44A00146D11 /* AWRoundedTextView.h */,
+				3A5AD3CE1ADFC44A00146D11 /* AWRoundedTextView.m */,
 				3A5AD3AD1ADF55FF00146D11 /* RestClient */,
 				3AC5DB561ADD0D32006DF05A /* Models */,
 				3AE0C4E21ADBA56200E14FAD /* images */,
@@ -329,6 +368,8 @@
 				3AC5DB781ADD673A006DF05A /* SessionTableViewCell.m */,
 				3AC5DB7D1ADD8502006DF05A /* PaddedLabel.h */,
 				3AC5DB7E1ADD8502006DF05A /* PaddedLabel.m */,
+				3A5AD3D81AE0A4CB00146D11 /* SurveyTableViewCell.h */,
+				3A5AD3D91AE0A4CB00146D11 /* SurveyTableViewCell.m */,
 			);
 			path = AnalystWeek;
 			sourceTree = "<group>";
@@ -380,6 +421,10 @@
 				3AC5DB871ADE18AA006DF05A /* ContactUsViewController.m */,
 				3AC5DB8F1ADE8B9F006DF05A /* SpeakerProfileViewController.h */,
 				3AC5DB901ADE8B9F006DF05A /* SpeakerProfileViewController.m */,
+				3A5AD3DB1AE0A56000146D11 /* SurveyViewController.h */,
+				3A5AD3DC1AE0A56000146D11 /* SurveyViewController.m */,
+				3A5AD3E41AE0B13D00146D11 /* ResourceBankViewController.h */,
+				3A5AD3E51AE0B13D00146D11 /* ResourceBankViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -387,6 +432,9 @@
 		3AE0C4E21ADBA56200E14FAD /* images */ = {
 			isa = PBXGroup;
 			children = (
+				3A5AD3DE1AE0AAAC00146D11 /* Button_BusinessVertical.png */,
+				3A5AD3DF1AE0AAAD00146D11 /* Button_ServiceLines.png */,
+				3A5AD3E01AE0AAAD00146D11 /* Button_Topic.png */,
 				3A5AD3B61ADFAE2C00146D11 /* Heading */,
 				3A5AD3B41ADF69C000146D11 /* alert_icon.png */,
 				3AC5DB8D1ADE831F006DF05A /* speaker_heading.png */,
@@ -539,10 +587,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AD644B11ADB693D00591666 /* LHS_1_About The Event.png in Resources */,
+				3A5AD3E31AE0AAAD00146D11 /* Button_Topic.png in Resources */,
 				3AC5DB831ADE0743006DF05A /* contact_us_icon.png in Resources */,
 				3AC5DB6F1ADD60FF006DF05A /* Agenda_Heading.png in Resources */,
 				3AC5DB851ADE1648006DF05A /* chat_user_icon_1.png in Resources */,
+				3A5AD3E21AE0AAAD00146D11 /* Button_ServiceLines.png in Resources */,
+				3A5AD3D31ADFC87800146D11 /* BG-Element.png in Resources */,
 				3AC5DB8C1ADE733E006DF05A /* parking_pass.png in Resources */,
+				3A5AD3D51ADFC87C00146D11 /* Login_Button.png in Resources */,
+				3A5AD3D71ADFC87F00146D11 /* Wipro_Logo.png in Resources */,
 				3AE0C5171ADC111A00E14FAD /* parking_pass.jpg in Resources */,
 				3AC5DB631ADD4155006DF05A /* footer.png in Resources */,
 				3AE0C51B1ADC21D500E14FAD /* back_button.png in Resources */,
@@ -588,6 +641,7 @@
 				3AE0C5191ADC127000E14FAD /* threed_selfie.jpg in Resources */,
 				3AC5DB651ADD4155006DF05A /* text_bottom.png in Resources */,
 				3A5AD3B51ADF69C000146D11 /* alert_icon.png in Resources */,
+				3A5AD3E11AE0AAAD00146D11 /* Button_BusinessVertical.png in Resources */,
 				3AE0C4FD1ADC00FE00E14FAD /* RHS_3.png in Resources */,
 				3AE0C4F81ADC00FE00E14FAD /* LHS_2.png in Resources */,
 				3A5AD3C01ADFAE3C00146D11 /* About_Event.png in Resources */,
@@ -647,17 +701,23 @@
 				3AC5DB731ADD671D006DF05A /* HeadingTableViewCell.m in Sources */,
 				3AC5DB521ADD08D7006DF05A /* MeetingRequestTableViewCell.m in Sources */,
 				3AD644881ADB5B0A00591666 /* AppDelegate.m in Sources */,
+				3A5AD3D11ADFC44A00146D11 /* AWRoundedTextView.m in Sources */,
+				3A5AD3DD1AE0A56000146D11 /* SurveyViewController.m in Sources */,
 				3A5AD3B01ADF564D00146D11 /* AnalystWeekHTTPClient.m in Sources */,
+				3A5AD3DA1AE0A4CB00146D11 /* SurveyTableViewCell.m in Sources */,
 				3A5AD3B31ADF65D700146D11 /* JSONResponseSerializerWithData.m in Sources */,
+				3A5AD3E61AE0B13D00146D11 /* ResourceBankViewController.m in Sources */,
 				3AC5DB551ADD0A75006DF05A /* YourMeetingsViewController.m in Sources */,
 				3AC5DB691ADD4F6D006DF05A /* LandscapeOnlyViewController.m in Sources */,
 				3AC5DB7C1ADD7B6A006DF05A /* Agenda.m in Sources */,
 				3AC5DB591ADD0D49006DF05A /* YourMeeting.m in Sources */,
+				3A5AD3CF1ADFC44A00146D11 /* AWRoundedLabel.m in Sources */,
 				3AC5DB791ADD673A006DF05A /* SessionTableViewCell.m in Sources */,
 				3AE0C4EE1ADBBE6700E14FAD /* RequestMeetingViewController.m in Sources */,
 				3AD644851ADB5B0900591666 /* main.m in Sources */,
 				3AC5DB911ADE8B9F006DF05A /* SpeakerProfileViewController.m in Sources */,
 				3AC5DB7F1ADD8502006DF05A /* PaddedLabel.m in Sources */,
+				3A5AD3D01ADFC44A00146D11 /* AWRoundedTextField.m in Sources */,
 				3AE0C5061ADC089500E14FAD /* LoginViewController.m in Sources */,
 				3AC5DB881ADE18AA006DF05A /* ContactUsViewController.m in Sources */,
 				3AE0C51E1ADC22A800E14FAD /* WelcomeViewController.m in Sources */,
@@ -795,6 +855,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AnalystWeek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -809,6 +870,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AnalystWeek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
