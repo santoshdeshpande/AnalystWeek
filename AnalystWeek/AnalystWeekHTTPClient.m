@@ -9,7 +9,7 @@
 #import "AnalystWeekHTTPClient.h"
 #import "JSONResponseSerializerWithData.h"
 
-static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
+static NSString * const ServerBaseURL = @"https://aw.eatsleepcode.in/api/v1/";
 
 @implementation AnalystWeekHTTPClient
 

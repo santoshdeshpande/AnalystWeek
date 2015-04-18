@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A4E97491AE23CE00050AD01 /* AW_Welcome_note_page.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4E97481AE23CE00050AD01 /* AW_Welcome_note_page.png */; };
+		3A4E974B1AE23E780050AD01 /* AW_Parking_pass_page.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4E974A1AE23E780050AD01 /* AW_Parking_pass_page.png */; };
 		3A5AD3B01ADF564D00146D11 /* AnalystWeekHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AD3AF1ADF564D00146D11 /* AnalystWeekHTTPClient.m */; };
 		3A5AD3B31ADF65D700146D11 /* JSONResponseSerializerWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AD3B21ADF65D700146D11 /* JSONResponseSerializerWithData.m */; };
 		3A5AD3B51ADF69C000146D11 /* alert_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AD3B41ADF69C000146D11 /* alert_icon.png */; };
@@ -117,6 +119,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A4E97481AE23CE00050AD01 /* AW_Welcome_note_page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AW_Welcome_note_page.png; sourceTree = "<group>"; };
+		3A4E974A1AE23E780050AD01 /* AW_Parking_pass_page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AW_Parking_pass_page.png; sourceTree = "<group>"; };
 		3A5AD3AE1ADF564D00146D11 /* AnalystWeekHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalystWeekHTTPClient.h; sourceTree = "<group>"; };
 		3A5AD3AF1ADF564D00146D11 /* AnalystWeekHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalystWeekHTTPClient.m; sourceTree = "<group>"; };
 		3A5AD3B11ADF65D700146D11 /* JSONResponseSerializerWithData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONResponseSerializerWithData.h; sourceTree = "<group>"; };
@@ -446,6 +450,8 @@
 		3AE0C4E21ADBA56200E14FAD /* images */ = {
 			isa = PBXGroup;
 			children = (
+				3A4E974A1AE23E780050AD01 /* AW_Parking_pass_page.png */,
+				3A4E97481AE23CE00050AD01 /* AW_Welcome_note_page.png */,
 				3AA493481AE1F72D004430F0 /* AW_SubmitButton.png */,
 				3A5AD3DE1AE0AAAC00146D11 /* Button_BusinessVertical.png */,
 				3A5AD3DF1AE0AAAD00146D11 /* Button_ServiceLines.png */,
@@ -626,6 +632,7 @@
 				3AE0C5151ADC0E0C00E14FAD /* Welcome_note_Jpg.jpg in Resources */,
 				3A5AD3C31ADFAE3C00146D11 /* Feedback.png in Resources */,
 				3AE0C4FA1ADC00FE00E14FAD /* LHS_4.png in Resources */,
+				3A4E97491AE23CE00050AD01 /* AW_Welcome_note_page.png in Resources */,
 				3AE0C50E1ADC0B2600E14FAD /* Button_1.png in Resources */,
 				3AE0C4F91ADC00FE00E14FAD /* LHS_3.png in Resources */,
 				3AE0C4E91ADBB39700E14FAD /* request_icon.png in Resources */,
@@ -666,6 +673,7 @@
 				3AD644901ADB5B0A00591666 /* Images.xcassets in Resources */,
 				3A5AD3C61ADFAE3C00146D11 /* Resource_Bank.png in Resources */,
 				3AC5DB5D1ADD188F006DF05A /* your_meetings_icon.png in Resources */,
+				3A4E974B1AE23E780050AD01 /* AW_Parking_pass_page.png in Resources */,
 				3AE0C5191ADC127000E14FAD /* threed_selfie.jpg in Resources */,
 				3AC5DB651ADD4155006DF05A /* text_bottom.png in Resources */,
 				3A5AD3B51ADF69C000146D11 /* alert_icon.png in Resources */,

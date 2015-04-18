@@ -19,10 +19,16 @@
 
 @implementation AgendaViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    if([self.agendaItems count] <= 0) {
+        NSLog(@"Inside...");
+        self.agendaItems = [NSMutableArray array];
+        [self fetchAgendaInfo];
+    }
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.agendaItems = [NSMutableArray array];
-    [self fetchAgendaInfo];
+
     // Do any additional setup after loading the view.
     self.agendaTable.rowHeight = UITableViewAutomaticDimension;
     self.agendaTable.estimatedRowHeight = 60.0;
