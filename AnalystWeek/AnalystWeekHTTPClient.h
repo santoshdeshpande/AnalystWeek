@@ -23,6 +23,7 @@
 - (void) fetchAgenda;
 - (void) fetchSurvey;
 - (void) fetchUserInfo;
+- (void) fetchMeetings;
 - (void) postSurveyQuestions: (NSDictionary *) params;
 @end
 
@@ -34,8 +35,8 @@
 -(void)analystHTTPClient:(AnalystWeekHTTPClient *)client loginFailedWithError:(NSError *)error;
 -(void)analystHTTPClient:(AnalystWeekHTTPClient *)client contactInfoFetched:(id)response;
 -(void)analystHTTPClient:(AnalystWeekHTTPClient *)client agendaFetched:(id)response;
-
 -(void)analystHTTPClient:(AnalystWeekHTTPClient *)client surveyFetched:(id)response;
 -(void)analystHTTPClient:(AnalystWeekHTTPClient *)client userInfoFetched:(id)response;
 -(void)analystHTTPClient:(AnalystWeekHTTPClient *)client surveyInformationPosted:(id)response;
+-(void)analystHTTPClient:(AnalystWeekHTTPClient *)client meetingsFetched:(id)response;
 @end

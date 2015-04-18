@@ -68,6 +68,7 @@
     
     client.delegate = self;
     [client fetchUserInfo];
+
     
 }
 

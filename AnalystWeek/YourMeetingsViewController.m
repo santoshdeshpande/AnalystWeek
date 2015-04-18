@@ -19,14 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self fetchMeetings];
     // Do any additional setup after loading the view.
     self.meetingTableView.dataSource = self;
     self.meetingTableView.delegate = self;
     self.yourMeetings = [NSMutableArray array];
-    for(int i=0;i<10;i++) {
-        YourMeeting *meeting = [[YourMeeting alloc] initWithLeader:@"Leader" room:@"Board Room" atTime:@"09:30 AM - 10:30 AM" andTopic:@"This is a long topic that I will want to see in the list of stuff that I will be there"];
-        [self.yourMeetings addObject:meeting];
-    }
+    
 
 }
 
@@ -62,6 +60,29 @@
     cell.meetingTimeLabel.text = meeting.time;
     cell.meetingTopicLabel.text = meeting.topic;
     return cell;
+}
+
+- (void) fetchMeetings {
+    AnalystWeekHTTPClient *client = [AnalystWeekHTTPClient sharedHTTPClient];
+    client.delegate = self;
+    [client fetchMeetings];
+}
+
+- (void)analystHTTPClient:(AnalystWeekHTTPClient *)client meetingsFetched:(id)response {
+    NSLog(@"Response:  %@",response);
+    NSArray *array = (NSArray *) response;
+    for (id object in array) {
+        NSDictionary *dict = (NSDictionary *) object;
+        NSString *leader = [dict objectForKey:@"meeting_with_name"];
+        NSString *room = [dict objectForKey:@"table_name"];
+        NSString *start = [dict objectForKey:@"start_time_str"];
+        NSString *end = [dict objectForKey:@"end_time_str"];
+        NSString *time = [NSString stringWithFormat:@"%@ - %@",start, end];
+        NSString *topic = [dict objectForKey:@"topic"];
+        YourMeeting *meeting = [[YourMeeting alloc] initWithLeader:leader room:room atTime:time andTopic:topic];
+        [self.yourMeetings addObject:meeting];
+    }
+    [self.meetingTableView reloadData];
 }
 
 @end

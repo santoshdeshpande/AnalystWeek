@@ -115,6 +115,21 @@ static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
     
 }
 
+- (void) fetchMeetings {
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
+    [self GET:@"meetings/" parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
+//        NSLog(@"%@",responseObject);
+        if ([self.delegate respondsToSelector:@selector(analystHTTPClient:meetingsFetched:)]) {
+            [self.delegate analystHTTPClient:self meetingsFetched:responseObject];
+        }
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"%@",error.userInfo);
+    }];
+    
+}
+
+
 - (void) fetchUserInfo {
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];

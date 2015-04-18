@@ -99,6 +99,16 @@
     [client postSurveyQuestions:params];
 }
 
+- (void) analystHTTPClient:(AnalystWeekHTTPClient *)client surveyInformationPosted:(id)response {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Thank you"
+                                                    message:@"Your answers were registered. Thank you for answering the survey"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+
+}
+
 - (void) showAlert {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Missing Answer"
                                                     message:@"Please select all answers"

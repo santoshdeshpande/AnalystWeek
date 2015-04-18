@@ -575,9 +575,6 @@
                                                     <string key="text">this is a long piece of the text that will need to wrap automatically in the header of the text with the text along with the next set of pages</string>
                                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="heightClass=regular" misplaced="YES">
-                                                        <rect key="frame" x="151" y="0.0" width="169" height="43"/>
-                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
@@ -1950,9 +1947,6 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                             <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular" misplaced="YES">
-                                                                <rect key="frame" x="168" y="20" width="88" height="0.0"/>
-                                                            </variation>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1982,8 +1976,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                             <exclude reference="vQi-MF-H3t"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular" misplaced="YES">
-                                                        <rect key="frame" x="28" y="46" width="264" height="40"/>
+                                                    <variation key="heightClass=regular">
                                                         <mask key="subviews">
                                                             <include reference="Ooq-TV-heD"/>
                                                             <include reference="LA6-XL-gW0"/>
@@ -2025,9 +2018,6 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                             <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular" misplaced="YES">
-                                                                <rect key="frame" x="168" y="20" width="88" height="0.0"/>
-                                                            </variation>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2057,8 +2047,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                             <exclude reference="xtn-YF-OtB"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular" misplaced="YES">
-                                                        <rect key="frame" x="28" y="94" width="264" height="40"/>
+                                                    <variation key="heightClass=regular">
                                                         <mask key="subviews">
                                                             <include reference="Dni-c5-eTp"/>
                                                             <include reference="nWt-Os-uN4"/>
@@ -2100,9 +2089,6 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                             <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular" misplaced="YES">
-                                                                <rect key="frame" x="168" y="20" width="88" height="0.0"/>
-                                                            </variation>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2132,8 +2118,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                             <exclude reference="dLK-kQ-UKa"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular" misplaced="YES">
-                                                        <rect key="frame" x="28" y="142" width="264" height="40"/>
+                                                    <variation key="heightClass=regular">
                                                         <mask key="subviews">
                                                             <include reference="vuz-Ls-SNZ"/>
                                                             <include reference="25B-JV-Gsn"/>
@@ -2183,8 +2168,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                                     <exclude reference="2AA-Qo-8Pv"/>
                                                                 </mask>
                                                             </variation>
-                                                            <variation key="heightClass=regular" misplaced="YES">
-                                                                <rect key="frame" x="168" y="8" width="88" height="100"/>
+                                                            <variation key="heightClass=regular">
                                                                 <mask key="constraints">
                                                                     <include reference="2AA-Qo-8Pv"/>
                                                                 </mask>
@@ -2220,8 +2204,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                             <exclude reference="ie9-SS-IQ5"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular" misplaced="YES">
-                                                        <rect key="frame" x="28" y="190" width="264" height="120"/>
+                                                    <variation key="heightClass=regular">
                                                         <mask key="subviews">
                                                             <include reference="zpP-vY-mNV"/>
                                                             <include reference="D3Z-Tx-Q4p"/>
@@ -2581,8 +2564,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                 <exclude reference="ED5-PJ-2SP"/>
                                             </mask>
                                         </variation>
-                                        <variation key="heightClass=regular" misplaced="YES">
-                                            <rect key="frame" x="65" y="360" width="230" height="15"/>
+                                        <variation key="heightClass=regular">
                                             <mask key="constraints">
                                                 <include reference="ED5-PJ-2SP"/>
                                             </mask>

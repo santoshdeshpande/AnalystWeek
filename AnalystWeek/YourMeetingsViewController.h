@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AnalystWeekHTTPClient.h"
 
-@interface YourMeetingsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface YourMeetingsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource,AnalystWeekDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *meetingTableView;
 
 @end
