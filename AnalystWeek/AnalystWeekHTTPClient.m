@@ -9,7 +9,8 @@
 #import "AnalystWeekHTTPClient.h"
 #import "JSONResponseSerializerWithData.h"
 
-static NSString * const ServerBaseURL = @"https://aw.eatsleepcode.in/api/v1/";
+//static NSString * const ServerBaseURL = @"https://aw.eatsleepcode.in/api/v1/";
+static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
 
 @implementation AnalystWeekHTTPClient
 
@@ -38,6 +39,7 @@ static NSString * const ServerBaseURL = @"https://aw.eatsleepcode.in/api/v1/";
 }
 
 - (void)loginWithUserName:(NSString *)user password:(NSString *)password {
+    [SVProgressHUD show];
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"username"] = user;
     parameters[@"password"] = password;
@@ -50,15 +52,18 @@ static NSString * const ServerBaseURL = @"https://aw.eatsleepcode.in/api/v1/";
         if ([self.delegate respondsToSelector:@selector(analystHTTPClient:loginSucceeded:)]) {
             [self.delegate analystHTTPClient:self loginSucceeded:responseObject];
         }
+        [SVProgressHUD dismiss];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         if ([self.delegate respondsToSelector:@selector(analystHTTPClient:loginFailedWithError:)]) {
             NSLog(@"%@",error.userInfo);
             [self.delegate analystHTTPClient:self loginFailedWithError:error];
         }
+        [SVProgressHUD dismiss];
     }];
 }
 
 - (void)postSurveyQuestions:(NSDictionary *)params {
+        [SVProgressHUD show];
 //    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
     [self POST:@"survey_answers/" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
@@ -66,56 +71,67 @@ static NSString * const ServerBaseURL = @"https://aw.eatsleepcode.in/api/v1/";
         if ([self.delegate respondsToSelector:@selector(analystHTTPClient:surveyInformationPosted:)]) {
             [self.delegate analystHTTPClient:self surveyInformationPosted:responseObject];
         }
+            [SVProgressHUD dismiss];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         if ([self.delegate respondsToSelector:@selector(analystHTTPClient:loginFailedWithError:)]) {
             NSLog(@"%@",error.userInfo);
             [self.delegate analystHTTPClient:self loginFailedWithError:error];
         }
+            [SVProgressHUD dismiss];
     }];
 }
 
 
 - (void) fetchContactInfo {
-
+    [SVProgressHUD show];
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
     [self GET:@"contact_info/" parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
         if ([self.delegate respondsToSelector:@selector(analystHTTPClient:contactInfoFetched:)]) {
             [self.delegate analystHTTPClient:self contactInfoFetched:responseObject];
         }
+            [SVProgressHUD dismiss];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"%@",error.userInfo);
+            [SVProgressHUD dismiss];
     }];
     
 }
 
 - (void) fetchAgenda {
+    [SVProgressHUD show];
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
     [self GET:@"agenda/" parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
         if ([self.delegate respondsToSelector:@selector(analystHTTPClient:agendaFetched:)]) {
             [self.delegate analystHTTPClient:self agendaFetched:responseObject];
         }
+        [SVProgressHUD dismiss];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"%@",error.userInfo);
+        [SVProgressHUD dismiss];
     }];
     
 }
 
 - (void) fetchSurvey {
+        [SVProgressHUD show];
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
     [self GET:@"survey/" parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
         if ([self.delegate respondsToSelector:@selector(analystHTTPClient:surveyFetched:)]) {
             [self.delegate analystHTTPClient:self surveyFetched:responseObject];
         }
+            [SVProgressHUD dismiss];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"%@",error.userInfo);
+            [SVProgressHUD dismiss];
     }];
     
 }
 
 - (void) fetchMeetings {
+        [SVProgressHUD show];
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
     [self GET:@"meetings/" parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
@@ -123,14 +139,17 @@ static NSString * const ServerBaseURL = @"https://aw.eatsleepcode.in/api/v1/";
         if ([self.delegate respondsToSelector:@selector(analystHTTPClient:meetingsFetched:)]) {
             [self.delegate analystHTTPClient:self meetingsFetched:responseObject];
         }
+            [SVProgressHUD dismiss];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"%@",error.userInfo);
+            [SVProgressHUD dismiss];
     }];
     
 }
 
 
 - (void) fetchUserInfo {
+        [SVProgressHUD show];
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
     [self GET:@"user/" parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
@@ -144,11 +163,12 @@ static NSString * const ServerBaseURL = @"https://aw.eatsleepcode.in/api/v1/";
         NSString *lastName = [defaults objectForKey:@"last_name"];
         NSString *name = [NSString stringWithFormat:@"%@ %@",firstName,lastName];
         [defaults setValue:name forKey:@"name"];
-
+        [SVProgressHUD dismiss];
         
         
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"%@",error.userInfo);
+            [SVProgressHUD dismiss];
     }];
     
 }

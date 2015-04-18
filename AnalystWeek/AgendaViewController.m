@@ -14,20 +14,20 @@
 #import "AnalystWeekHTTPClient.h"
 
 @interface AgendaViewController ()
-@property NSMutableArray *agendaItems;
+
 @end
 
 @implementation AgendaViewController
 
 - (void)viewWillAppear:(BOOL)animated {
+}
+- (void)viewDidLoad {
+    [super viewDidLoad];
     if([self.agendaItems count] <= 0) {
         NSLog(@"Inside...");
         self.agendaItems = [NSMutableArray array];
         [self fetchAgendaInfo];
     }
-}
-- (void)viewDidLoad {
-    [super viewDidLoad];
 
     // Do any additional setup after loading the view.
     self.agendaTable.rowHeight = UITableViewAutomaticDimension;
@@ -91,6 +91,7 @@
 }
 
 - (void) analystHTTPClient:(AnalystWeekHTTPClient *)client agendaFetched:(id)response {
+    NSLog(@"Length:  %ld",[self.agendaItems count]);
     NSArray *data = (NSArray *)response;
     for (id object in data) {
         NSDictionary *dictionary = (NSDictionary *)object;

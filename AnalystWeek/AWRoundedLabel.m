@@ -16,7 +16,7 @@
 - (void) awakeFromNib {
     [super awakeFromNib];
     UIRectCorner corners;
-
+    self.style = 6;
     switch ( self.style )
     {
         case 0:

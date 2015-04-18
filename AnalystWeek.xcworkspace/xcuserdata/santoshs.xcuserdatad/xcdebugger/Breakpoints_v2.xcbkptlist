@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AnalystWeek/AnalystWeekHTTPClient.m"
-            timestampString = "450973785.122484"
+            timestampString = "451062286.92723"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "-loginWithUserName:password:"
             landmarkType = "5">
          </BreakpointContent>

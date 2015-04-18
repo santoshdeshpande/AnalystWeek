@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A4E97491AE23CE00050AD01 /* AW_Welcome_note_page.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4E97481AE23CE00050AD01 /* AW_Welcome_note_page.png */; };
 		3A4E974B1AE23E780050AD01 /* AW_Parking_pass_page.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4E974A1AE23E780050AD01 /* AW_Parking_pass_page.png */; };
+		3A4E974D1AE2AD520050AD01 /* label_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4E974C1AE2AD520050AD01 /* label_bg.png */; };
 		3A5AD3B01ADF564D00146D11 /* AnalystWeekHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AD3AF1ADF564D00146D11 /* AnalystWeekHTTPClient.m */; };
 		3A5AD3B31ADF65D700146D11 /* JSONResponseSerializerWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AD3B21ADF65D700146D11 /* JSONResponseSerializerWithData.m */; };
 		3A5AD3B51ADF69C000146D11 /* alert_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AD3B41ADF69C000146D11 /* alert_icon.png */; };
@@ -121,6 +122,7 @@
 /* Begin PBXFileReference section */
 		3A4E97481AE23CE00050AD01 /* AW_Welcome_note_page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AW_Welcome_note_page.png; sourceTree = "<group>"; };
 		3A4E974A1AE23E780050AD01 /* AW_Parking_pass_page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AW_Parking_pass_page.png; sourceTree = "<group>"; };
+		3A4E974C1AE2AD520050AD01 /* label_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label_bg.png; sourceTree = "<group>"; };
 		3A5AD3AE1ADF564D00146D11 /* AnalystWeekHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalystWeekHTTPClient.h; sourceTree = "<group>"; };
 		3A5AD3AF1ADF564D00146D11 /* AnalystWeekHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalystWeekHTTPClient.m; sourceTree = "<group>"; };
 		3A5AD3B11ADF65D700146D11 /* JSONResponseSerializerWithData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONResponseSerializerWithData.h; sourceTree = "<group>"; };
@@ -450,6 +452,7 @@
 		3AE0C4E21ADBA56200E14FAD /* images */ = {
 			isa = PBXGroup;
 			children = (
+				3A4E974C1AE2AD520050AD01 /* label_bg.png */,
 				3A4E974A1AE23E780050AD01 /* AW_Parking_pass_page.png */,
 				3A4E97481AE23CE00050AD01 /* AW_Welcome_note_page.png */,
 				3AA493481AE1F72D004430F0 /* AW_SubmitButton.png */,
@@ -614,6 +617,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AD644B11ADB693D00591666 /* LHS_1_About The Event.png in Resources */,
+				3A4E974D1AE2AD520050AD01 /* label_bg.png in Resources */,
 				3A5AD3E31AE0AAAD00146D11 /* Button_Topic.png in Resources */,
 				3AC5DB831ADE0743006DF05A /* contact_us_icon.png in Resources */,
 				3AC5DB6F1ADD60FF006DF05A /* Agenda_Heading.png in Resources */,

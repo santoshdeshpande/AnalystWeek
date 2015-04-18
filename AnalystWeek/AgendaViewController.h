@@ -11,5 +11,6 @@
 
 @interface AgendaViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,AnalystWeekDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *agendaTable;
+@property NSMutableArray *agendaItems;
 
 @end
