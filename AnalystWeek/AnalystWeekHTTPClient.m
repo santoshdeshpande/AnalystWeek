@@ -58,6 +58,23 @@ static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
     }];
 }
 
+- (void)postSurveyQuestions:(NSDictionary *)params {
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
+    [self POST:@"survey_answers/" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@"responseObject - %@", responseObject);
+        if ([self.delegate respondsToSelector:@selector(analystHTTPClient:surveyInformationPosted:)]) {
+            [self.delegate analystHTTPClient:self surveyInformationPosted:responseObject];
+        }
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        if ([self.delegate respondsToSelector:@selector(analystHTTPClient:loginFailedWithError:)]) {
+            NSLog(@"%@",error.userInfo);
+            [self.delegate analystHTTPClient:self loginFailedWithError:error];
+        }
+    }];
+}
+
+
 - (void) fetchContactInfo {
 
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
@@ -84,6 +101,43 @@ static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
     }];
     
 }
+
+- (void) fetchSurvey {
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
+    [self GET:@"survey/" parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
+        if ([self.delegate respondsToSelector:@selector(analystHTTPClient:surveyFetched:)]) {
+            [self.delegate analystHTTPClient:self surveyFetched:responseObject];
+        }
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"%@",error.userInfo);
+    }];
+    
+}
+
+- (void) fetchUserInfo {
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
+    [self GET:@"user/" parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSDictionary *dict = (NSDictionary *)responseObject;
+        [defaults setValue:[dict objectForKey:@"email"] forKey:@"email"];
+        [defaults setValue:[dict objectForKey:@"first_name"] forKey:@"first_name"];
+        [defaults setValue:[dict objectForKey:@"last_name"] forKey:@"last_name"];
+        
+        NSString *firstName = [defaults objectForKey:@"first_name"];
+        NSString *lastName = [defaults objectForKey:@"last_name"];
+        NSString *name = [NSString stringWithFormat:@"%@ %@",firstName,lastName];
+        [defaults setValue:name forKey:@"name"];
+
+        
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"%@",error.userInfo);
+    }];
+    
+}
+
 
 - (NSString *) getToken {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

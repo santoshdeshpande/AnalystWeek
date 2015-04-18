@@ -31,6 +31,13 @@
 		3A5AD3E21AE0AAAD00146D11 /* Button_ServiceLines.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AD3DF1AE0AAAD00146D11 /* Button_ServiceLines.png */; };
 		3A5AD3E31AE0AAAD00146D11 /* Button_Topic.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AD3E01AE0AAAD00146D11 /* Button_Topic.png */; };
 		3A5AD3E61AE0B13D00146D11 /* ResourceBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AD3E51AE0B13D00146D11 /* ResourceBankViewController.m */; };
+		3AA493421AE15817004430F0 /* aw_3D_selfie.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4933C1AE15817004430F0 /* aw_3D_selfie.png */; };
+		3AA493431AE15817004430F0 /* aw_agenda.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4933D1AE15817004430F0 /* aw_agenda.png */; };
+		3AA493441AE15817004430F0 /* aw_free_parking_pass.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4933E1AE15817004430F0 /* aw_free_parking_pass.png */; };
+		3AA493451AE15817004430F0 /* aw_free_wi-fi_pass.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4933F1AE15817004430F0 /* aw_free_wi-fi_pass.png */; };
+		3AA493461AE15817004430F0 /* aw_imp_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA493401AE15817004430F0 /* aw_imp_info.png */; };
+		3AA493471AE15817004430F0 /* aw_welcome_note.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA493411AE15817004430F0 /* aw_welcome_note.png */; };
+		3AA493491AE1F72D004430F0 /* AW_SubmitButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA493481AE1F72D004430F0 /* AW_SubmitButton.png */; };
 		3AC5DB521ADD08D7006DF05A /* MeetingRequestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5DB511ADD08D7006DF05A /* MeetingRequestTableViewCell.m */; };
 		3AC5DB551ADD0A75006DF05A /* YourMeetingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5DB541ADD0A75006DF05A /* YourMeetingsViewController.m */; };
 		3AC5DB591ADD0D49006DF05A /* YourMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5DB581ADD0D49006DF05A /* YourMeeting.m */; };
@@ -142,6 +149,13 @@
 		3A5AD3E01AE0AAAD00146D11 /* Button_Topic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Topic.png; sourceTree = "<group>"; };
 		3A5AD3E41AE0B13D00146D11 /* ResourceBankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceBankViewController.h; sourceTree = "<group>"; };
 		3A5AD3E51AE0B13D00146D11 /* ResourceBankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceBankViewController.m; sourceTree = "<group>"; };
+		3AA4933C1AE15817004430F0 /* aw_3D_selfie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aw_3D_selfie.png; sourceTree = "<group>"; };
+		3AA4933D1AE15817004430F0 /* aw_agenda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aw_agenda.png; sourceTree = "<group>"; };
+		3AA4933E1AE15817004430F0 /* aw_free_parking_pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aw_free_parking_pass.png; sourceTree = "<group>"; };
+		3AA4933F1AE15817004430F0 /* aw_free_wi-fi_pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aw_free_wi-fi_pass.png"; sourceTree = "<group>"; };
+		3AA493401AE15817004430F0 /* aw_imp_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aw_imp_info.png; sourceTree = "<group>"; };
+		3AA493411AE15817004430F0 /* aw_welcome_note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aw_welcome_note.png; sourceTree = "<group>"; };
+		3AA493481AE1F72D004430F0 /* AW_SubmitButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AW_SubmitButton.png; sourceTree = "<group>"; };
 		3AC5DB501ADD08D7006DF05A /* MeetingRequestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingRequestTableViewCell.h; sourceTree = "<group>"; };
 		3AC5DB511ADD08D7006DF05A /* MeetingRequestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingRequestTableViewCell.m; sourceTree = "<group>"; };
 		3AC5DB531ADD0A75006DF05A /* YourMeetingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YourMeetingsViewController.h; sourceTree = "<group>"; };
@@ -432,6 +446,7 @@
 		3AE0C4E21ADBA56200E14FAD /* images */ = {
 			isa = PBXGroup;
 			children = (
+				3AA493481AE1F72D004430F0 /* AW_SubmitButton.png */,
 				3A5AD3DE1AE0AAAC00146D11 /* Button_BusinessVertical.png */,
 				3A5AD3DF1AE0AAAD00146D11 /* Button_ServiceLines.png */,
 				3A5AD3E01AE0AAAD00146D11 /* Button_Topic.png */,
@@ -478,6 +493,12 @@
 		3AE0C5071ADC0B1A00E14FAD /* About */ = {
 			isa = PBXGroup;
 			children = (
+				3AA4933C1AE15817004430F0 /* aw_3D_selfie.png */,
+				3AA4933D1AE15817004430F0 /* aw_agenda.png */,
+				3AA4933E1AE15817004430F0 /* aw_free_parking_pass.png */,
+				3AA4933F1AE15817004430F0 /* aw_free_wi-fi_pass.png */,
+				3AA493401AE15817004430F0 /* aw_imp_info.png */,
+				3AA493411AE15817004430F0 /* aw_welcome_note.png */,
 				3AC5DB5C1ADD188F006DF05A /* your_meetings_icon.png */,
 				3AC5DB5A1ADD1871006DF05A /* yourMeeting.png */,
 				3AE0C51A1ADC21D500E14FAD /* back_button.png */,
@@ -591,14 +612,17 @@
 				3AC5DB831ADE0743006DF05A /* contact_us_icon.png in Resources */,
 				3AC5DB6F1ADD60FF006DF05A /* Agenda_Heading.png in Resources */,
 				3AC5DB851ADE1648006DF05A /* chat_user_icon_1.png in Resources */,
+				3AA493491AE1F72D004430F0 /* AW_SubmitButton.png in Resources */,
 				3A5AD3E21AE0AAAD00146D11 /* Button_ServiceLines.png in Resources */,
 				3A5AD3D31ADFC87800146D11 /* BG-Element.png in Resources */,
+				3AA493441AE15817004430F0 /* aw_free_parking_pass.png in Resources */,
 				3AC5DB8C1ADE733E006DF05A /* parking_pass.png in Resources */,
 				3A5AD3D51ADFC87C00146D11 /* Login_Button.png in Resources */,
 				3A5AD3D71ADFC87F00146D11 /* Wipro_Logo.png in Resources */,
 				3AE0C5171ADC111A00E14FAD /* parking_pass.jpg in Resources */,
 				3AC5DB631ADD4155006DF05A /* footer.png in Resources */,
 				3AE0C51B1ADC21D500E14FAD /* back_button.png in Resources */,
+				3AA493471AE15817004430F0 /* aw_welcome_note.png in Resources */,
 				3AE0C5151ADC0E0C00E14FAD /* Welcome_note_Jpg.jpg in Resources */,
 				3A5AD3C31ADFAE3C00146D11 /* Feedback.png in Resources */,
 				3AE0C4FA1ADC00FE00E14FAD /* LHS_4.png in Resources */,
@@ -615,12 +639,14 @@
 				3AC5DB821ADE0743006DF05A /* Contact_us_heading.png in Resources */,
 				3AD644AB1ADB66E500591666 /* BG-01.png in Resources */,
 				3A5AD3C81ADFAE3C00146D11 /* Survey.png in Resources */,
+				3AA493461AE15817004430F0 /* aw_imp_info.png in Resources */,
 				3AC5DB641ADD4155006DF05A /* main_pic.png in Resources */,
 				3AE0C5121ADC0B2600E14FAD /* Button_5.png in Resources */,
 				3AD644AD1ADB66EC00591666 /* image.png in Resources */,
 				3A5AD3C41ADFAE3C00146D11 /* Meetings.png in Resources */,
 				3AE0C4FC1ADC00FE00E14FAD /* RHS_2.png in Resources */,
 				3AC5DB8E1ADE831F006DF05A /* speaker_heading.png in Resources */,
+				3AA493421AE15817004430F0 /* aw_3D_selfie.png in Resources */,
 				3AD644AF1ADB68EF00591666 /* HeadingDesign.png in Resources */,
 				3A5AD3C51ADFAE3C00146D11 /* Request for Meeting.png in Resources */,
 				3AE0C4FB1ADC00FE00E14FAD /* RHS_1.png in Resources */,
@@ -634,6 +660,8 @@
 				3AC5DB5B1ADD1871006DF05A /* yourMeeting.png in Resources */,
 				3A5AD3C21ADFAE3C00146D11 /* Conatct_Us.png in Resources */,
 				3AD644931ADB5B0A00591666 /* LaunchScreen.xib in Resources */,
+				3AA493431AE15817004430F0 /* aw_agenda.png in Resources */,
+				3AA493451AE15817004430F0 /* aw_free_wi-fi_pass.png in Resources */,
 				3AE0C5101ADC0B2600E14FAD /* Button_3.png in Resources */,
 				3AD644901ADB5B0A00591666 /* Images.xcassets in Resources */,
 				3A5AD3C61ADFAE3C00146D11 /* Resource_Bank.png in Resources */,

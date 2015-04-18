@@ -8,8 +8,11 @@
 
 #import "SurveyViewController.h"
 #import "SurveyTableViewCell.h"
+#import "AnalystWeekHTTPClient.h"
 
 @interface SurveyViewController ()
+
+@property NSArray *surveyQuestions;
 
 @end
 
@@ -17,9 +20,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if(self.surveyQuestions == nil) {
+        [self fetchSurveyQuestions];
+    }
     // Do any additional setup after loading the view.
     self.surveyTable.dataSource = self;
     self.surveyTable.delegate = self;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,16 +45,66 @@
 */
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return [self.surveyQuestions count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SurveyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SurveyCell" forIndexPath:indexPath];
-    cell.questionLabel.text = @"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s";
+    NSDictionary *dict = [self.surveyQuestions objectAtIndex:indexPath.row];
+    cell.questionLabel.text = [dict objectForKey:@"question"];
+    [cell.optionLabel setTitle:[dict objectForKey:@"option1"] forSegmentAtIndex:0];
+    [cell.optionLabel setTitle:[dict objectForKey:@"option2"] forSegmentAtIndex:1];
+    [cell.optionLabel setTitle:[dict objectForKey:@"option3"] forSegmentAtIndex:2];
+    [cell.optionLabel setTitle:[dict objectForKey:@"option4"] forSegmentAtIndex:3];
     return cell;
 
 }
 
+- (void) fetchSurveyQuestions {
+    AnalystWeekHTTPClient *client = [AnalystWeekHTTPClient sharedHTTPClient];
+    client.delegate = self;
+    [client fetchSurvey];
+}
 
+- (void) analystHTTPClient:(AnalystWeekHTTPClient *)client surveyFetched:(id)response {
+    NSArray *array = (NSArray *)response;
+    self.surveyQuestions = array;
+    [self.surveyTable reloadData];
+}
+
+
+- (IBAction)onSubmitClicked:(id)sender {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *email = [defaults objectForKey:@"email"];
+    NSString *name = [defaults objectForKey:@"name"];
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setObject:email forKey:@"email"];
+    [params setObject:name forKey:@"name"];
+    for (NSInteger i = 0; i < [self.surveyTable numberOfRowsInSection:0]; ++i) {
+        SurveyTableViewCell *cell = (SurveyTableViewCell *)[self.surveyTable cellForRowAtIndexPath:[NSIndexPath indexPathForRow:i inSection:0]];
+        NSInteger index = [cell.optionLabel selectedSegmentIndex];
+        NSString *value = @"";
+        if(index >= 0) {
+            value = [cell.optionLabel titleForSegmentAtIndex:index];
+        } else {
+            [self showAlert];
+            return;
+        }
+        NSString *optionName = [NSString stringWithFormat:@"answer%ld", i+1];
+        [params setObject:value forKey:optionName];
+    }
+    AnalystWeekHTTPClient *client = [AnalystWeekHTTPClient sharedHTTPClient];
+    client.delegate = self;
+    [client postSurveyQuestions:params];
+}
+
+- (void) showAlert {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Missing Answer"
+                                                    message:@"Please select all answers"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
 @end

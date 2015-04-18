@@ -66,8 +66,15 @@
     AppDelegate *appDelegateTemp = [[UIApplication sharedApplication]delegate];
     appDelegateTemp.window.rootViewController = navigation;
     
+    client.delegate = self;
+    [client fetchUserInfo];
     
 }
+
+-(void)analystHTTPClient:(AnalystWeekHTTPClient *)client userInfoFetched:(id)response {
+    NSLog(@"User Info: %@",response);
+}
+
 
 -(void)analystHTTPClient:(AnalystWeekHTTPClient *)client loginFailedWithError:(NSError *)error {
     [self.invalidError setHidden:NO];
