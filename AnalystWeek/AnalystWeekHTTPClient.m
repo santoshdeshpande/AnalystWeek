@@ -82,6 +82,27 @@ static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
 }
 
 
+- (void)requestMeeting:(NSDictionary *)params {
+    [SVProgressHUD show];
+    //    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
+    [self POST:@"request_meeting/" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@"responseObject - %@", responseObject);
+        if ([self.delegate respondsToSelector:@selector(analystHTTPClient:meetingRequestPosted:)]) {
+            [self.delegate analystHTTPClient:self meetingRequestPosted:responseObject];
+        }
+        [SVProgressHUD dismiss];
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        if ([self.delegate respondsToSelector:@selector(analystHTTPClient:loginFailedWithError:)]) {
+            NSLog(@"%@",error.userInfo);
+            [self.delegate analystHTTPClient:self loginFailedWithError:error];
+        }
+        [SVProgressHUD dismiss];
+    }];
+}
+
+
+
 - (void) fetchContactInfo {
     [SVProgressHUD show];
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];

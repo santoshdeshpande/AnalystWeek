@@ -26,6 +26,7 @@
     NSString *password = [defaults objectForKey:@"password"];
     self.userName.text = user;
     self.password.text = password;
+    [self.userName becomeFirstResponder];
     // Do any additional setup after loading the view.
 }
 

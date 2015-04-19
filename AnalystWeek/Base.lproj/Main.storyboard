@@ -4272,6 +4272,9 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                         <include reference="p4a-zp-nhW"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="onSubmitClicked:" destination="v3m-Em-JhL" eventType="touchUpInside" id="KVm-Yd-Sca"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUH-y7-yya">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -4418,6 +4421,13 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="comments" destination="f5b-RR-PEC" id="m5s-B8-3Qg"/>
+                        <outlet property="company" destination="tK2-6J-AYr" id="PXo-Kf-2Q2"/>
+                        <outlet property="designation" destination="a2r-Is-Mes" id="dCV-vd-jKd"/>
+                        <outlet property="leader" destination="lAQ-0t-deO" id="NAg-EI-HTl"/>
+                        <outlet property="name" destination="ol2-iq-L7M" id="x5e-Az-yIV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6rV-iR-jmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="cfz-nE-svr" userLabel="Exit" sceneMemberID="exit"/>

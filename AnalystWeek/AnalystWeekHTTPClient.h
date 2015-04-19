@@ -26,6 +26,7 @@
 - (void) fetchUserInfo;
 - (void) fetchMeetings;
 - (void) postSurveyQuestions: (NSDictionary *) params;
+- (void) requestMeeting: (NSDictionary *) params;
 @end
 
 
@@ -40,4 +41,5 @@
 -(void)analystHTTPClient:(AnalystWeekHTTPClient *)client userInfoFetched:(id)response;
 -(void)analystHTTPClient:(AnalystWeekHTTPClient *)client surveyInformationPosted:(id)response;
 -(void)analystHTTPClient:(AnalystWeekHTTPClient *)client meetingsFetched:(id)response;
+-(void)analystHTTPClient:(AnalystWeekHTTPClient *)client meetingRequestPosted:(id)response;
 @end

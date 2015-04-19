@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AnalystWeekHTTPClient.h"
 
-@interface RequestMeetingViewController : UIViewController
+@interface RequestMeetingViewController : UIViewController<AnalystWeekDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *name;
+@property (weak, nonatomic) IBOutlet UITextField *company;
+@property (weak, nonatomic) IBOutlet UITextField *designation;
+@property (weak, nonatomic) IBOutlet UITextField *leader;
+@property (weak, nonatomic) IBOutlet UITextView *comments;
+- (IBAction)onSubmitClicked:(id)sender;
     
 
 @end
