@@ -1494,7 +1494,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="tc1-da-qw9">
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="tc1-da-qw9">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -1550,7 +1550,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <view hidden="YES" alpha="0.64999999999999969" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TuL-hc-6mH" userLabel="Speaker Profile Detail">
+                            <view alpha="0.64999999999999969" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TuL-hc-6mH" userLabel="Speaker Profile Detail">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wipro_Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="TbY-ql-JzH">
@@ -1829,10 +1829,14 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="nameLabel" destination="D9d-uh-EYB" id="dt5-X8-Da0"/>
                         <outlet property="participantButton" destination="M8n-Mo-rpT" id="GwN-qL-kXC"/>
+                        <outlet property="profileImageView" destination="TbY-ql-JzH" id="e7r-eu-hpv"/>
+                        <outlet property="profileLabel" destination="cFZ-Mf-2Kw" id="ssc-YK-lUJ"/>
                         <outlet property="profileView" destination="TuL-hc-6mH" id="gm9-N0-Ocb"/>
                         <outlet property="speakerButton" destination="IeR-ba-JSk" id="LuT-zL-RAe"/>
                         <outlet property="speakerTable" destination="tc1-da-qw9" id="hYk-Ba-5mI"/>
+                        <outlet property="titleLabel" destination="pH9-gD-kSD" id="mex-Rl-dNP"/>
                         <outlet property="wiproLeaderButton" destination="m6O-5J-mhz" id="Zyj-v4-ICX"/>
                     </connections>
                 </viewController>

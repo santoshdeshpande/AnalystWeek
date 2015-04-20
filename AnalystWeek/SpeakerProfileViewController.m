@@ -7,11 +7,12 @@
 //
 
 #import "SpeakerProfileViewController.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface SpeakerProfileViewController ()
 @property   NSDictionary *speakerProfiles;
-@property   NSDictionary *wiproLeaderProfiles;
-@property   NSDictionary *participantProfiles;
+//@property   NSDictionary *wiproLeaderProfiles;
+//@property   NSDictionary *participantProfiles;
 @property   NSDictionary *currentProfiles;
 @property   NSArray      *currentTitles;
 @end
@@ -21,19 +22,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.speakerProfiles = [NSDictionary dictionary];
-    self.wiproLeaderProfiles = [NSDictionary dictionary];
-    self.participantProfiles = [NSDictionary dictionary];
-    
-    NSDictionary *profiles = @{
-                               @"A" : @[@"Azim Premji",@"Adam",@"Abdul"],
-                               @"B" : @[@"Bin",@"Bell",@"Best"],
-                               @"C" : @[@"Cello",@"Cielo",@"Cest"]
-                               
-                               };
-    self.speakerProfiles = profiles;
-    self.currentProfiles = self.speakerProfiles;
-    self.currentTitles = [[profiles allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    self.speakerProfiles = [NSMutableDictionary dictionary];
+    [self.speakerProfiles setValue:[NSMutableDictionary dictionary] forKey:@"participant"];
+    [self.speakerProfiles setValue:[NSMutableDictionary dictionary] forKey:@"speaker"];
+    [self.speakerProfiles setValue:[NSMutableDictionary dictionary] forKey:@"wipro"];
+    [self.profileView setHidden:YES];
+    [self.speakerTable setHidden:NO];
+
+//    self.wiproLeaderProfiles = [NSDictionary dictionary];
+//    self.participantProfiles = [NSDictionary dictionary];
+    [self fetchUserProfiles];
+//    NSDictionary *profiles = @{
+//                               @"A" : @[@"Azim Premji",@"Adam",@"Abdul"],
+//                               @"B" : @[@"Bin",@"Bell",@"Best"],
+//                               @"C" : @[@"Cello",@"Cielo",@"Cest"]
+//                               
+//                               };
+//    self.speakerProfiles = profiles;
     
     self.speakerTable.rowHeight = UITableViewAutomaticDimension;
     self.speakerTable.estimatedRowHeight = 44.0;
@@ -59,22 +64,31 @@
 */
 
 - (IBAction)onSpeakerClicked:(id)sender {
+    [self.profileView setHidden:YES];
+    [self.speakerTable setHidden:NO];
+
     
-    self.currentProfiles = self.speakerProfiles;
+    self.currentProfiles = [self.speakerProfiles objectForKey:@"speaker"];
     self.currentTitles = [[self.currentProfiles allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     [self.speakerTable reloadData];
     
 }
 
 - (IBAction)onWiproLeaderClicked:(id)sender {
-    self.currentProfiles = self.wiproLeaderProfiles;
+    [self.profileView setHidden:YES];
+    [self.speakerTable setHidden:NO];
+
+    self.currentProfiles = [self.speakerProfiles objectForKey:@"wipro"];
     self.currentTitles = [[self.currentProfiles allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     [self.speakerTable reloadData];
     
 }
 
 - (IBAction)onParticipantClicked:(id)sender {
-    self.currentProfiles = self.participantProfiles;
+    [self.profileView setHidden:YES];
+    [self.speakerTable setHidden:NO];
+
+    self.currentProfiles = [self.speakerProfiles objectForKey:@"participant"];
     self.currentTitles = [[self.currentProfiles allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     [self.speakerTable reloadData];
     
@@ -115,7 +129,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SpeakerCell" forIndexPath:indexPath];
         NSString *currentTitle = [self.currentTitles objectAtIndex:indexPath.section];
         NSArray *profiles = [self.currentProfiles objectForKey:currentTitle];
-    NSString *name = [profiles objectAtIndex:indexPath.row];
+    NSDictionary *profile = [profiles objectAtIndex:indexPath.row];
+    NSString *name = [profile objectForKey:@"name"];
     cell.textLabel.text = name;
     return cell;
 }
@@ -123,6 +138,14 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 //    NSString *currentTitle = [self.currentTitles objectAtIndex:indexPath.section];
     NSLog(@"Selection...");
+    NSString *currentTitle = [self.currentTitles objectAtIndex:indexPath.section];
+    NSArray *profiles = [self.currentProfiles objectForKey:currentTitle];
+    NSDictionary *profile = [profiles objectAtIndex:indexPath.row];
+    self.nameLabel.text = [profile objectForKey:@"name"];
+    self.titleLabel.text = [profile objectForKey:@"title"];
+    self.profileLabel.text = [profile objectForKey:@"profile"];
+    NSString *imageURL = [profile objectForKey:@"image"];
+    [self.profileImageView setImageWithURL:[NSURL URLWithString:imageURL]];
     [self.profileView setHidden:NO];
     [self.speakerTable setHidden:YES];
 }
@@ -130,6 +153,32 @@
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
 {
     return self.currentTitles;
+}
+
+- (void) fetchUserProfiles {
+    AnalystWeekHTTPClient *client = [AnalystWeekHTTPClient sharedHTTPClient];
+    client.delegate = self;
+    [client fetchUserProfiles];
+}
+
+- (void) analystHTTPClient:(AnalystWeekHTTPClient *)client userProfilesFetched:(id)response {
+    NSArray *data = (NSArray *) response;
+    for (id profile in data) {
+        NSDictionary *dictionary = (NSDictionary *) profile;
+        NSString *type = [dictionary objectForKey:@"userType"];
+        NSString *start = [dictionary objectForKey:@"start"];
+        NSDictionary *profileDict = [self.speakerProfiles objectForKey:type];
+        NSMutableArray *alphaDict = (NSMutableArray *)[profileDict objectForKey:start];
+        if(alphaDict == nil) {
+            alphaDict = [NSMutableArray array];
+            [profileDict setValue:alphaDict forKey:start];
+        }
+        [alphaDict addObject:dictionary];        
+    }
+    self.currentProfiles = [self.speakerProfiles objectForKey:@"speaker"];
+    self.currentTitles = [[self.currentProfiles allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    [self.speakerTable reloadData];
+    NSLog(@"Response - %@", response);
 }
 
 

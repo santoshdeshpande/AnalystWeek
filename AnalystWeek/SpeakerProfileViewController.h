@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AnalystWeekHTTPClient.h"
 
-@interface SpeakerProfileViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface SpeakerProfileViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,AnalystWeekDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *speakerButton;
 @property (weak, nonatomic) IBOutlet UIButton *wiproLeaderButton;
 @property (weak, nonatomic) IBOutlet UIButton *participantButton;
@@ -18,5 +19,9 @@
 - (IBAction)onWiproLeaderClicked:(id)sender;
 - (IBAction)onParticipantClicked:(id)sender;
 - (IBAction)onBackButtonClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UITextView *profileLabel;
 
 @end

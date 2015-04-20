@@ -119,6 +119,23 @@ static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
     
 }
 
+
+- (void) fetchUserProfiles {
+    [SVProgressHUD show];
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
+    [self GET:@"user_profiles/" parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
+        if ([self.delegate respondsToSelector:@selector(analystHTTPClient:userProfilesFetched:)]) {
+            [self.delegate analystHTTPClient:self userProfilesFetched:responseObject];
+        }
+        [SVProgressHUD dismiss];
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"%@",error.userInfo);
+        [SVProgressHUD dismiss];
+    }];
+    
+}
+
 - (void) fetchAgenda {
     [SVProgressHUD show];
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
