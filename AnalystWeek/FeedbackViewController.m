@@ -34,4 +34,33 @@
 }
 */
 
+- (IBAction)onSubmitClicked:(id)sender {
+    NSString *q1 = self.question1.text;
+    NSInteger index = self.question2.selectedSegmentIndex;
+    NSString *q2 = [self.question2 titleForSegmentAtIndex:index];
+    NSString *q3 = self.question3.text;
+    index = self.question4.selectedSegmentIndex;
+    NSString *q4 = [self.question4 titleForSegmentAtIndex:index];
+    NSString *q5 = self.question5.text;
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *email = [defaults objectForKey:@"email"];
+    NSString *name = [defaults objectForKey:@"name"];
+    [params setObject:email  forKey:@"email"];
+    [params setObject:name  forKey:@"name"];
+    
+    [params setObject:q1  forKey:@"question1"];
+    [params setObject:q2  forKey:@"question2"];
+    [params setObject:q3  forKey:@"question3"];
+    [params setObject:q4  forKey:@"question4"];
+    [params setObject:q5  forKey:@"question5"];
+    AnalystWeekHTTPClient *client = [AnalystWeekHTTPClient sharedHTTPClient];
+    client.delegate = self;
+    [client postFeedback:params];
+}
+
+- (void) analystHTTPClient:(AnalystWeekHTTPClient *)client feedbackPosted:(id)response {
+    NSLog(@"Feedback Posted...");
+}
 @end

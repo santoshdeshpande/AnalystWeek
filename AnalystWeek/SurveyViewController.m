@@ -91,7 +91,7 @@
             [self showAlert];
             return;
         }
-        NSString *optionName = [NSString stringWithFormat:@"answer%ld", i+1];
+        NSString *optionName = [NSString stringWithFormat:@"answer%d", i+1];
         [params setObject:value forKey:optionName];
     }
     AnalystWeekHTTPClient *client = [AnalystWeekHTTPClient sharedHTTPClient];

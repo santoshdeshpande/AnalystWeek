@@ -53,7 +53,7 @@
     static NSString *CellIdentifier = @"meetingCell";
     MeetingRequestTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     YourMeeting *meeting = [self.yourMeetings objectAtIndex:[indexPath row]];
-    NSString *label = [NSString stringWithFormat:@"Meeting %ld", [indexPath row]+1];
+    NSString *label = [NSString stringWithFormat:@"Meeting %d", [indexPath row]+1];
     cell.meetingIdLabel.text = label;
     cell.meetingWithLabel.text = meeting.leaderName;
     cell.meetingLocationLabel.text = meeting.room;

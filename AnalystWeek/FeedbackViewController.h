@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AnalystWeekHTTPClient.h"
 
-@interface FeedbackViewController : UIViewController
+@interface FeedbackViewController : UIViewController<AnalystWeekDelegate>
+- (IBAction)onSubmitClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextView *question1;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *question2;
+@property (weak, nonatomic) IBOutlet UITextView *question3;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *question4;
+@property (weak, nonatomic) IBOutlet UITextView *question5;
 
 @end

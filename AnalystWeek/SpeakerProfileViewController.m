@@ -145,7 +145,11 @@
     self.titleLabel.text = [profile objectForKey:@"title"];
     self.profileLabel.text = [profile objectForKey:@"profile"];
     NSString *imageURL = [profile objectForKey:@"image"];
-    [self.profileImageView setImageWithURL:[NSURL URLWithString:imageURL]];
+    if (imageURL) {
+        [self.profileImageView setImageWithURL:[NSURL URLWithString:imageURL]];
+    } else {
+        [self.profileImageView setImage:[UIImage imageNamed:@"Wipro_Logo.png"]];
+    }
     [self.profileView setHidden:NO];
     [self.speakerTable setHidden:YES];
 }

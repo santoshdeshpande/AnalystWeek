@@ -10,6 +10,9 @@
 #import "JSONResponseSerializerWithData.h"
 
 //static NSString * const ServerBaseURL = @"https://aw.eatsleepcode.in/api/v1/";
+
+//static NSString * const ServerBaseURL = @"http://23.98.74.210/api/v1/";
+
 static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
 
 @implementation AnalystWeekHTTPClient
@@ -63,8 +66,7 @@ static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
 }
 
 - (void)postSurveyQuestions:(NSDictionary *)params {
-        [SVProgressHUD show];
-//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [SVProgressHUD show];
     [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
     [self POST:@"survey_answers/" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
         NSLog(@"responseObject - %@", responseObject);
@@ -78,6 +80,24 @@ static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
             [self.delegate analystHTTPClient:self loginFailedWithError:error];
         }
             [SVProgressHUD dismiss];
+    }];
+}
+
+- (void)postFeedback:(NSDictionary *)params {
+    [SVProgressHUD show];
+    [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
+    [self POST:@"feedback/" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@"responseObject - %@", responseObject);
+        if ([self.delegate respondsToSelector:@selector(analystHTTPClient:feedbackPosted:)]) {
+            [self.delegate analystHTTPClient:self feedbackPosted:responseObject];
+        }
+        [SVProgressHUD dismiss];
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        if ([self.delegate respondsToSelector:@selector(analystHTTPClient:loginFailedWithError:)]) {
+            NSLog(@"%@",error.userInfo);
+            [self.delegate analystHTTPClient:self loginFailedWithError:error];
+        }
+        [SVProgressHUD dismiss];
     }];
 }
 

@@ -91,7 +91,6 @@
 }
 
 - (void) analystHTTPClient:(AnalystWeekHTTPClient *)client agendaFetched:(id)response {
-    NSLog(@"Length:  %ld",[self.agendaItems count]);
     NSArray *data = (NSArray *)response;
     for (id object in data) {
         NSDictionary *dictionary = (NSDictionary *)object;
