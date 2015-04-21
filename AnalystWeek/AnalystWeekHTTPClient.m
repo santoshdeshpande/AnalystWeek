@@ -11,9 +11,9 @@
 
 //static NSString * const ServerBaseURL = @"https://aw.eatsleepcode.in/api/v1/";
 
-//static NSString * const ServerBaseURL = @"http://23.98.74.210/api/v1/";
+static NSString * const ServerBaseURL = @"http://23.98.74.210/api/v1/";
 
-static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
+//static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
 
 @implementation AnalystWeekHTTPClient
 
