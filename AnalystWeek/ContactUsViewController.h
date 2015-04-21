@@ -13,5 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *liveChatView;
 @property (weak, nonatomic) IBOutlet UITextView *contactField;
 @property (weak, nonatomic) IBOutlet UITextView *addressField;
+@property (weak, nonatomic) IBOutlet UITextField *chatMessageField;
+- (IBAction)sendClicked:(id)sender;
 
 @end

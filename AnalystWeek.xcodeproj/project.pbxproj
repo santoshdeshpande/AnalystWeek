@@ -10,6 +10,7 @@
 		3A4E97491AE23CE00050AD01 /* AW_Welcome_note_page.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4E97481AE23CE00050AD01 /* AW_Welcome_note_page.png */; };
 		3A4E974B1AE23E780050AD01 /* AW_Parking_pass_page.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4E974A1AE23E780050AD01 /* AW_Parking_pass_page.png */; };
 		3A4E974D1AE2AD520050AD01 /* label_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4E974C1AE2AD520050AD01 /* label_bg.png */; };
+		3A4E97501AE5F95C0050AD01 /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4E974F1AE5F95C0050AD01 /* ChatTableViewCell.m */; };
 		3A5AD3B01ADF564D00146D11 /* AnalystWeekHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AD3AF1ADF564D00146D11 /* AnalystWeekHTTPClient.m */; };
 		3A5AD3B31ADF65D700146D11 /* JSONResponseSerializerWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AD3B21ADF65D700146D11 /* JSONResponseSerializerWithData.m */; };
 		3A5AD3B51ADF69C000146D11 /* alert_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AD3B41ADF69C000146D11 /* alert_icon.png */; };
@@ -123,6 +124,8 @@
 		3A4E97481AE23CE00050AD01 /* AW_Welcome_note_page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AW_Welcome_note_page.png; sourceTree = "<group>"; };
 		3A4E974A1AE23E780050AD01 /* AW_Parking_pass_page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AW_Parking_pass_page.png; sourceTree = "<group>"; };
 		3A4E974C1AE2AD520050AD01 /* label_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label_bg.png; sourceTree = "<group>"; };
+		3A4E974E1AE5F95C0050AD01 /* ChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewCell.h; sourceTree = "<group>"; };
+		3A4E974F1AE5F95C0050AD01 /* ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
 		3A5AD3AE1ADF564D00146D11 /* AnalystWeekHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalystWeekHTTPClient.h; sourceTree = "<group>"; };
 		3A5AD3AF1ADF564D00146D11 /* AnalystWeekHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalystWeekHTTPClient.m; sourceTree = "<group>"; };
 		3A5AD3B11ADF65D700146D11 /* JSONResponseSerializerWithData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONResponseSerializerWithData.h; sourceTree = "<group>"; };
@@ -390,6 +393,8 @@
 				3AC5DB7E1ADD8502006DF05A /* PaddedLabel.m */,
 				3A5AD3D81AE0A4CB00146D11 /* SurveyTableViewCell.h */,
 				3A5AD3D91AE0A4CB00146D11 /* SurveyTableViewCell.m */,
+				3A4E974E1AE5F95C0050AD01 /* ChatTableViewCell.h */,
+				3A4E974F1AE5F95C0050AD01 /* ChatTableViewCell.m */,
 			);
 			path = AnalystWeek;
 			sourceTree = "<group>";
@@ -584,7 +589,6 @@
 				TargetAttributes = {
 					3AD6447E1ADB5B0900591666 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = 9A3YH84565;
 					};
 					3AD644971ADB5B0A00591666 = {
 						CreatedOnToolsVersion = 6.3;
@@ -741,6 +745,7 @@
 				3AC5DB731ADD671D006DF05A /* HeadingTableViewCell.m in Sources */,
 				3AC5DB521ADD08D7006DF05A /* MeetingRequestTableViewCell.m in Sources */,
 				3AD644881ADB5B0A00591666 /* AppDelegate.m in Sources */,
+				3A4E97501AE5F95C0050AD01 /* ChatTableViewCell.m in Sources */,
 				3A5AD3D11ADFC44A00146D11 /* AWRoundedTextView.m in Sources */,
 				3A5AD3DD1AE0A56000146D11 /* SurveyViewController.m in Sources */,
 				3A5AD3B01ADF564D00146D11 /* AnalystWeekHTTPClient.m in Sources */,
@@ -892,7 +897,7 @@
 			baseConfigurationReference = 92287C6F13BB2FB53B8D435F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = AnalystWeek/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
@@ -907,7 +912,7 @@
 			baseConfigurationReference = 7B3653E8CA4FCCB43AF09DE4 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = AnalystWeek/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;

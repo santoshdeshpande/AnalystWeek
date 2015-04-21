@@ -101,6 +101,24 @@ static NSString * const ServerBaseURL = @"http://23.98.74.210/api/v1/";
     }];
 }
 
+- (void)postChat:(NSDictionary *)params {
+    [SVProgressHUD show];
+    [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
+    [self POST:@"chat/" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@"responseObject - %@", responseObject);
+        if ([self.delegate respondsToSelector:@selector(analystHTTPClient:chatPosted:)]) {
+            [self.delegate analystHTTPClient:self chatPosted:responseObject];
+        }
+        [SVProgressHUD dismiss];
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        if ([self.delegate respondsToSelector:@selector(analystHTTPClient:loginFailedWithError:)]) {
+            NSLog(@"%@",error.userInfo);
+            [self.delegate analystHTTPClient:self loginFailedWithError:error];
+        }
+        [SVProgressHUD dismiss];
+    }];
+}
+
 
 - (void)requestMeeting:(NSDictionary *)params {
     [SVProgressHUD show];
@@ -135,6 +153,22 @@ static NSString * const ServerBaseURL = @"http://23.98.74.210/api/v1/";
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"%@",error.userInfo);
             [SVProgressHUD dismiss];
+    }];
+    
+}
+
+- (void) fetchChat {
+    [SVProgressHUD show];
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    [self.requestSerializer setValue:[self getToken] forHTTPHeaderField:@"Authorization"];
+    [self GET:@"chat/" parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
+        if ([self.delegate respondsToSelector:@selector(analystHTTPClient:chatsFetched:)]) {
+            [self.delegate analystHTTPClient:self chatsFetched:responseObject];
+        }
+        [SVProgressHUD dismiss];
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"%@",error.userInfo);
+        [SVProgressHUD dismiss];
     }];
     
 }
