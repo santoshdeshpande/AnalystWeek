@@ -14,6 +14,9 @@
 @property NSString *room;
 @property NSString *time;
 @property NSString *topic;
+@property NSString *date;
+@property NSString *analysts;
+@property NSString *participants;
 
 - (id) initWithLeader:(NSString *)leader room:(NSString *)roomName atTime:(NSString *)time andTopic:(NSString *)topic;
 @end

@@ -45,20 +45,28 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+//    return 10;
     return [self.yourMeetings count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"meetingCell";
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *userType = [defaults objectForKey:@"userType"];
     MeetingRequestTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     YourMeeting *meeting = [self.yourMeetings objectAtIndex:[indexPath row]];
     NSString *label = [NSString stringWithFormat:@"Meeting %d", [indexPath row]+1];
     cell.meetingIdLabel.text = label;
-    cell.meetingWithLabel.text = meeting.leaderName;
-    cell.meetingLocationLabel.text = meeting.room;
-    cell.meetingTimeLabel.text = meeting.time;
+    cell.meetingWithLabel.text = meeting.date;
+    cell.meetingLocationLabel.text = meeting.time;
+    cell.meetingTimeLabel.text = meeting.room;
     cell.meetingTopicLabel.text = meeting.topic;
+    cell.participantsLabel.text = meeting.participants;
+    cell.analystsLabel.text = meeting.analysts;
+    if([userType isEqualToString:@"wipro"] == false) {
+        [cell.analystsView setHidden:TRUE];
+    }
     return cell;
 }
 
@@ -89,18 +97,71 @@
     self.lastUpdatedLabel.text = lastModified;
     for (id object in array) {
         NSDictionary *dict = (NSDictionary *) object;
-        NSString *meeting_with_name = [self getMeetingWithNames:dict];
-        NSString *leader = meeting_with_name;
+        NSString *participants = [self getParticipants:dict];
+        NSString *leader = @"";
         NSString *room = [dict objectForKey:@"venue"];
         NSString *start = [dict objectForKey:@"start_time_str"];
         NSString *end = [dict objectForKey:@"end_time_str"];
         NSString *time = [NSString stringWithFormat:@"%@ - %@",start, end];
         NSString *topic = [dict objectForKey:@"topic"];
+        NSString *meetingTime = [dict objectForKey:@"start_time"];
+        
         YourMeeting *meeting = [[YourMeeting alloc] initWithLeader:leader room:room atTime:time andTopic:topic];
+        meeting.date = meetingTime;
+        meeting.participants = participants;
+        meeting.analysts = [self getAnalysts:dict];
+        
         [self.yourMeetings addObject:meeting];
     }
     [self.meetingTableView reloadData];
 }
+
+- (NSString *) getParticipants: (NSDictionary *) object {
+    NSString *result = @"";
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *userEmail = [defaults objectForKey:@"email"];
+    NSString *userType = [defaults objectForKey:@"userType"];
+    NSArray *array = [object objectForKey:@"meeting_with"];
+    if ([userType isEqualToString:@"wipro"]) {
+        array = [object objectForKey:@"meeting_of"];
+    }
+    for (id meeting in array) {
+        NSDictionary *dict = (NSDictionary *) meeting;
+        NSString *email = [dict objectForKey:@"email"];
+        NSString *fullName = [NSString stringWithFormat:@"%@, ",[dict objectForKey:@"name"]];
+        if([userEmail isEqualToString:email])
+            continue;
+        result = [result stringByAppendingString:fullName];
+    }
+    if ([result length] > 0) {
+        NSLog(@"Here....");
+        result = [result substringToIndex:[result length]-2];
+    }
+    
+    return result;
+}
+
+- (NSString *) getAnalysts: (NSDictionary *) object {
+    NSString *result = @"";
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *userEmail = [defaults objectForKey:@"email"];
+    NSArray *array = [object objectForKey:@"meeting_with"];
+    for (id meeting in array) {
+        NSDictionary *dict = (NSDictionary *) meeting;
+        NSString *email = [dict objectForKey:@"email"];
+        NSString *fullName = [NSString stringWithFormat:@"%@, ",[dict objectForKey:@"name"]];
+        if([userEmail isEqualToString:email])
+            continue;
+        result = [result stringByAppendingString:fullName];
+    }
+    if ([result length] > 0) {
+        NSLog(@"Here....");
+        result = [result substringToIndex:[result length]-2];
+    }
+    
+    return result;
+}
+
 
 - (NSString *) getMeetingWithNames:(NSDictionary*) object {
     NSString *result = @"";

@@ -44,6 +44,12 @@
 		3AA493471AE15817004430F0 /* aw_welcome_note.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA493411AE15817004430F0 /* aw_welcome_note.png */; };
 		3AA493491AE1F72D004430F0 /* AW_SubmitButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA493481AE1F72D004430F0 /* AW_SubmitButton.png */; };
 		3AC2FD831AE88CCE00577BD6 /* Empty_Welcome_Note-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2FD821AE88CCE00577BD6 /* Empty_Welcome_Note-01.png */; };
+		3AC2FD861AE8F84500577BD6 /* ResourceBankCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2FD851AE8F84500577BD6 /* ResourceBankCollectionViewCell.m */; };
+		3AC2FD8C1AE8FEF200577BD6 /* POV.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2FD881AE8FEF200577BD6 /* POV.png */; };
+		3AC2FD8D1AE8FEF200577BD6 /* Success_Story.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2FD891AE8FEF200577BD6 /* Success_Story.png */; };
+		3AC2FD8E1AE8FEF200577BD6 /* Video_POV.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2FD8A1AE8FEF200577BD6 /* Video_POV.png */; };
+		3AC2FD8F1AE8FEF200577BD6 /* White_Paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2FD8B1AE8FEF200577BD6 /* White_Paper.png */; };
+		3AC2FD921AE902CA00577BD6 /* ResourceWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2FD911AE902CA00577BD6 /* ResourceWebViewController.m */; };
 		3AC5DB521ADD08D7006DF05A /* MeetingRequestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5DB511ADD08D7006DF05A /* MeetingRequestTableViewCell.m */; };
 		3AC5DB551ADD0A75006DF05A /* YourMeetingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5DB541ADD0A75006DF05A /* YourMeetingsViewController.m */; };
 		3AC5DB591ADD0D49006DF05A /* YourMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5DB581ADD0D49006DF05A /* YourMeeting.m */; };
@@ -171,6 +177,14 @@
 		3AA493411AE15817004430F0 /* aw_welcome_note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aw_welcome_note.png; sourceTree = "<group>"; };
 		3AA493481AE1F72D004430F0 /* AW_SubmitButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AW_SubmitButton.png; sourceTree = "<group>"; };
 		3AC2FD821AE88CCE00577BD6 /* Empty_Welcome_Note-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Empty_Welcome_Note-01.png"; sourceTree = "<group>"; };
+		3AC2FD841AE8F84500577BD6 /* ResourceBankCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceBankCollectionViewCell.h; sourceTree = "<group>"; };
+		3AC2FD851AE8F84500577BD6 /* ResourceBankCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceBankCollectionViewCell.m; sourceTree = "<group>"; };
+		3AC2FD881AE8FEF200577BD6 /* POV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = POV.png; sourceTree = "<group>"; };
+		3AC2FD891AE8FEF200577BD6 /* Success_Story.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Success_Story.png; sourceTree = "<group>"; };
+		3AC2FD8A1AE8FEF200577BD6 /* Video_POV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Video_POV.png; sourceTree = "<group>"; };
+		3AC2FD8B1AE8FEF200577BD6 /* White_Paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = White_Paper.png; sourceTree = "<group>"; };
+		3AC2FD901AE902CA00577BD6 /* ResourceWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceWebViewController.h; sourceTree = "<group>"; };
+		3AC2FD911AE902CA00577BD6 /* ResourceWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceWebViewController.m; sourceTree = "<group>"; };
 		3AC5DB501ADD08D7006DF05A /* MeetingRequestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingRequestTableViewCell.h; sourceTree = "<group>"; };
 		3AC5DB511ADD08D7006DF05A /* MeetingRequestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingRequestTableViewCell.m; sourceTree = "<group>"; };
 		3AC5DB531ADD0A75006DF05A /* YourMeetingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YourMeetingsViewController.h; sourceTree = "<group>"; };
@@ -319,6 +333,17 @@
 			name = Heading;
 			sourceTree = "<group>";
 		};
+		3AC2FD871AE8FEDC00577BD6 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				3AC2FD881AE8FEF200577BD6 /* POV.png */,
+				3AC2FD891AE8FEF200577BD6 /* Success_Story.png */,
+				3AC2FD8A1AE8FEF200577BD6 /* Video_POV.png */,
+				3AC2FD8B1AE8FEF200577BD6 /* White_Paper.png */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
 		3AC5DB561ADD0D32006DF05A /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,6 +427,8 @@
 				3A5AD3D91AE0A4CB00146D11 /* SurveyTableViewCell.m */,
 				3A4E974E1AE5F95C0050AD01 /* ChatTableViewCell.h */,
 				3A4E974F1AE5F95C0050AD01 /* ChatTableViewCell.m */,
+				3AC2FD841AE8F84500577BD6 /* ResourceBankCollectionViewCell.h */,
+				3AC2FD851AE8F84500577BD6 /* ResourceBankCollectionViewCell.m */,
 			);
 			path = AnalystWeek;
 			sourceTree = "<group>";
@@ -459,6 +486,8 @@
 				3A5AD3E51AE0B13D00146D11 /* ResourceBankViewController.m */,
 				3A4E97511AE633040050AD01 /* BaseViewController.h */,
 				3A4E97521AE633040050AD01 /* BaseViewController.m */,
+				3AC2FD901AE902CA00577BD6 /* ResourceWebViewController.h */,
+				3AC2FD911AE902CA00577BD6 /* ResourceWebViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -466,6 +495,7 @@
 		3AE0C4E21ADBA56200E14FAD /* images */ = {
 			isa = PBXGroup;
 			children = (
+				3AC2FD871AE8FEDC00577BD6 /* resource */,
 				3AC2FD821AE88CCE00577BD6 /* Empty_Welcome_Note-01.png */,
 				3AEAABFB1AE7D74A005932A7 /* BLACK_Back_Button.png */,
 				3A4E974C1AE2AD520050AD01 /* label_bg.png */,
@@ -634,11 +664,14 @@
 			files = (
 				3AD644B11ADB693D00591666 /* LHS_1_About The Event.png in Resources */,
 				3A4E974D1AE2AD520050AD01 /* label_bg.png in Resources */,
+				3AC2FD8F1AE8FEF200577BD6 /* White_Paper.png in Resources */,
 				3A5AD3E31AE0AAAD00146D11 /* Button_Topic.png in Resources */,
 				3AC5DB831ADE0743006DF05A /* contact_us_icon.png in Resources */,
 				3AC5DB6F1ADD60FF006DF05A /* Agenda_Heading.png in Resources */,
+				3AC2FD8D1AE8FEF200577BD6 /* Success_Story.png in Resources */,
 				3AC5DB851ADE1648006DF05A /* chat_user_icon_1.png in Resources */,
 				3AA493491AE1F72D004430F0 /* AW_SubmitButton.png in Resources */,
+				3AC2FD8C1AE8FEF200577BD6 /* POV.png in Resources */,
 				3A5AD3E21AE0AAAD00146D11 /* Button_ServiceLines.png in Resources */,
 				3A5AD3D31ADFC87800146D11 /* BG-Element.png in Resources */,
 				3AA493441AE15817004430F0 /* aw_free_parking_pass.png in Resources */,
@@ -694,6 +727,7 @@
 				3A5AD3C61ADFAE3C00146D11 /* Resource_Bank.png in Resources */,
 				3AC5DB5D1ADD188F006DF05A /* your_meetings_icon.png in Resources */,
 				3A4E974B1AE23E780050AD01 /* AW_Parking_pass_page.png in Resources */,
+				3AC2FD8E1AE8FEF200577BD6 /* Video_POV.png in Resources */,
 				3AE0C5191ADC127000E14FAD /* threed_selfie.jpg in Resources */,
 				3AC5DB651ADD4155006DF05A /* text_bottom.png in Resources */,
 				3A5AD3B51ADF69C000146D11 /* alert_icon.png in Resources */,
@@ -779,7 +813,9 @@
 				3AC5DB7F1ADD8502006DF05A /* PaddedLabel.m in Sources */,
 				3A5AD3D01ADFC44A00146D11 /* AWRoundedTextField.m in Sources */,
 				3AE0C5061ADC089500E14FAD /* LoginViewController.m in Sources */,
+				3AC2FD861AE8F84500577BD6 /* ResourceBankCollectionViewCell.m in Sources */,
 				3AC5DB881ADE18AA006DF05A /* ContactUsViewController.m in Sources */,
+				3AC2FD921AE902CA00577BD6 /* ResourceWebViewController.m in Sources */,
 				3AE0C51E1ADC22A800E14FAD /* WelcomeViewController.m in Sources */,
 				3AD644B71ADB6F1600591666 /* HomeViewController.m in Sources */,
 				3AE0C5031ADC086300E14FAD /* FeedbackViewController.m in Sources */,

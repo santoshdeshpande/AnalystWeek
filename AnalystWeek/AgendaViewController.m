@@ -31,7 +31,7 @@
 
     // Do any additional setup after loading the view.
     self.agendaTable.rowHeight = UITableViewAutomaticDimension;
-    self.agendaTable.estimatedRowHeight = 60.0;
+    self.agendaTable.estimatedRowHeight = 100.0;
     self.agendaTable.dataSource = self;
     self.agendaTable.delegate = self;
     self.agendaTable.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];

@@ -250,6 +250,7 @@ static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
         [defaults setValue:[dict objectForKey:@"email"] forKey:@"email"];
         [defaults setValue:[dict objectForKey:@"first_name"] forKey:@"first_name"];
         [defaults setValue:[dict objectForKey:@"last_name"] forKey:@"last_name"];
+        [defaults setValue:[dict objectForKey:@"userType"] forKey:@"userType"];
         
         NSString *firstName = [defaults objectForKey:@"first_name"];
         NSString *lastName = [defaults objectForKey:@"last_name"];

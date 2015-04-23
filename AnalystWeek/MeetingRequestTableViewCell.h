@@ -14,5 +14,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *meetingLocationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *meetingTimeLabel;
 @property (weak, nonatomic) IBOutlet UITextView *meetingTopicLabel;
+@property (weak, nonatomic) IBOutlet UILabel *participantsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *analystsLabel;
+@property (weak, nonatomic) IBOutlet UIView *analystsView;
 
 @end

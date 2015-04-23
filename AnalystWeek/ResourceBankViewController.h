@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface ResourceBankViewController : BaseViewController
+@interface ResourceBankViewController : BaseViewController<UICollectionViewDataSource,UICollectionViewDelegate>
+@property (weak, nonatomic) IBOutlet UICollectionView *pesCollectionView;
+@property (weak, nonatomic) IBOutlet UICollectionView *ctoCollectionView;
+@property (weak, nonatomic) IBOutlet UICollectionView *hlsCollectionView;
 
 @end

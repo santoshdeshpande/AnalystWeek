@@ -121,9 +121,9 @@
         NSString *currentTitle = [self.currentTitles objectAtIndex:indexPath.section];
         NSArray *profiles = [self.currentProfiles objectForKey:currentTitle];
     NSDictionary *profile = [profiles objectAtIndex:indexPath.row];
-    NSString *label = [NSString stringWithFormat:@"%@ (%@)",[profile objectForKey:@"name"],[profile objectForKey:@"email"]];
-//    NSString *name = [profile objectForKey:@"name"];
-    cell.textLabel.text = label;
+//    NSString *label = [NSString stringWithFormat:@"%@ (%@)",[profile objectForKey:@"name"]];
+    NSString *name = [profile objectForKey:@"name"];
+    cell.textLabel.text = name;
     return cell;
 }
 
@@ -132,8 +132,9 @@
     NSString *currentTitle = [self.currentTitles objectAtIndex:indexPath.section];
     NSArray *profiles = [self.currentProfiles objectForKey:currentTitle];
     NSDictionary *profile = [profiles objectAtIndex:indexPath.row];
-    NSString *label = [NSString stringWithFormat:@"%@ (%@)",[profile objectForKey:@"name"],[profile objectForKey:@"email"]];
-    self.nameLabel.text = label;
+//    NSString *label = [NSString stringWithFormat:@"%@ (%@)",[profile objectForKey:@"name"],[profile objectForKey:@"email"]];
+        NSString *name = [profile objectForKey:@"name"];
+    self.nameLabel.text = name;
     self.titleLabel.text = [profile objectForKey:@"title"];
     if ([profile objectForKey:@"profile"] != [NSNull null]) {
         self.profileLabel.text = [profile objectForKey:@"profile"];
