@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface ResourceBankViewController : UIViewController
+@interface ResourceBankViewController : BaseViewController
 
 @end

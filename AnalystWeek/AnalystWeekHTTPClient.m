@@ -11,7 +11,7 @@
 
 //static NSString * const ServerBaseURL = @"https://aw.eatsleepcode.in/api/v1/";
 
-static NSString * const ServerBaseURL = @"http://23.98.74.210/api/v1/";
+static NSString * const ServerBaseURL = @"http://analystsday.langoorqa.net/api/v1/";
 
 //static NSString * const ServerBaseURL = @"http://localhost:8000/api/v1/";
 
@@ -44,7 +44,7 @@ static NSString * const ServerBaseURL = @"http://23.98.74.210/api/v1/";
 - (void)loginWithUserName:(NSString *)user password:(NSString *)password {
     [SVProgressHUD show];
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"username"] = user;
+    parameters[@"email"] = user;
     parameters[@"password"] = password;
     NSLog(@"Sending %@  - %@",user, password);
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

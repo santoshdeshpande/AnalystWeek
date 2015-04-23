@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "AnalystWeekHTTPClient.h"
+#import "BaseViewController.h"
 
-@interface AgendaViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,AnalystWeekDelegate>
+@interface AgendaViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate,AnalystWeekDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *agendaTable;
 @property NSMutableArray *agendaItems;
 

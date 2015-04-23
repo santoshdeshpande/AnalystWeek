@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "AnalystWeekHTTPClient.h"
+#import "BaseViewController.h"
 
-@interface RequestMeetingViewController : UIViewController<AnalystWeekDelegate>
+@interface RequestMeetingViewController : BaseViewController<AnalystWeekDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *name;
 @property (weak, nonatomic) IBOutlet UITextField *company;
 @property (weak, nonatomic) IBOutlet UITextField *designation;

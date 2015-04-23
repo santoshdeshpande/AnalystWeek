@@ -73,8 +73,9 @@
     NSArray *array = (NSArray *) response;
     for (id object in array) {
         NSDictionary *dict = (NSDictionary *) object;
-        NSString *leader = [dict objectForKey:@"meeting_with_name"];
-        NSString *room = [dict objectForKey:@"table_name"];
+        NSString *meeting_with_name = [self getMeetingWithNames:dict];
+        NSString *leader = meeting_with_name;
+        NSString *room = [dict objectForKey:@"venue"];
         NSString *start = [dict objectForKey:@"start_time_str"];
         NSString *end = [dict objectForKey:@"end_time_str"];
         NSString *time = [NSString stringWithFormat:@"%@ - %@",start, end];
@@ -83,6 +84,36 @@
         [self.yourMeetings addObject:meeting];
     }
     [self.meetingTableView reloadData];
+}
+
+- (NSString *) getMeetingWithNames:(NSDictionary*) object {
+    NSString *result = @"";
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *userEmail = [defaults objectForKey:@"email"];
+    NSArray *array = [object objectForKey:@"meeting_of"];
+    for (id meeting in array) {
+        NSDictionary *dict = (NSDictionary *) meeting;
+        NSString *email = [dict objectForKey:@"email"];
+        NSString *fullName = [NSString stringWithFormat:@"%@, ",[dict objectForKey:@"name"]];
+        if([userEmail isEqualToString:email])
+           continue;
+        result = [result stringByAppendingString:fullName];
+    }
+    array = [object objectForKey:@"meeting_with"];
+    for (id meeting in array) {
+        NSDictionary *dict = (NSDictionary *) meeting;
+        NSString *email = [dict objectForKey:@"email"];
+        NSString *fullName = [NSString stringWithFormat:@"%@, ",[dict objectForKey:@"name"]];
+        if([userEmail isEqualToString:email])
+            continue;
+        result = [result stringByAppendingString:fullName];
+    }
+    
+    if ([result length] > 0) {
+        NSLog(@"Here....");
+        result = [result substringToIndex:[result length]-2];
+    }
+    return result;
 }
 
 @end

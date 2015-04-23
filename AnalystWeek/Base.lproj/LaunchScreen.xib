@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,33 +10,16 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="J5U-L8-11P">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="J5U-L8-11P">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wipro_Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="8UL-Sl-yzz">
-                    <rect key="frame" x="180" y="180" width="120" height="120"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="121" id="Huq-Ns-iwv"/>
-                        <constraint firstAttribute="width" constant="105" id="RKS-aX-4zE"/>
-                    </constraints>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="Huq-Ns-iwv"/>
-                            <exclude reference="RKS-aX-4zE"/>
-                        </mask>
-                    </variation>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="J5U-L8-11P" secondAttribute="bottom" id="11S-ny-qAt"/>
-                <constraint firstItem="J5U-L8-11P" firstAttribute="height" secondItem="8UL-Sl-yzz" secondAttribute="height" multiplier="4" id="6ix-Cj-F4S"/>
-                <constraint firstItem="J5U-L8-11P" firstAttribute="width" secondItem="8UL-Sl-yzz" secondAttribute="width" multiplier="4" id="NK5-Lk-FQa"/>
                 <constraint firstAttribute="trailing" secondItem="J5U-L8-11P" secondAttribute="trailing" id="Zev-CC-PuQ"/>
-                <constraint firstAttribute="centerX" secondItem="8UL-Sl-yzz" secondAttribute="centerX" id="jeH-eo-4ky"/>
                 <constraint firstItem="J5U-L8-11P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jwk-ht-ClO"/>
                 <constraint firstItem="J5U-L8-11P" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ohC-JT-RRs"/>
-                <constraint firstAttribute="centerY" secondItem="8UL-Sl-yzz" secondAttribute="centerY" id="tJ4-4b-5z4"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -45,7 +27,6 @@
         </view>
     </objects>
     <resources>
-        <image name="BG-01.png" width="246" height="185"/>
-        <image name="Wipro_Logo.png" width="316" height="363"/>
+        <image name="Splash" width="769" height="1025"/>
     </resources>
 </document>

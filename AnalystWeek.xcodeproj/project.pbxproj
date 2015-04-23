@@ -11,6 +11,7 @@
 		3A4E974B1AE23E780050AD01 /* AW_Parking_pass_page.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4E974A1AE23E780050AD01 /* AW_Parking_pass_page.png */; };
 		3A4E974D1AE2AD520050AD01 /* label_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4E974C1AE2AD520050AD01 /* label_bg.png */; };
 		3A4E97501AE5F95C0050AD01 /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4E974F1AE5F95C0050AD01 /* ChatTableViewCell.m */; };
+		3A4E97531AE633040050AD01 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4E97521AE633040050AD01 /* BaseViewController.m */; };
 		3A5AD3B01ADF564D00146D11 /* AnalystWeekHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AD3AF1ADF564D00146D11 /* AnalystWeekHTTPClient.m */; };
 		3A5AD3B31ADF65D700146D11 /* JSONResponseSerializerWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AD3B21ADF65D700146D11 /* JSONResponseSerializerWithData.m */; };
 		3A5AD3B51ADF69C000146D11 /* alert_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AD3B41ADF69C000146D11 /* alert_icon.png */; };
@@ -42,6 +43,7 @@
 		3AA493461AE15817004430F0 /* aw_imp_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA493401AE15817004430F0 /* aw_imp_info.png */; };
 		3AA493471AE15817004430F0 /* aw_welcome_note.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA493411AE15817004430F0 /* aw_welcome_note.png */; };
 		3AA493491AE1F72D004430F0 /* AW_SubmitButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA493481AE1F72D004430F0 /* AW_SubmitButton.png */; };
+		3AC2FD831AE88CCE00577BD6 /* Empty_Welcome_Note-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2FD821AE88CCE00577BD6 /* Empty_Welcome_Note-01.png */; };
 		3AC5DB521ADD08D7006DF05A /* MeetingRequestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5DB511ADD08D7006DF05A /* MeetingRequestTableViewCell.m */; };
 		3AC5DB551ADD0A75006DF05A /* YourMeetingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5DB541ADD0A75006DF05A /* YourMeetingsViewController.m */; };
 		3AC5DB591ADD0D49006DF05A /* YourMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5DB581ADD0D49006DF05A /* YourMeeting.m */; };
@@ -107,6 +109,7 @@
 		3AE0C5191ADC127000E14FAD /* threed_selfie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0C5181ADC127000E14FAD /* threed_selfie.jpg */; };
 		3AE0C51B1ADC21D500E14FAD /* back_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0C51A1ADC21D500E14FAD /* back_button.png */; };
 		3AE0C51E1ADC22A800E14FAD /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0C51D1ADC22A800E14FAD /* WelcomeViewController.m */; };
+		3AEAABFC1AE7D74A005932A7 /* BLACK_Back_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AEAABFB1AE7D74A005932A7 /* BLACK_Back_Button.png */; };
 		7160E761781809B808D4041B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9996439B58A8E53B554E4860 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +129,8 @@
 		3A4E974C1AE2AD520050AD01 /* label_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label_bg.png; sourceTree = "<group>"; };
 		3A4E974E1AE5F95C0050AD01 /* ChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewCell.h; sourceTree = "<group>"; };
 		3A4E974F1AE5F95C0050AD01 /* ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
+		3A4E97511AE633040050AD01 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		3A4E97521AE633040050AD01 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		3A5AD3AE1ADF564D00146D11 /* AnalystWeekHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalystWeekHTTPClient.h; sourceTree = "<group>"; };
 		3A5AD3AF1ADF564D00146D11 /* AnalystWeekHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalystWeekHTTPClient.m; sourceTree = "<group>"; };
 		3A5AD3B11ADF65D700146D11 /* JSONResponseSerializerWithData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONResponseSerializerWithData.h; sourceTree = "<group>"; };
@@ -165,6 +170,7 @@
 		3AA493401AE15817004430F0 /* aw_imp_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aw_imp_info.png; sourceTree = "<group>"; };
 		3AA493411AE15817004430F0 /* aw_welcome_note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aw_welcome_note.png; sourceTree = "<group>"; };
 		3AA493481AE1F72D004430F0 /* AW_SubmitButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AW_SubmitButton.png; sourceTree = "<group>"; };
+		3AC2FD821AE88CCE00577BD6 /* Empty_Welcome_Note-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Empty_Welcome_Note-01.png"; sourceTree = "<group>"; };
 		3AC5DB501ADD08D7006DF05A /* MeetingRequestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingRequestTableViewCell.h; sourceTree = "<group>"; };
 		3AC5DB511ADD08D7006DF05A /* MeetingRequestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingRequestTableViewCell.m; sourceTree = "<group>"; };
 		3AC5DB531ADD0A75006DF05A /* YourMeetingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YourMeetingsViewController.h; sourceTree = "<group>"; };
@@ -253,6 +259,7 @@
 		3AE0C51A1ADC21D500E14FAD /* back_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_button.png; sourceTree = "<group>"; };
 		3AE0C51C1ADC22A800E14FAD /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		3AE0C51D1ADC22A800E14FAD /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		3AEAABFB1AE7D74A005932A7 /* BLACK_Back_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BLACK_Back_Button.png; sourceTree = "<group>"; };
 		7B3653E8CA4FCCB43AF09DE4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		92287C6F13BB2FB53B8D435F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9996439B58A8E53B554E4860 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -450,6 +457,8 @@
 				3A5AD3DC1AE0A56000146D11 /* SurveyViewController.m */,
 				3A5AD3E41AE0B13D00146D11 /* ResourceBankViewController.h */,
 				3A5AD3E51AE0B13D00146D11 /* ResourceBankViewController.m */,
+				3A4E97511AE633040050AD01 /* BaseViewController.h */,
+				3A4E97521AE633040050AD01 /* BaseViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -457,6 +466,8 @@
 		3AE0C4E21ADBA56200E14FAD /* images */ = {
 			isa = PBXGroup;
 			children = (
+				3AC2FD821AE88CCE00577BD6 /* Empty_Welcome_Note-01.png */,
+				3AEAABFB1AE7D74A005932A7 /* BLACK_Back_Button.png */,
 				3A4E974C1AE2AD520050AD01 /* label_bg.png */,
 				3A4E974A1AE23E780050AD01 /* AW_Parking_pass_page.png */,
 				3A4E97481AE23CE00050AD01 /* AW_Welcome_note_page.png */,
@@ -589,6 +600,7 @@
 				TargetAttributes = {
 					3AD6447E1ADB5B0900591666 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 9A3YH84565;
 					};
 					3AD644971ADB5B0A00591666 = {
 						CreatedOnToolsVersion = 6.3;
@@ -685,9 +697,11 @@
 				3AE0C5191ADC127000E14FAD /* threed_selfie.jpg in Resources */,
 				3AC5DB651ADD4155006DF05A /* text_bottom.png in Resources */,
 				3A5AD3B51ADF69C000146D11 /* alert_icon.png in Resources */,
+				3AC2FD831AE88CCE00577BD6 /* Empty_Welcome_Note-01.png in Resources */,
 				3A5AD3E11AE0AAAD00146D11 /* Button_BusinessVertical.png in Resources */,
 				3AE0C4FD1ADC00FE00E14FAD /* RHS_3.png in Resources */,
 				3AE0C4F81ADC00FE00E14FAD /* LHS_2.png in Resources */,
+				3AEAABFC1AE7D74A005932A7 /* BLACK_Back_Button.png in Resources */,
 				3A5AD3C01ADFAE3C00146D11 /* About_Event.png in Resources */,
 				3AE0C4EB1ADBBC1000E14FAD /* submitButton.png in Resources */,
 			);
@@ -741,6 +755,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AC5DB6C1ADD605D006DF05A /* AgendaViewController.m in Sources */,
+				3A4E97531AE633040050AD01 /* BaseViewController.m in Sources */,
 				3AD6448B1ADB5B0A00591666 /* ViewController.m in Sources */,
 				3AC5DB731ADD671D006DF05A /* HeadingTableViewCell.m in Sources */,
 				3AC5DB521ADD08D7006DF05A /* MeetingRequestTableViewCell.m in Sources */,
@@ -898,12 +913,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AnalystWeek/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "01532e9f-3102-4944-a081-a24170159576";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -913,12 +928,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AnalystWeek/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "01532e9f-3102-4944-a081-a24170159576";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

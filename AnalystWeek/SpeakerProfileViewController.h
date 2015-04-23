@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "AnalystWeekHTTPClient.h"
+#import "BaseViewController.h"
 
-@interface SpeakerProfileViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,AnalystWeekDelegate>
+@interface SpeakerProfileViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate,AnalystWeekDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *speakerButton;
 @property (weak, nonatomic) IBOutlet UIButton *wiproLeaderButton;
 @property (weak, nonatomic) IBOutlet UIButton *participantButton;

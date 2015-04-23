@@ -29,16 +29,7 @@
     [self.profileView setHidden:YES];
     [self.speakerTable setHidden:NO];
 
-//    self.wiproLeaderProfiles = [NSDictionary dictionary];
-//    self.participantProfiles = [NSDictionary dictionary];
     [self fetchUserProfiles];
-//    NSDictionary *profiles = @{
-//                               @"A" : @[@"Azim Premji",@"Adam",@"Abdul"],
-//                               @"B" : @[@"Bin",@"Bell",@"Best"],
-//                               @"C" : @[@"Cello",@"Cielo",@"Cest"]
-//                               
-//                               };
-//    self.speakerProfiles = profiles;
     
     self.speakerTable.rowHeight = UITableViewAutomaticDimension;
     self.speakerTable.estimatedRowHeight = 44.0;
@@ -130,26 +121,32 @@
         NSString *currentTitle = [self.currentTitles objectAtIndex:indexPath.section];
         NSArray *profiles = [self.currentProfiles objectForKey:currentTitle];
     NSDictionary *profile = [profiles objectAtIndex:indexPath.row];
-    NSString *name = [profile objectForKey:@"name"];
-    cell.textLabel.text = name;
+    NSString *label = [NSString stringWithFormat:@"%@ (%@)",[profile objectForKey:@"name"],[profile objectForKey:@"email"]];
+//    NSString *name = [profile objectForKey:@"name"];
+    cell.textLabel.text = label;
     return cell;
 }
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 //    NSString *currentTitle = [self.currentTitles objectAtIndex:indexPath.section];
-    NSLog(@"Selection...");
     NSString *currentTitle = [self.currentTitles objectAtIndex:indexPath.section];
     NSArray *profiles = [self.currentProfiles objectForKey:currentTitle];
     NSDictionary *profile = [profiles objectAtIndex:indexPath.row];
-    self.nameLabel.text = [profile objectForKey:@"name"];
+    NSString *label = [NSString stringWithFormat:@"%@ (%@)",[profile objectForKey:@"name"],[profile objectForKey:@"email"]];
+    self.nameLabel.text = label;
     self.titleLabel.text = [profile objectForKey:@"title"];
-    self.profileLabel.text = [profile objectForKey:@"profile"];
-    NSString *imageURL = [profile objectForKey:@"image"];
-    if (imageURL) {
-        [self.profileImageView setImageWithURL:[NSURL URLWithString:imageURL]];
-    } else {
-        [self.profileImageView setImage:[UIImage imageNamed:@"Wipro_Logo.png"]];
+    if ([profile objectForKey:@"profile"] != [NSNull null]) {
+        self.profileLabel.text = [profile objectForKey:@"profile"];
     }
+
+    if ([profile objectForKey:@"image"] == [NSNull null]) {
+        [self.profileImageView setImage:[UIImage imageNamed:@"chat_user_icon_1.png"]];
+    } else {
+        NSString *imageURL = [profile objectForKey:@"image"];
+        [self.profileImageView setImageWithURL:[NSURL URLWithString:imageURL]];
+    }
+    
+
     [self.profileView setHidden:NO];
     [self.speakerTable setHidden:YES];
 }
@@ -179,10 +176,10 @@
         }
         [alphaDict addObject:dictionary];        
     }
-    self.currentProfiles = [self.speakerProfiles objectForKey:@"speaker"];
+    self.currentProfiles = [self.speakerProfiles objectForKey:@"wipro"];
     self.currentTitles = [[self.currentProfiles allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     [self.speakerTable reloadData];
-    NSLog(@"Response - %@", response);
+//    NSLog(@"Response - %@", response);
 }
 
 

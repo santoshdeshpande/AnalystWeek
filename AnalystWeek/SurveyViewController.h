@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "AnalystWeekHTTPClient.h"
+#import "BaseViewController.h"
 
-@interface SurveyViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,AnalystWeekDelegate>
+@interface SurveyViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate,AnalystWeekDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *surveyTable;
 - (IBAction)onSubmitClicked:(id)sender;
 
