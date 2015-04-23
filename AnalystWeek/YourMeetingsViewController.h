@@ -12,5 +12,6 @@
 
 @interface YourMeetingsViewController : BaseViewController<UITableViewDelegate, UITableViewDataSource,AnalystWeekDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *meetingTableView;
+@property (weak, nonatomic) IBOutlet UILabel *lastUpdatedLabel;
 
 @end

@@ -71,6 +71,22 @@
 - (void)analystHTTPClient:(AnalystWeekHTTPClient *)client meetingsFetched:(id)response {
     NSLog(@"Response:  %@",response);
     NSArray *array = (NSArray *) response;
+    NSString *lastModified = @"Last Modified Time: ";
+    if ([array count] > 0) {
+        NSDictionary *first = [array objectAtIndex:0];
+        NSString *date = [first objectForKey:@"modified"];
+        NSDateFormatter *dateFormat = [NSDateFormatter new];
+        dateFormat.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSSZ";
+        NSLocale* posix = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
+        dateFormat.locale = posix;
+        NSDate* output = [dateFormat dateFromString:date];
+        NSLog(@"Date: %@",output);
+        NSString *dateString = [NSDateFormatter localizedStringFromDate:output
+                                                              dateStyle:NSDateFormatterMediumStyle
+                                                              timeStyle:NSDateFormatterShortStyle];
+        lastModified = [lastModified stringByAppendingString:dateString];
+    }
+    self.lastUpdatedLabel.text = lastModified;
     for (id object in array) {
         NSDictionary *dict = (NSDictionary *) object;
         NSString *meeting_with_name = [self getMeetingWithNames:dict];

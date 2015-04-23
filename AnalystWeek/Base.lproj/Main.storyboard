@@ -362,9 +362,6 @@
                                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="heightClass=regular" misplaced="YES">
-                                                        <rect key="frame" x="18" y="8" width="284" height="27"/>
-                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.30196078430000001" green="0.047058823530000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
@@ -1897,9 +1894,6 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                             <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular" misplaced="YES">
-                                                                <rect key="frame" x="168" y="20" width="88" height="0.0"/>
-                                                            </variation>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1929,8 +1923,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                             <exclude reference="vQi-MF-H3t"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular" misplaced="YES">
-                                                        <rect key="frame" x="28" y="46" width="264" height="40"/>
+                                                    <variation key="heightClass=regular">
                                                         <mask key="subviews">
                                                             <include reference="Ooq-TV-heD"/>
                                                             <include reference="LA6-XL-gW0"/>
@@ -1972,9 +1965,6 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                             <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular" misplaced="YES">
-                                                                <rect key="frame" x="168" y="20" width="88" height="0.0"/>
-                                                            </variation>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2004,8 +1994,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                             <exclude reference="xtn-YF-OtB"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular" misplaced="YES">
-                                                        <rect key="frame" x="28" y="94" width="264" height="40"/>
+                                                    <variation key="heightClass=regular">
                                                         <mask key="subviews">
                                                             <include reference="Dni-c5-eTp"/>
                                                             <include reference="nWt-Os-uN4"/>
@@ -2047,9 +2036,6 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                             <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular" misplaced="YES">
-                                                                <rect key="frame" x="168" y="20" width="88" height="0.0"/>
-                                                            </variation>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2079,8 +2065,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                             <exclude reference="dLK-kQ-UKa"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular" misplaced="YES">
-                                                        <rect key="frame" x="28" y="142" width="264" height="40"/>
+                                                    <variation key="heightClass=regular">
                                                         <mask key="subviews">
                                                             <include reference="vuz-Ls-SNZ"/>
                                                             <include reference="25B-JV-Gsn"/>
@@ -2130,8 +2115,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                                     <exclude reference="2AA-Qo-8Pv"/>
                                                                 </mask>
                                                             </variation>
-                                                            <variation key="heightClass=regular" misplaced="YES">
-                                                                <rect key="frame" x="168" y="8" width="88" height="100"/>
+                                                            <variation key="heightClass=regular">
                                                                 <mask key="constraints">
                                                                     <include reference="2AA-Qo-8Pv"/>
                                                                 </mask>
@@ -2167,8 +2151,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                                             <exclude reference="ie9-SS-IQ5"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular" misplaced="YES">
-                                                        <rect key="frame" x="28" y="190" width="264" height="120"/>
+                                                    <variation key="heightClass=regular">
                                                         <mask key="subviews">
                                                             <include reference="zpP-vY-mNV"/>
                                                             <include reference="D3Z-Tx-Q4p"/>
@@ -2347,6 +2330,15 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                     <segue destination="ey5-3i-lbo" kind="unwind" unwindAction="unwindToHomeView:" id="QX7-tW-QLl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Updated Time: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymw-fp-coY">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="378" y="742" width="156" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -2360,6 +2352,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                             <constraint firstAttribute="centerX" secondItem="d4j-EE-xl3" secondAttribute="centerX" id="SCM-iE-P20"/>
                             <constraint firstItem="l1l-Zb-FLN" firstAttribute="leading" secondItem="xf6-do-csp" secondAttribute="leading" constant="10" id="Sy9-Id-ctg"/>
                             <constraint firstAttribute="centerY" secondItem="mGO-FF-RZm" secondAttribute="centerY" id="UnM-DD-y0S"/>
+                            <constraint firstItem="Ymw-fp-coY" firstAttribute="top" secondItem="zes-KX-tG6" secondAttribute="bottom" constant="8" id="Zcc-YY-ELa"/>
                             <constraint firstItem="d4j-EE-xl3" firstAttribute="width" secondItem="mGO-FF-RZm" secondAttribute="width" multiplier="0.5" id="a7j-rb-3vs"/>
                             <constraint firstItem="l1l-Zb-FLN" firstAttribute="top" secondItem="xf6-do-csp" secondAttribute="top" constant="20" id="bxn-Ba-w0K"/>
                             <constraint firstItem="d4j-EE-xl3" firstAttribute="top" secondItem="xf6-do-csp" secondAttribute="topMargin" constant="10" id="dIr-g1-ptl">
@@ -2372,6 +2365,7 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                             <constraint firstItem="l1l-Zb-FLN" firstAttribute="top" secondItem="xf6-do-csp" secondAttribute="top" constant="20" id="idZ-li-KLc"/>
                             <constraint firstItem="mGO-FF-RZm" firstAttribute="leading" secondItem="xf6-do-csp" secondAttribute="leading" id="jlX-zL-Yyf"/>
                             <constraint firstItem="uSY-xh-kEa" firstAttribute="top" secondItem="zes-KX-tG6" secondAttribute="bottom" constant="50" id="mru-SI-SOq"/>
+                            <constraint firstItem="zes-KX-tG6" firstAttribute="trailing" secondItem="Ymw-fp-coY" secondAttribute="trailing" id="nz8-Zf-Gx8"/>
                             <constraint firstItem="l1l-Zb-FLN" firstAttribute="leading" secondItem="xf6-do-csp" secondAttribute="leadingMargin" constant="10" id="tO2-Ve-y5z"/>
                             <constraint firstItem="l1l-Zb-FLN" firstAttribute="leading" secondItem="xf6-do-csp" secondAttribute="leading" constant="10" id="wSP-fk-oN0"/>
                         </constraints>
@@ -2381,10 +2375,14 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                 <exclude reference="d4j-EE-xl3"/>
                                 <exclude reference="zes-KX-tG6"/>
                                 <exclude reference="l1l-Zb-FLN"/>
+                                <exclude reference="Ymw-fp-coY"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Gce-YV-xWs"/>
-                                <exclude reference="mru-SI-SOq"/>
+                                <exclude reference="QmA-ew-EPP"/>
+                                <exclude reference="UnM-DD-y0S"/>
+                                <exclude reference="dO1-xL-3r1"/>
+                                <exclude reference="ejI-zi-Dym"/>
+                                <exclude reference="jlX-zL-Yyf"/>
                                 <exclude reference="8Te-wn-7uU"/>
                                 <exclude reference="8v7-Zy-S5N"/>
                                 <exclude reference="EMm-WG-fba"/>
@@ -2397,14 +2395,13 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                 <exclude reference="a7j-rb-3vs"/>
                                 <exclude reference="dIr-g1-ptl"/>
                                 <exclude reference="fX9-sG-5EK"/>
-                                <exclude reference="QmA-ew-EPP"/>
-                                <exclude reference="UnM-DD-y0S"/>
-                                <exclude reference="dO1-xL-3r1"/>
-                                <exclude reference="ejI-zi-Dym"/>
-                                <exclude reference="jlX-zL-Yyf"/>
                                 <exclude reference="2eJ-q8-RUj"/>
                                 <exclude reference="8a0-on-hd3"/>
                                 <exclude reference="hyN-mR-ySI"/>
+                                <exclude reference="nz8-Zf-Gx8"/>
+                                <exclude reference="Gce-YV-xWs"/>
+                                <exclude reference="mru-SI-SOq"/>
+                                <exclude reference="Zcc-YY-ELa"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -2413,10 +2410,14 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                 <include reference="d4j-EE-xl3"/>
                                 <include reference="zes-KX-tG6"/>
                                 <include reference="l1l-Zb-FLN"/>
+                                <include reference="Ymw-fp-coY"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Gce-YV-xWs"/>
-                                <exclude reference="mru-SI-SOq"/>
+                                <include reference="QmA-ew-EPP"/>
+                                <include reference="UnM-DD-y0S"/>
+                                <include reference="dO1-xL-3r1"/>
+                                <include reference="ejI-zi-Dym"/>
+                                <include reference="jlX-zL-Yyf"/>
                                 <exclude reference="8Te-wn-7uU"/>
                                 <include reference="8v7-Zy-S5N"/>
                                 <include reference="EMm-WG-fba"/>
@@ -2429,18 +2430,18 @@ LinkedIn: https://www.linkedin.com/pub/janice-worsfold/0/897/547</string>
                                 <include reference="a7j-rb-3vs"/>
                                 <exclude reference="dIr-g1-ptl"/>
                                 <include reference="fX9-sG-5EK"/>
-                                <include reference="QmA-ew-EPP"/>
-                                <include reference="UnM-DD-y0S"/>
-                                <include reference="dO1-xL-3r1"/>
-                                <include reference="ejI-zi-Dym"/>
-                                <include reference="jlX-zL-Yyf"/>
                                 <include reference="2eJ-q8-RUj"/>
                                 <include reference="8a0-on-hd3"/>
                                 <include reference="hyN-mR-ySI"/>
+                                <include reference="nz8-Zf-Gx8"/>
+                                <include reference="Gce-YV-xWs"/>
+                                <exclude reference="mru-SI-SOq"/>
+                                <include reference="Zcc-YY-ELa"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="lastUpdatedLabel" destination="Ymw-fp-coY" id="pOe-T0-lLZ"/>
                         <outlet property="meetingTableView" destination="zes-KX-tG6" id="vXZ-mH-4Dj"/>
                     </connections>
                 </viewController>
@@ -5103,9 +5104,6 @@ T.K. Kurien</mutableString>
                                                             <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular" misplaced="YES">
-                                                                <rect key="frame" x="16" y="20" width="288" height="18"/>
-                                                            </variation>
                                                         </label>
                                                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Wqy-Cc-dhe">
                                                             <rect key="frame" x="-61" y="-14" width="123" height="29"/>
@@ -5116,9 +5114,6 @@ T.K. Kurien</mutableString>
                                                                 <segment title="Option 4"/>
                                                             </segments>
                                                             <color key="tintColor" red="0.7725490196" green="0.2274509804" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <variation key="heightClass=regular" misplaced="YES">
-                                                                <rect key="frame" x="16" y="53" width="288" height="29"/>
-                                                            </variation>
                                                         </segmentedControl>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -5154,8 +5149,7 @@ T.K. Kurien</mutableString>
                                                             <exclude reference="jRB-ec-wfD"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular" misplaced="YES">
-                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                                    <variation key="heightClass=regular">
                                                         <mask key="subviews">
                                                             <include reference="kIA-Dh-ftZ"/>
                                                             <include reference="Wqy-Cc-dhe"/>
