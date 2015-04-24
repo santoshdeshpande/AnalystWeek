@@ -632,7 +632,7 @@
 				TargetAttributes = {
 					3AD6447E1ADB5B0900591666 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = RMXWGV7ZSS;
+						DevelopmentTeam = H2P64G9YTN;
 						SystemCapabilities = {
 							com.apple.InterAppAudio = {
 								enabled = 0;
