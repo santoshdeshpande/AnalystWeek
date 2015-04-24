@@ -185,6 +185,7 @@
 		3AC2FD8B1AE8FEF200577BD6 /* White_Paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = White_Paper.png; sourceTree = "<group>"; };
 		3AC2FD901AE902CA00577BD6 /* ResourceWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceWebViewController.h; sourceTree = "<group>"; };
 		3AC2FD911AE902CA00577BD6 /* ResourceWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceWebViewController.m; sourceTree = "<group>"; };
+		3AC2FD951AE9D06400577BD6 /* AnalystWeek.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AnalystWeek.entitlements; sourceTree = "<group>"; };
 		3AC5DB501ADD08D7006DF05A /* MeetingRequestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingRequestTableViewCell.h; sourceTree = "<group>"; };
 		3AC5DB511ADD08D7006DF05A /* MeetingRequestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingRequestTableViewCell.m; sourceTree = "<group>"; };
 		3AC5DB531ADD0A75006DF05A /* YourMeetingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YourMeetingsViewController.h; sourceTree = "<group>"; };
@@ -392,6 +393,7 @@
 		3AD644811ADB5B0900591666 /* AnalystWeek */ = {
 			isa = PBXGroup;
 			children = (
+				3AC2FD951AE9D06400577BD6 /* AnalystWeek.entitlements */,
 				3A5AD3C91ADFC44A00146D11 /* AWRoundedLabel.h */,
 				3A5AD3CA1ADFC44A00146D11 /* AWRoundedLabel.m */,
 				3A5AD3CB1ADFC44A00146D11 /* AWRoundedTextField.h */,
@@ -630,7 +632,12 @@
 				TargetAttributes = {
 					3AD6447E1ADB5B0900591666 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = 9A3YH84565;
+						DevelopmentTeam = RMXWGV7ZSS;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
 					};
 					3AD644971ADB5B0A00591666 = {
 						CreatedOnToolsVersion = 6.3;
@@ -951,7 +958,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AnalystWeek/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -966,7 +973,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AnalystWeek/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

@@ -96,15 +96,28 @@
     }
     self.lastUpdatedLabel.text = lastModified;
     for (id object in array) {
+        NSLog(@"%@",object);
         NSDictionary *dict = (NSDictionary *) object;
         NSString *participants = [self getParticipants:dict];
+        
         NSString *leader = @"";
         NSString *room = [dict objectForKey:@"venue"];
         NSString *start = [dict objectForKey:@"start_time_str"];
+
+        NSDateFormatter *dateFormat = [NSDateFormatter new];
+        dateFormat.dateFormat = @"yyyy-MM-dd'T'HH:mm:ssZ";
+        NSLocale* posix = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
+        dateFormat.locale = posix;
+        NSDate* output = [dateFormat dateFromString:[dict objectForKey:@"start_time"]];
+        NSLog(@"Date: %@",output);
+        NSString *dateString = [NSDateFormatter localizedStringFromDate:output
+                                                              dateStyle:NSDateFormatterMediumStyle
+                                                              timeStyle:NSDateFormatterNoStyle];
+        
         NSString *end = [dict objectForKey:@"end_time_str"];
         NSString *time = [NSString stringWithFormat:@"%@ - %@",start, end];
         NSString *topic = [dict objectForKey:@"topic"];
-        NSString *meetingTime = [dict objectForKey:@"start_time"];
+        NSString *meetingTime = dateString;
         
         YourMeeting *meeting = [[YourMeeting alloc] initWithLeader:leader room:room atTime:time andTopic:topic];
         meeting.date = meetingTime;
@@ -138,6 +151,9 @@
         result = [result substringToIndex:[result length]-2];
     }
     
+    if ([result isEqualToString:@""]) {
+        result = @"-";
+    }
     return result;
 }
 
@@ -157,6 +173,10 @@
     if ([result length] > 0) {
         NSLog(@"Here....");
         result = [result substringToIndex:[result length]-2];
+    }
+    
+    if ([result isEqualToString:@""]) {
+        result = @"-";
     }
     
     return result;

@@ -20,13 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    if(self.surveyQuestions == nil) {
-        [self fetchSurveyQuestions];
-    }
+    [self.questionTextView becomeFirstResponder];
     // Do any additional setup after loading the view.
-    self.surveyTable.dataSource = self;
-    self.surveyTable.delegate = self;
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,33 +39,14 @@
 }
 */
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.surveyQuestions count];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    SurveyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SurveyCell" forIndexPath:indexPath];
-    NSDictionary *dict = [self.surveyQuestions objectAtIndex:indexPath.row];
-    cell.questionLabel.text = [dict objectForKey:@"question"];
-    [cell.optionLabel setTitle:[dict objectForKey:@"option1"] forSegmentAtIndex:0];
-    [cell.optionLabel setTitle:[dict objectForKey:@"option2"] forSegmentAtIndex:1];
-    [cell.optionLabel setTitle:[dict objectForKey:@"option3"] forSegmentAtIndex:2];
-    [cell.optionLabel setTitle:[dict objectForKey:@"option4"] forSegmentAtIndex:3];
-    return cell;
-
-}
 
 - (void) fetchSurveyQuestions {
     AnalystWeekHTTPClient *client = [AnalystWeekHTTPClient sharedHTTPClient];
     client.delegate = self;
-    [client fetchSurvey];
+//    [client fetchSurvey];
 }
 
 - (void) analystHTTPClient:(AnalystWeekHTTPClient *)client surveyFetched:(id)response {
-    NSArray *array = (NSArray *)response;
-    self.surveyQuestions = array;
-    [self.surveyTable reloadData];
 }
 
 
@@ -81,19 +57,14 @@
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     [params setObject:email forKey:@"email"];
     [params setObject:name forKey:@"name"];
-    for (NSInteger i = 0; i < [self.surveyTable numberOfRowsInSection:0]; ++i) {
-        SurveyTableViewCell *cell = (SurveyTableViewCell *)[self.surveyTable cellForRowAtIndexPath:[NSIndexPath indexPathForRow:i inSection:0]];
-        NSInteger index = [cell.optionLabel selectedSegmentIndex];
-        NSString *value = @"";
-        if(index >= 0) {
-            value = [cell.optionLabel titleForSegmentAtIndex:index];
-        } else {
-            [self showAlert];
-            return;
-        }
-        NSString *optionName = [NSString stringWithFormat:@"answer%d", i+1];
-        [params setObject:value forKey:optionName];
+    NSString *text = self.questionTextView.text;
+    text = [text stringByTrimmingCharactersInSet:
+                                      [NSCharacterSet whitespaceCharacterSet]];
+    if ([text isEqualToString:@""]) {
+        [self showAlert];
+        return;
     }
+    [params setObject:text forKey:@"answer1"];
     AnalystWeekHTTPClient *client = [AnalystWeekHTTPClient sharedHTTPClient];
     client.delegate = self;
     [client postSurveyQuestions:params];
@@ -106,12 +77,14 @@
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
     [alert show];
+    self.questionTextView.text = @"";
+    [self.navigationController popToRootViewControllerAnimated:YES];
 
 }
 
 - (void) showAlert {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Missing Answer"
-                                                    message:@"Please select all answers"
+                                                    message:@"Please answer the question"
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
